@@ -3,7 +3,7 @@
 When the user provides reference images (screenshots) and optionally some CSS classes or style notes:
 
 1. **Generate** a single `index.html` file using Tailwind CSS (via CDN). Include all content inline — no
-2. **Screenshot** the rendered page using Puppeteer (`npx puppeteer screenshot index.html --fullpage` or equivalent). If the page has distinct sections, capture those individually too.
+2. **Screenshot** the rendered page with `node tools/shot.js <page.html>` — this writes full-page desktop and mobile captures to `shots/`. Add `--sections` to also capture each block individually.
 3. **Compare** your screenshots against the reference images. Check for mismatches in:
    - Spacing and padding (measure in px)
    - Font sizes, weights, and line heights
