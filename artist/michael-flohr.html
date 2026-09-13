@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Michael Flohr — Signature Gallery Group</title>
+<meta name="description" content="Michael Flohr: biography, upcoming events and artwork catalogue at Signature Gallery Group.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,75..125,100..900;1,75..125,100..900&family=Geist:wght@100..900&family=Geist+Mono:wght@100..900&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config={theme:{extend:{colors:{taste1:'#3D2B68',taste2:'#9089D3'},
+fontFamily:{body:['Geist','Arial','sans-serif'],head:['Archivo','Arial','sans-serif'],mono:['Geist Mono','Arial','sans-serif']}}}};
+</script>
+<link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+
+<div class="rail"><div class="rail-fill" id="railFill"></div></div>
+<div class="frame">
+  <span class="corner tl"></span><span class="corner tr"></span>
+  <span class="corner bl"></span><span class="corner br"></span>
+  <span class="tick" style="top:13.3rem;right:var(--page-padding);"></span>
+  <span class="tick" style="bottom:6.4rem;right:var(--page-padding);"></span>
+  <span class="edge-letter" style="top:33.5rem;">S</span>
+  <span class="edge-letter" style="top:39rem;">G</span>
+  <span class="edge-letter" style="top:44.5rem;">G</span>
+</div>
+
+<header class="nav">
+  <div class="nav-left flex items-center gap-3">
+    <span class="mono text-[.72rem] tracking-[.14em]">ON</span>
+    <span class="eq"><span></span><span></span><span></span><span></span></span>
+  </div>
+  <a href="../index.html" class="display wordmark">SIGNATURE<br>GALLERY GROUP</a>
+  <div class="nav-right flex items-center gap-[3.25rem]">
+    <button class="flex items-center gap-3" data-menu-open>
+      <span class="dotgrid"><i></i><i></i><i></i><i></i></span>
+      <span class="nav-menu-label text-[.78rem] tracking-[.09em]">MENU</span>
+    </button>
+    <a href="../index.html#contact" class="btn-pill">CONTACT</a>
+  </div>
+</header>
+
+<div class="menu-overlay" id="menuOverlay">
+  <button class="menu-close" data-menu-close aria-label="Close menu">&#10005;</button>
+  <nav class="text-center">
+    <a href="../artists.html" class="display text-[clamp(1.8rem,4vw,3rem)]">All Artists</a>
+    <a href="../index.html#releases" class="display text-[clamp(1.8rem,4vw,3rem)]">New Releases</a>
+    <a href="../index.html#events" class="display text-[clamp(1.8rem,4vw,3rem)]">Events</a>
+    <a href="../index.html#galleries" class="display text-[clamp(1.8rem,4vw,3rem)]">Galleries</a>
+    <a href="../index.html#contact" class="display text-[clamp(1.8rem,4vw,3rem)]">Contact</a>
+  </nav>
+</div>
+
+
+<main class="page-hero">
+  <div class="glow-purple-v"></div><div class="vignette"></div>
+
+  <section class="relative z-10 pad-content pt-[var(--pad-xh)] pb-[var(--pad-xxl)]">
+    <p class="crumb rv"><a href="../index.html">Home</a> &nbsp;/&nbsp; <a href="../artists.html">Artists</a> &nbsp;/&nbsp; Michael Flohr</p>
+    <div class="mt-[var(--pad-l)] grid grid-cols-1 lg:grid-cols-[minmax(0,1fr)_minmax(0,.85fr)] gap-[var(--pad-xl)] items-center">
+      <div class="rv">
+        <h1 class="display display-tight text-[clamp(2.4rem,5vw,5.2rem)]">Michael Flohr</h1>
+
+        <p class="mt-[var(--pad-m)] text-white/70 copy">“I am the guy in a café,” he says, “noticing a beautiful, warm, orange-violetlight chipping on people’sfaces across the room, and immediately thinking of ways to combine color andcapture that moment in my next painting.” Sometimes he is with penciland notebook, sometimes a camera. Observation is everything to him—whether seen, heard, or read, “it is all connected to thatwhich can be processed into a visual.”</p>
+      </div>
+      <div class="rv">
+        <img src="../images/artists/michael-flohr/_hero.jpg" alt="Michael Flohr"
+             class="artist-hero-photo rounded-[1rem]"
+             style="filter:drop-shadow(0 40px 70px rgba(0,0,0,.75));">
+      </div>
+    </div>
+  </section>
+
+  <section class="relative z-10 pad-content pb-[var(--pad-xxl)]">
+    <h2 class="display h-section rv">Upcoming Events</h2>
+    <div class="mt-[var(--pad-l)] grid grid-cols-1 md:grid-cols-2 gap-[var(--pad-s)]">
+      <div class="card p-[var(--pad-l)] rv">
+        <p class="text-white/60 copy">No scheduled appearances at this time. Contact a gallery to be notified
+          when this artist's next show is announced.</p>
+        <a href="../index.html#galleries" class="btn-ghost mt-[var(--pad-m)]">CONTACT A GALLERY</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="relative z-10 pad-content pb-[var(--pad-xxh)]">
+    <h2 class="display h-section rv">Catalogue</h2>
+    <p class="mt-[var(--pad-s)] text-white/60 copy rv">48 works. Select a piece to view it larger. Contact a gallery for availability and pricing.</p>
+    <div class="mt-[var(--pad-xl)] grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-[var(--pad-xs)]">
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/michael-flohr/000.jpg" data-lb-caption="Winter In Paris &mdash; Michael Flohr">
+        <img src="../images/artists/michael-flohr/thumb/000.jpg" alt="Winter In Paris" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Winter In Paris</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/michael-flohr/001.jpg" data-lb-caption="Win At the Preakness &mdash; Michael Flohr">
+        <img src="../images/artists/michael-flohr/thumb/001.jpg" alt="Win At the Preakness" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Win At the Preakness</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/michael-flohr/002.jpg" data-lb-caption="Win at Belmont &mdash; Michael Flohr">
+        <img src="../images/artists/michael-flohr/thumb/002.jpg" alt="Win at Belmont" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Win at Belmont</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/michael-flohr/003.jpg" data-lb-caption="When in Rome &mdash; Michael Flohr">
+        <img src="../images/artists/michael-flohr/thumb/003.jpg" alt="When in Rome" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">When in Rome</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/michael-flohr/004.jpg" data-lb-caption="Vesuvios &mdash; Michael Flohr">
+        <img src="../images/artists/michael-flohr/thumb/004.jpg" alt="Vesuvios" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Vesuvios</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/michael-flohr/005.jpg" data-lb-caption="Venetian Lights &mdash; Michael Flohr">
+        <img src="../images/artists/michael-flohr/thumb/005.jpg" alt="Venetian Lights" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Venetian Lights</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/michael-flohr/006.jpg" data-lb-caption="Top Shelf &mdash; Michael Flohr">
+        <img src="../images/artists/michael-flohr/thumb/006.jpg" alt="Top Shelf" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Top Shelf</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/michael-flohr/007.jpg" data-lb-caption="The Red Umbrella &mdash; Michael Flohr">
+        <img src="../images/artists/michael-flohr/thumb/007.jpg" alt="The Red Umbrella" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">The Red Umbrella</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/michael-flohr/008.jpg" data-lb-caption="Romance In the Rain &mdash; Michael Flohr">
+        <img src="../images/artists/michael-flohr/thumb/008.jpg" alt="Romance In the Rain" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Romance In the Rain</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/michael-flohr/009.jpg" data-lb-caption="PFATW Twilight In Florence &mdash; Michael Flohr">
+        <img src="../images/artists/michael-flohr/thumb/009.jpg" alt="PFATW Twilight In Florence" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">PFATW Twilight In Florence</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/michael-flohr/010.jpg" data-lb-caption="PFATW Taj Mahal &mdash; Michael Flohr">
+        <img src="../images/artists/michael-flohr/thumb/010.jpg" alt="PFATW Taj Mahal" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">PFATW Taj Mahal</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/michael-flohr/011.jpg" data-lb-caption="PFATW Reflections of Paris &mdash; Michael Flohr">
+        <img src="../images/artists/michael-flohr/thumb/011.jpg" alt="PFATW Reflections of Paris" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">PFATW Reflections of Paris</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/michael-flohr/012.jpg" data-lb-caption="PFATW Metropolitan Cathedral Mexico City &mdash; Michael Flohr">
+        <img src="../images/artists/michael-flohr/thumb/012.jpg" alt="PFATW Metropolitan Cathedral Mexico City" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">PFATW Metropolitan Cathedral Mexico City</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/michael-flohr/013.jpg" data-lb-caption="PFATW London Bridge London Tower &mdash; Michael Flohr">
+        <img src="../images/artists/michael-flohr/thumb/013.jpg" alt="PFATW London Bridge London Tower" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">PFATW London Bridge London Tower</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/michael-flohr/014.jpg" data-lb-caption="PFATW Historic St Charles &mdash; Michael Flohr">
+        <img src="../images/artists/michael-flohr/thumb/014.jpg" alt="PFATW Historic St Charles" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">PFATW Historic St Charles</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/michael-flohr/015.jpg" data-lb-caption="PFATW Grand Canal Venice &mdash; Michael Flohr">
+        <img src="../images/artists/michael-flohr/thumb/015.jpg" alt="PFATW Grand Canal Venice" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">PFATW Grand Canal Venice</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/michael-flohr/016.jpg" data-lb-caption="PFATW Enamored &mdash; Michael Flohr">
+        <img src="../images/artists/michael-flohr/thumb/016.jpg" alt="PFATW Enamored" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">PFATW Enamored</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/michael-flohr/017.jpg" data-lb-caption="PFATW Dreams of Madrid &mdash; Michael Flohr">
+        <img src="../images/artists/michael-flohr/thumb/017.jpg" alt="PFATW Dreams of Madrid" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">PFATW Dreams of Madrid</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/michael-flohr/018.jpg" data-lb-caption="PFATW Cuban Night Cap &mdash; Michael Flohr">
+        <img src="../images/artists/michael-flohr/thumb/018.jpg" alt="PFATW Cuban Night Cap" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">PFATW Cuban Night Cap</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/michael-flohr/019.jpg" data-lb-caption="PFATW Capital Building &mdash; Michael Flohr">
+        <img src="../images/artists/michael-flohr/thumb/019.jpg" alt="PFATW Capital Building" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">PFATW Capital Building</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/michael-flohr/020.jpg" data-lb-caption="PFATW Amsterdam &mdash; Michael Flohr">
+        <img src="../images/artists/michael-flohr/thumb/020.jpg" alt="PFATW Amsterdam" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">PFATW Amsterdam</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/michael-flohr/021.jpg" data-lb-caption="Parisian Rain &mdash; Michael Flohr">
+        <img src="../images/artists/michael-flohr/thumb/021.jpg" alt="Parisian Rain" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Parisian Rain</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/michael-flohr/022.jpg" data-lb-caption="NOLA &mdash; Michael Flohr">
+        <img src="../images/artists/michael-flohr/thumb/022.jpg" alt="NOLA" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">NOLA</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/michael-flohr/023.jpg" data-lb-caption="New York City Rain &mdash; Michael Flohr">
+        <img src="../images/artists/michael-flohr/thumb/023.jpg" alt="New York City Rain" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">New York City Rain</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/michael-flohr/024.jpg" data-lb-caption="Martini for Two &mdash; Michael Flohr">
+        <img src="../images/artists/michael-flohr/thumb/024.jpg" alt="Martini for Two" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Martini for Two</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/michael-flohr/025.jpg" data-lb-caption="Makers Best &mdash; Michael Flohr">
+        <img src="../images/artists/michael-flohr/thumb/025.jpg" alt="Makers Best" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Makers Best</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/michael-flohr/026.jpg" data-lb-caption="Lunch with Degas &mdash; Michael Flohr">
+        <img src="../images/artists/michael-flohr/thumb/026.jpg" alt="Lunch with Degas" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Lunch with Degas</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/michael-flohr/027.jpg" data-lb-caption="Lucky Number 4 &mdash; Michael Flohr">
+        <img src="../images/artists/michael-flohr/thumb/027.jpg" alt="Lucky Number 4" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Lucky Number 4</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/michael-flohr/028.jpg" data-lb-caption="Luck of the Irish &mdash; Michael Flohr">
+        <img src="../images/artists/michael-flohr/thumb/028.jpg" alt="Luck of the Irish" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Luck of the Irish</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/michael-flohr/029.jpg" data-lb-caption="London Rain &mdash; Michael Flohr">
+        <img src="../images/artists/michael-flohr/thumb/029.jpg" alt="London Rain" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">London Rain</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/michael-flohr/030.jpg" data-lb-caption="In The Mood &mdash; Michael Flohr">
+        <img src="../images/artists/michael-flohr/thumb/030.jpg" alt="In The Mood" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">In The Mood</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/michael-flohr/031.jpg" data-lb-caption="Homage to Fred &mdash; Michael Flohr">
+        <img src="../images/artists/michael-flohr/thumb/031.jpg" alt="Homage to Fred" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Homage to Fred</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/michael-flohr/032.jpg" data-lb-caption="Historic Romance &mdash; Michael Flohr">
+        <img src="../images/artists/michael-flohr/thumb/032.jpg" alt="Historic Romance" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Historic Romance</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/michael-flohr/033.jpg" data-lb-caption="Fontaines &mdash; Michael Flohr">
+        <img src="../images/artists/michael-flohr/thumb/033.jpg" alt="Fontaines" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Fontaines</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/michael-flohr/034.jpg" data-lb-caption="Coronado Beach Walks &mdash; Michael Flohr">
+        <img src="../images/artists/michael-flohr/thumb/034.jpg" alt="Coronado Beach Walks" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Coronado Beach Walks</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/michael-flohr/035.jpg" data-lb-caption="Cocktails at Carmines &mdash; Michael Flohr">
+        <img src="../images/artists/michael-flohr/thumb/035.jpg" alt="Cocktails at Carmines" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Cocktails at Carmines</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/michael-flohr/036.jpg" data-lb-caption="Classic Manhattan &mdash; Michael Flohr">
+        <img src="../images/artists/michael-flohr/thumb/036.jpg" alt="Classic Manhattan" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Classic Manhattan</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/michael-flohr/037.jpg" data-lb-caption="Ciao Bella &mdash; Michael Flohr">
+        <img src="../images/artists/michael-flohr/thumb/037.jpg" alt="Ciao Bella" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Ciao Bella</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/michael-flohr/038.jpg" data-lb-caption="Churchills Downs &mdash; Michael Flohr">
+        <img src="../images/artists/michael-flohr/thumb/038.jpg" alt="Churchills Downs" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Churchills Downs</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/michael-flohr/039.jpg" data-lb-caption="Captured Moments &mdash; Michael Flohr">
+        <img src="../images/artists/michael-flohr/thumb/039.jpg" alt="Captured Moments" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Captured Moments</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/michael-flohr/040.jpg" data-lb-caption="Cafe De Flore &mdash; Michael Flohr">
+        <img src="../images/artists/michael-flohr/thumb/040.jpg" alt="Cafe De Flore" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Cafe De Flore</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/michael-flohr/041.jpg" data-lb-caption="Bourbon St. &mdash; Michael Flohr">
+        <img src="../images/artists/michael-flohr/thumb/041.jpg" alt="Bourbon St." loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Bourbon St.</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/michael-flohr/042.jpg" data-lb-caption="Blue Note &mdash; Michael Flohr">
+        <img src="../images/artists/michael-flohr/thumb/042.jpg" alt="Blue Note" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Blue Note</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/michael-flohr/043.jpg" data-lb-caption="Big CIty of Dreams &mdash; Michael Flohr">
+        <img src="../images/artists/michael-flohr/thumb/043.jpg" alt="Big CIty of Dreams" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Big CIty of Dreams</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/michael-flohr/044.jpg" data-lb-caption="Beautiful Venice &mdash; Michael Flohr">
+        <img src="../images/artists/michael-flohr/thumb/044.jpg" alt="Beautiful Venice" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Beautiful Venice</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/michael-flohr/045.jpg" data-lb-caption="Beautiful Florence &mdash; Michael Flohr">
+        <img src="../images/artists/michael-flohr/thumb/045.jpg" alt="Beautiful Florence" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Beautiful Florence</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/michael-flohr/046.jpg" data-lb-caption="Beautiful Bell &mdash; Michael Flohr">
+        <img src="../images/artists/michael-flohr/thumb/046.jpg" alt="Beautiful Bell" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Beautiful Bell</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/michael-flohr/047.jpg" data-lb-caption="Across the Board &mdash; Michael Flohr">
+        <img src="../images/artists/michael-flohr/thumb/047.jpg" alt="Across the Board" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Across the Board</figcaption>
+      </figure>
+    </div>
+
+    <h2 class="display h-section mt-[var(--pad-xxl)] rv">More Artists</h2>
+    <div class="scroll-x mt-[var(--pad-l)] rv">
+      <div class="flex gap-[var(--pad-xs)] w-max pb-2">
+        <a href="angela-mia.html" class="card flex items-center gap-3 py-3 px-4 flex-none">
+          <img src="../images/artists/angela-mia/_card.jpg" alt="Angela Mia" loading="lazy" class="w-9 h-9 rounded-full object-cover border border-white/25">
+          <span class="text-[.92rem] whitespace-nowrap">Angela Mia</span>
+        </a>
+        <a href="david-wight.html" class="card flex items-center gap-3 py-3 px-4 flex-none">
+          <img src="../images/artists/david-wight/_card.jpg" alt="David Wight" loading="lazy" class="w-9 h-9 rounded-full object-cover border border-white/25">
+          <span class="text-[.92rem] whitespace-nowrap">David Wight</span>
+        </a>
+        <a href="jeff-vermeeren.html" class="card flex items-center gap-3 py-3 px-4 flex-none">
+          <img src="../images/artists/jeff-vermeeren/_card.jpg" alt="Jeff Vermeeren" loading="lazy" class="w-9 h-9 rounded-full object-cover border border-white/25">
+          <span class="text-[.92rem] whitespace-nowrap">Jeff Vermeeren</span>
+        </a>
+        <a href="joseph-capicotto.html" class="card flex items-center gap-3 py-3 px-4 flex-none">
+          <img src="../images/artists/joseph-capicotto/_card.jpg" alt="Joseph Capicotto" loading="lazy" class="w-9 h-9 rounded-full object-cover border border-white/25">
+          <span class="text-[.92rem] whitespace-nowrap">Joseph Capicotto</span>
+        </a>
+        <a href="michael-godard.html" class="card flex items-center gap-3 py-3 px-4 flex-none">
+          <img src="../images/artists/michael-godard/_card.jpg" alt="Michael Godard" loading="lazy" class="w-9 h-9 rounded-full object-cover border border-white/25">
+          <span class="text-[.92rem] whitespace-nowrap">Michael Godard</span>
+        </a>
+        <a href="nano-lopez.html" class="card flex items-center gap-3 py-3 px-4 flex-none">
+          <img src="../images/artists/nano-lopez/_card.jpg" alt="Nano Lopez" loading="lazy" class="w-9 h-9 rounded-full object-cover border border-white/25">
+          <span class="text-[.92rem] whitespace-nowrap">Nano Lopez</span>
+        </a>
+        <a href="oryan.html" class="card flex items-center gap-3 py-3 px-4 flex-none">
+          <img src="../images/artists/oryan/_card.jpg" alt="Oryan" loading="lazy" class="w-9 h-9 rounded-full object-cover border border-white/25">
+          <span class="text-[.92rem] whitespace-nowrap">Oryan</span>
+        </a>
+        <a href="tom-everhart.html" class="card flex items-center gap-3 py-3 px-4 flex-none">
+          <img src="../images/artists/tom-everhart/_card.jpg" alt="Tom Everhart" loading="lazy" class="w-9 h-9 rounded-full object-cover border border-white/25">
+          <span class="text-[.92rem] whitespace-nowrap">Tom Everhart</span>
+        </a>
+        <a href="walfrido.html" class="card flex items-center gap-3 py-3 px-4 flex-none">
+          <img src="../images/artists/walfrido/_card.jpg" alt="Walfrido" loading="lazy" class="w-9 h-9 rounded-full object-cover border border-white/25">
+          <span class="text-[.92rem] whitespace-nowrap">Walfrido</span>
+        </a>
+        <a href="wyland.html" class="card flex items-center gap-3 py-3 px-4 flex-none">
+          <img src="../images/artists/wyland/_card.jpg" alt="Wyland" loading="lazy" class="w-9 h-9 rounded-full object-cover border border-white/25">
+          <span class="text-[.92rem] whitespace-nowrap">Wyland</span>
+        </a>
+        <a href="2wild.html" class="card flex items-center gap-3 py-3 px-4 flex-none">
+          <img src="../images/artists/2wild/_card.jpg" alt="2Wild" loading="lazy" class="w-9 h-9 rounded-full object-cover border border-white/25">
+          <span class="text-[.92rem] whitespace-nowrap">2Wild</span>
+        </a>
+        <a href="advait-kolarkar.html" class="card flex items-center gap-3 py-3 px-4 flex-none">
+          <img src="../images/artists/advait-kolarkar/_card.jpg" alt="Advait Kolarkar" loading="lazy" class="w-9 h-9 rounded-full object-cover border border-white/25">
+          <span class="text-[.92rem] whitespace-nowrap">Advait Kolarkar</span>
+        </a>
+      </div>
+    </div>
+    <a href="../artists.html" class="btn-ghost mt-[var(--pad-l)] rv">VIEW ALL ARTISTS</a>
+  </section>
+</main>
+
+<div class="lightbox" id="lightbox">
+  <img alt="">
+  <p class="mono text-[.72rem] tracking-[.13em] uppercase text-white/70" data-lb-caption></p>
+</div>
+
+<footer id="contact" class="relative pt-[var(--pad-xxh)] pb-[var(--pad-xh)] overflow-hidden">
+  <div class="glow-grey opacity-45"></div>
+  <div class="vignette"></div>
+  <div class="relative z-10 pad-content">
+    <div class="max-w-[35rem] mx-auto text-center rv">
+      <h2 class="display h-section">Join Us</h2>
+      <p class="mt-[var(--pad-s)] text-white/70 copy">
+        Join the community and be the first to know about new releases, upcoming art shows and artist appearances at our galleries.
+      </p>
+      <form class="mt-[var(--pad-l)]" data-sgg-signup>
+        <input class="field" type="email" name="email" required placeholder="Your email address" aria-label="Your email address">
+        <button class="btn-pill w-full mt-[var(--pad-s)] text-[.82rem]">REGISTER</button>
+        <p class="mt-[var(--pad-s)] text-[.82rem] text-taste2" data-sgg-signup-msg hidden></p>
+      </form>
+      <p class="mt-[var(--pad-s)] text-[.82rem] text-white/55">
+        By registering you agree to our <a href="#contact" class="underline">privacy policy</a>
+      </p>
+      <div class="socials">
+      <a href="https://www.instagram.com/signaturegallerieslv/?hl=en" target="_blank" rel="noopener" aria-label="Signature Galleries on Instagram"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1.1" fill="currentColor" stroke="none"/></svg></a>
+      <a href="https://www.facebook.com/Signaturegalleryinlasvegas" target="_blank" rel="noopener" aria-label="Signature Galleries on Facebook"><svg width="19" height="19" viewBox="0 0 24 24" fill="currentColor"><path d="M14 8.5V7.2c0-.7.2-1.1 1.2-1.1H17V3.2A18 18 0 0 0 14.6 3C12.3 3 10.8 4.4 10.8 7v1.5H8.4V12h2.4v9h3.2v-9h2.5l.4-3.5H14z"/></svg></a>
+    </div>
+      <p class="mt-[var(--pad-l)] mono text-[.68rem] tracking-[.13em] text-white/45 uppercase">
+        Corporate office &middot; <a href="mailto:info@signaturegalleries.com?subject=Enquiry%20for%20Signature%20Gallery%20Group&amp;body=Hello%20Signature%20Gallery%20Group%2C%0D%0A%0D%0A" class="underline">info@signaturegalleries.com</a>
+      </p>
+      <p class="mt-[var(--pad-xs)] mono text-[.68rem] tracking-[.13em] text-white/45 uppercase">&copy; 2026 Signature Gallery Group</p>
+    </div>
+    <div class="mt-[var(--pad-xh)] max-w-[52rem] mx-auto legalbar px-[var(--pad-s)] py-[var(--pad-xs)] flex flex-wrap items-center justify-center gap-x-[var(--pad-l)] gap-y-[var(--pad-xs)] rv">
+      <a href="../artists.html" class="border border-white/40 rounded-[.25rem] px-4 py-2 text-[.72rem] tracking-[.1em] uppercase">Artists</a>
+      <a href="../index.html#events" class="text-[.72rem] tracking-[.1em] uppercase text-white/70 hover:text-white transition-colors">Events</a>
+      <a href="../index.html#galleries" class="text-[.72rem] tracking-[.1em] uppercase text-white/70 hover:text-white transition-colors">Galleries</a>
+      <a href="../index.html#contact" class="text-[.72rem] tracking-[.1em] uppercase text-white/70 hover:text-white transition-colors">Shop</a>
+      <a href="../index.html#contact" class="border border-white/40 rounded-[.25rem] px-4 py-2 text-[.72rem] tracking-[.1em] uppercase">Contact</a>
+    </div>
+    <p class="mt-[var(--pad-l)] text-center text-[.78rem] text-white/40">
+      Signature Gallery Group, a managing and accounting company.
+    </p>
+    <p class="mt-[var(--pad-xs)] text-center text-[.78rem] text-white/40">
+      Created by <span class="underline">Giancarlo Capicotto</span>
+    </p>
+  </div>
+</footer>
+
+<script src="../assets/site.js"></script>
+<script src="../assets/track.js" defer></script>
+</body>
+</html>
+

@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Michael Godard — Signature Gallery Group</title>
+<meta name="description" content="Michael Godard: biography, upcoming events and artwork catalogue at Signature Gallery Group.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,75..125,100..900;1,75..125,100..900&family=Geist:wght@100..900&family=Geist+Mono:wght@100..900&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config={theme:{extend:{colors:{taste1:'#3D2B68',taste2:'#9089D3'},
+fontFamily:{body:['Geist','Arial','sans-serif'],head:['Archivo','Arial','sans-serif'],mono:['Geist Mono','Arial','sans-serif']}}}};
+</script>
+<link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+
+<div class="rail"><div class="rail-fill" id="railFill"></div></div>
+<div class="frame">
+  <span class="corner tl"></span><span class="corner tr"></span>
+  <span class="corner bl"></span><span class="corner br"></span>
+  <span class="tick" style="top:13.3rem;right:var(--page-padding);"></span>
+  <span class="tick" style="bottom:6.4rem;right:var(--page-padding);"></span>
+  <span class="edge-letter" style="top:33.5rem;">S</span>
+  <span class="edge-letter" style="top:39rem;">G</span>
+  <span class="edge-letter" style="top:44.5rem;">G</span>
+</div>
+
+<header class="nav">
+  <div class="nav-left flex items-center gap-3">
+    <span class="mono text-[.72rem] tracking-[.14em]">ON</span>
+    <span class="eq"><span></span><span></span><span></span><span></span></span>
+  </div>
+  <a href="../index.html" class="display wordmark">SIGNATURE<br>GALLERY GROUP</a>
+  <div class="nav-right flex items-center gap-[3.25rem]">
+    <button class="flex items-center gap-3" data-menu-open>
+      <span class="dotgrid"><i></i><i></i><i></i><i></i></span>
+      <span class="nav-menu-label text-[.78rem] tracking-[.09em]">MENU</span>
+    </button>
+    <a href="../index.html#contact" class="btn-pill">CONTACT</a>
+  </div>
+</header>
+
+<div class="menu-overlay" id="menuOverlay">
+  <button class="menu-close" data-menu-close aria-label="Close menu">&#10005;</button>
+  <nav class="text-center">
+    <a href="../artists.html" class="display text-[clamp(1.8rem,4vw,3rem)]">All Artists</a>
+    <a href="../index.html#releases" class="display text-[clamp(1.8rem,4vw,3rem)]">New Releases</a>
+    <a href="../index.html#events" class="display text-[clamp(1.8rem,4vw,3rem)]">Events</a>
+    <a href="../index.html#galleries" class="display text-[clamp(1.8rem,4vw,3rem)]">Galleries</a>
+    <a href="../index.html#contact" class="display text-[clamp(1.8rem,4vw,3rem)]">Contact</a>
+  </nav>
+</div>
+
+
+<main class="page-hero">
+  <div class="glow-purple-v"></div><div class="vignette"></div>
+
+  <section class="relative z-10 pad-content pt-[var(--pad-xh)] pb-[var(--pad-xxl)]">
+    <p class="crumb rv"><a href="../index.html">Home</a> &nbsp;/&nbsp; <a href="../artists.html">Artists</a> &nbsp;/&nbsp; Michael Godard</p>
+    <div class="mt-[var(--pad-l)] grid grid-cols-1 lg:grid-cols-[minmax(0,1fr)_minmax(0,.85fr)] gap-[var(--pad-xl)] items-center">
+      <div class="rv">
+        <h1 class="display display-tight text-[clamp(2.4rem,5vw,5.2rem)]">Michael Godard</h1>
+        <p class="mono text-[.72rem] tracking-[.14em] text-taste2 uppercase mt-[var(--pad-s)]">The Rock Star of the Art World</p>
+
+        <p class="mt-[var(--pad-m)] text-white/70 copy">Michael Godard artwork doesn&#39;t just sit there on the wall waiting to be noticed...it jumps out at the viewer with bold color, dramatic black backgrounds, and outrageous humor! Born in Southern California, Godard was a precocious kid with a multitude of talents and a dark home life filled with hidden abuse. He excelled in math, music and art—quite an achievement, considering that his family moved around so much that he attended a total of sixteen different schools.</p>
+      </div>
+      <div class="rv">
+        <img src="../images/artists/michael-godard/_hero.jpg" alt="Michael Godard"
+             class="artist-hero-photo rounded-[1rem]"
+             style="filter:drop-shadow(0 40px 70px rgba(0,0,0,.75));">
+      </div>
+    </div>
+  </section>
+
+  <section class="relative z-10 pad-content pb-[var(--pad-xxl)]">
+    <h2 class="display h-section rv">Upcoming Events</h2>
+    <div class="mt-[var(--pad-l)] grid grid-cols-1 md:grid-cols-2 gap-[var(--pad-s)]">
+      <div class="card p-[var(--pad-l)] rv">
+        <p class="text-white/60 copy">No scheduled appearances at this time. Contact a gallery to be notified
+          when this artist's next show is announced.</p>
+        <a href="../index.html#galleries" class="btn-ghost mt-[var(--pad-m)]">CONTACT A GALLERY</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="relative z-10 pad-content pb-[var(--pad-xxh)]">
+    <h2 class="display h-section rv">Catalogue</h2>
+    <p class="mt-[var(--pad-s)] text-white/60 copy rv">91 works. Select a piece to view it larger. Contact a gallery for availability and pricing.</p>
+    <div class="mt-[var(--pad-xl)] grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-[var(--pad-xs)]">
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/michael-godard/000.jpg" data-lb-caption="Butterfly Effervescence &mdash; Michael Godard">
+        <img src="../images/artists/michael-godard/thumb/000.jpg" alt="Butterfly Effervescence" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Butterfly Effervescence</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/michael-godard/001.jpg" data-lb-caption="Dancing Wine &mdash; Michael Godard">
+        <img src="../images/artists/michael-godard/thumb/001.jpg" alt="Dancing Wine" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Dancing Wine</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/michael-godard/002.jpg" data-lb-caption="Chick Magnet &mdash; Michael Godard">
+        <img src="../images/artists/michael-godard/thumb/002.jpg" alt="Chick Magnet" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Chick Magnet</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/michael-godard/003.jpg" data-lb-caption="Bar Hop &mdash; Michael Godard">
+        <img src="../images/artists/michael-godard/thumb/003.jpg" alt="Bar Hop" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Bar Hop</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/michael-godard/004.jpg" data-lb-caption="Queen Bee watermarked &mdash; Michael Godard">
+        <img src="../images/artists/michael-godard/thumb/004.jpg" alt="Queen Bee watermarked" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Queen Bee watermarked</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/michael-godard/005.jpg" data-lb-caption="Archangel &mdash; Michael Godard">
+        <img src="../images/artists/michael-godard/thumb/005.jpg" alt="Archangel" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Archangel</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/michael-godard/006.jpg" data-lb-caption="Wine Country &mdash; Michael Godard">
+        <img src="../images/artists/michael-godard/thumb/006.jpg" alt="Wine Country" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Wine Country</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/michael-godard/007.jpg" data-lb-caption="Losing My Marbles &mdash; Michael Godard">
+        <img src="../images/artists/michael-godard/thumb/007.jpg" alt="Losing My Marbles" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Losing My Marbles</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/michael-godard/008.jpg" data-lb-caption="Christmas WIne &mdash; Michael Godard">
+        <img src="../images/artists/michael-godard/thumb/008.jpg" alt="Christmas WIne" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Christmas WIne</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/michael-godard/009.jpg" data-lb-caption="Chocolate Kisses &mdash; Michael Godard">
+        <img src="../images/artists/michael-godard/thumb/009.jpg" alt="Chocolate Kisses" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Chocolate Kisses</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/michael-godard/010.jpg" data-lb-caption="KEYS OF IVORY &mdash; Michael Godard">
+        <img src="../images/artists/michael-godard/thumb/010.jpg" alt="KEYS OF IVORY" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">KEYS OF IVORY</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/michael-godard/011.jpg" data-lb-caption="Keys of Ivory &mdash; Michael Godard">
+        <img src="../images/artists/michael-godard/thumb/011.jpg" alt="Keys of Ivory" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Keys of Ivory</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/michael-godard/012.jpg" data-lb-caption="FireYall &mdash; Michael Godard">
+        <img src="../images/artists/michael-godard/thumb/012.jpg" alt="FireYall" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">FireYall</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/michael-godard/013.jpg" data-lb-caption="CORK WAITER SCULPTURE &mdash; Michael Godard">
+        <img src="../images/artists/michael-godard/thumb/013.jpg" alt="CORK WAITER SCULPTURE" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">CORK WAITER SCULPTURE</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/michael-godard/014.jpg" data-lb-caption="Majesty &mdash; Michael Godard">
+        <img src="../images/artists/michael-godard/thumb/014.jpg" alt="Majesty" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Majesty</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/michael-godard/015.jpg" data-lb-caption="Gothic Martini &mdash; Michael Godard">
+        <img src="../images/artists/michael-godard/thumb/015.jpg" alt="Gothic Martini" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Gothic Martini</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/michael-godard/016.jpg" data-lb-caption="Glamping &mdash; Michael Godard">
+        <img src="../images/artists/michael-godard/thumb/016.jpg" alt="Glamping" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Glamping</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/michael-godard/017.jpg" data-lb-caption="Drunken Pumpkins &mdash; Michael Godard">
+        <img src="../images/artists/michael-godard/thumb/017.jpg" alt="Drunken Pumpkins" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Drunken Pumpkins</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/michael-godard/018.jpg" data-lb-caption="Wonky Willy Espresso &mdash; Michael Godard">
+        <img src="../images/artists/michael-godard/thumb/018.jpg" alt="Wonky Willy Espresso" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Wonky Willy Espresso</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/michael-godard/019.jpg" data-lb-caption="Wine Shoe &mdash; Michael Godard">
+        <img src="../images/artists/michael-godard/thumb/019.jpg" alt="Wine Shoe" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Wine Shoe</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/michael-godard/020.jpg" data-lb-caption="Whiskey Rock and Roll &mdash; Michael Godard">
+        <img src="../images/artists/michael-godard/thumb/020.jpg" alt="Whiskey Rock and Roll" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Whiskey Rock and Roll</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/michael-godard/021.jpg" data-lb-caption="Beer Necessities &mdash; Michael Godard">
+        <img src="../images/artists/michael-godard/thumb/021.jpg" alt="Beer Necessities" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Beer Necessities</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/michael-godard/022.jpg" data-lb-caption="Strawberry Jams &mdash; Michael Godard">
+        <img src="../images/artists/michael-godard/thumb/022.jpg" alt="Strawberry Jams" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Strawberry Jams</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/michael-godard/023.jpg" data-lb-caption="Vampire Wine &mdash; Michael Godard">
+        <img src="../images/artists/michael-godard/thumb/023.jpg" alt="Vampire Wine" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Vampire Wine</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/michael-godard/024.jpg" data-lb-caption="Love Potion No.9 &mdash; Michael Godard">
+        <img src="../images/artists/michael-godard/thumb/024.jpg" alt="Love Potion No.9" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Love Potion No.9</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/michael-godard/025.jpg" data-lb-caption="White Wine Tango &mdash; Michael Godard">
+        <img src="../images/artists/michael-godard/thumb/025.jpg" alt="White Wine Tango" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">White Wine Tango</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/michael-godard/026.jpg" data-lb-caption="Love is a Life Savor &mdash; Michael Godard">
+        <img src="../images/artists/michael-godard/thumb/026.jpg" alt="Love is a Life Savor" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Love is a Life Savor</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/michael-godard/027.jpg" data-lb-caption="Strawberry Splash &mdash; Michael Godard">
+        <img src="../images/artists/michael-godard/thumb/027.jpg" alt="Strawberry Splash" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Strawberry Splash</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/michael-godard/028.jpg" data-lb-caption="Sons of Mixology &mdash; Michael Godard">
+        <img src="../images/artists/michael-godard/thumb/028.jpg" alt="Sons of Mixology" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Sons of Mixology</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/michael-godard/029.jpg" data-lb-caption="Baking Bad &mdash; Michael Godard">
+        <img src="../images/artists/michael-godard/thumb/029.jpg" alt="Baking Bad" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Baking Bad</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/michael-godard/030.jpg" data-lb-caption="Mint to Be &mdash; Michael Godard">
+        <img src="../images/artists/michael-godard/thumb/030.jpg" alt="Mint to Be" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Mint to Be</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/michael-godard/031.jpg" data-lb-caption="Never Give Up &mdash; Michael Godard">
+        <img src="../images/artists/michael-godard/thumb/031.jpg" alt="Never Give Up" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Never Give Up</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/michael-godard/032.jpg" data-lb-caption="Starry Starry Wine &mdash; Michael Godard">
+        <img src="../images/artists/michael-godard/thumb/032.jpg" alt="Starry Starry Wine" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Starry Starry Wine</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/michael-godard/033.jpg" data-lb-caption="Angel Kiss &mdash; Michael Godard">
+        <img src="../images/artists/michael-godard/thumb/033.jpg" alt="Angel Kiss" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Angel Kiss</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/michael-godard/034.jpg" data-lb-caption="3 Wishes in Red &mdash; Michael Godard">
+        <img src="../images/artists/michael-godard/thumb/034.jpg" alt="3 Wishes in Red" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">3 Wishes in Red</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/michael-godard/035.jpg" data-lb-caption="Golden Kinghts &mdash; Michael Godard">
+        <img src="../images/artists/michael-godard/thumb/035.jpg" alt="Golden Kinghts" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Golden Kinghts</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/michael-godard/036.jpg" data-lb-caption="First Love &mdash; Michael Godard">
+        <img src="../images/artists/michael-godard/thumb/036.jpg" alt="First Love" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">First Love</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/michael-godard/037.jpg" data-lb-caption="I Dream of Tini &mdash; Michael Godard">
+        <img src="../images/artists/michael-godard/thumb/037.jpg" alt="I Dream of Tini" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">I Dream of Tini</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/michael-godard/038.jpg" data-lb-caption="Bar Slang &mdash; Michael Godard">
+        <img src="../images/artists/michael-godard/thumb/038.jpg" alt="Bar Slang" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Bar Slang</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/michael-godard/039.jpg" data-lb-caption="Bar Slang 2 &mdash; Michael Godard">
+        <img src="../images/artists/michael-godard/thumb/039.jpg" alt="Bar Slang 2" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Bar Slang 2</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/michael-godard/040.jpg" data-lb-caption="2 Birds in Paradise &mdash; Michael Godard">
+        <img src="../images/artists/michael-godard/thumb/040.jpg" alt="2 Birds in Paradise" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">2 Birds in Paradise</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/michael-godard/041.jpg" data-lb-caption="White Wine of Love &mdash; Michael Godard">
+        <img src="../images/artists/michael-godard/thumb/041.jpg" alt="White Wine of Love" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">White Wine of Love</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/michael-godard/042.jpg" data-lb-caption="X-Tini &mdash; Michael Godard">
+        <img src="../images/artists/michael-godard/thumb/042.jpg" alt="X-Tini" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">X-Tini</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/michael-godard/043.jpg" data-lb-caption="Avenge-Tini &mdash; Michael Godard">
+        <img src="../images/artists/michael-godard/thumb/043.jpg" alt="Avenge-Tini" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Avenge-Tini</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/michael-godard/044.jpg" data-lb-caption="Shadows of Passion &mdash; Michael Godard">
+        <img src="../images/artists/michael-godard/thumb/044.jpg" alt="Shadows of Passion" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Shadows of Passion</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/michael-godard/045.jpg" data-lb-caption="Love is Everywhere &mdash; Michael Godard">
+        <img src="../images/artists/michael-godard/thumb/045.jpg" alt="Love is Everywhere" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Love is Everywhere</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/michael-godard/046.jpg" data-lb-caption="Tranquili-Tini &mdash; Michael Godard">
+        <img src="../images/artists/michael-godard/thumb/046.jpg" alt="Tranquili-Tini" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Tranquili-Tini</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/michael-godard/047.jpg" data-lb-caption="For Those Who Gave All &mdash; Michael Godard">
+        <img src="../images/artists/michael-godard/thumb/047.jpg" alt="For Those Who Gave All" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">For Those Who Gave All</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/michael-godard/048.jpg" data-lb-caption="Chasing Fireflies &mdash; Michael Godard">
+        <img src="../images/artists/michael-godard/thumb/048.jpg" alt="Chasing Fireflies" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Chasing Fireflies</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/michael-godard/049.jpg" data-lb-caption="Wine Dance &mdash; Michael Godard">
+        <img src="../images/artists/michael-godard/thumb/049.jpg" alt="Wine Dance" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Wine Dance</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/michael-godard/050.jpg" data-lb-caption="Wine Angel &mdash; Michael Godard">
+        <img src="../images/artists/michael-godard/thumb/050.jpg" alt="Wine Angel" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Wine Angel</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/michael-godard/051.jpg" data-lb-caption="When Stars Align &mdash; Michael Godard">
+        <img src="../images/artists/michael-godard/thumb/051.jpg" alt="When Stars Align" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">When Stars Align</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/michael-godard/052.jpg" data-lb-caption="We olive ashelby &mdash; Michael Godard">
+        <img src="../images/artists/michael-godard/thumb/052.jpg" alt="We olive ashelby" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">We olive ashelby</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/michael-godard/053.jpg" data-lb-caption="Welcome To Las Vegas &mdash; Michael Godard">
+        <img src="../images/artists/michael-godard/thumb/053.jpg" alt="Welcome To Las Vegas" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Welcome To Las Vegas</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/michael-godard/054.jpg" data-lb-caption="Totally Corked &mdash; Michael Godard">
+        <img src="../images/artists/michael-godard/thumb/054.jpg" alt="Totally Corked" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Totally Corked</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/michael-godard/055.jpg" data-lb-caption="Think Inside the Glass &mdash; Michael Godard">
+        <img src="../images/artists/michael-godard/thumb/055.jpg" alt="Think Inside the Glass" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Think Inside the Glass</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/michael-godard/056.jpg" data-lb-caption="The Splash &mdash; Michael Godard">
+        <img src="../images/artists/michael-godard/thumb/056.jpg" alt="The Splash" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">The Splash</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/michael-godard/057.jpg" data-lb-caption="The Plop &mdash; Michael Godard">
+        <img src="../images/artists/michael-godard/thumb/057.jpg" alt="The Plop" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">The Plop</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/michael-godard/058.jpg" data-lb-caption="Thats The Way to Get Abducted &mdash; Michael Godard">
+        <img src="../images/artists/michael-godard/thumb/058.jpg" alt="Thats The Way to Get Abducted" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Thats The Way to Get Abducted</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/michael-godard/059.jpg" data-lb-caption="Supertini &mdash; Michael Godard">
+        <img src="../images/artists/michael-godard/thumb/059.jpg" alt="Supertini" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Supertini</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/michael-godard/060.jpg" data-lb-caption="Sparking Romance &mdash; Michael Godard">
+        <img src="../images/artists/michael-godard/thumb/060.jpg" alt="Sparking Romance" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Sparking Romance</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/michael-godard/061.jpg" data-lb-caption="Smoking Grapes &mdash; Michael Godard">
+        <img src="../images/artists/michael-godard/thumb/061.jpg" alt="Smoking Grapes" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Smoking Grapes</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/michael-godard/062.jpg" data-lb-caption="Shooter &mdash; Michael Godard">
+        <img src="../images/artists/michael-godard/thumb/062.jpg" alt="Shooter" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Shooter</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/michael-godard/063.jpg" data-lb-caption="Share of The Good Life &mdash; Michael Godard">
+        <img src="../images/artists/michael-godard/thumb/063.jpg" alt="Share of The Good Life" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Share of The Good Life</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/michael-godard/064.jpg" data-lb-caption="Raining Romance &mdash; Michael Godard">
+        <img src="../images/artists/michael-godard/thumb/064.jpg" alt="Raining Romance" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Raining Romance</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/michael-godard/065.jpg" data-lb-caption="Picasso &mdash; Michael Godard">
+        <img src="../images/artists/michael-godard/thumb/065.jpg" alt="Picasso" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Picasso</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/michael-godard/066.jpg" data-lb-caption="Party Like A Rock Star &mdash; Michael Godard">
+        <img src="../images/artists/michael-godard/thumb/066.jpg" alt="Party Like A Rock Star" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Party Like A Rock Star</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/michael-godard/067.jpg" data-lb-caption="Paradise At Last &mdash; Michael Godard">
+        <img src="../images/artists/michael-godard/thumb/067.jpg" alt="Paradise At Last" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Paradise At Last</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/michael-godard/068.jpg" data-lb-caption="Mr. Smooth &mdash; Michael Godard">
+        <img src="../images/artists/michael-godard/thumb/068.jpg" alt="Mr. Smooth" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Mr. Smooth</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/michael-godard/069.jpg" data-lb-caption="We Olive Jordan &mdash; Michael Godard">
+        <img src="../images/artists/michael-godard/thumb/069.jpg" alt="We Olive Jordan" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">We Olive Jordan</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/michael-godard/070.jpg" data-lb-caption="Olive Bunnies &mdash; Michael Godard">
+        <img src="../images/artists/michael-godard/thumb/070.jpg" alt="Olive Bunnies" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Olive Bunnies</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/michael-godard/071.jpg" data-lb-caption="Man Cave 1200 &mdash; Michael Godard">
+        <img src="../images/artists/michael-godard/thumb/071.jpg" alt="Man Cave 1200" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Man Cave 1200</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/michael-godard/072.jpg" data-lb-caption="Lovers Moon II &mdash; Michael Godard">
+        <img src="../images/artists/michael-godard/thumb/072.jpg" alt="Lovers Moon II" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Lovers Moon II</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/michael-godard/073.jpg" data-lb-caption="Its All About Insurance &mdash; Michael Godard">
+        <img src="../images/artists/michael-godard/thumb/073.jpg" alt="Its All About Insurance" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Its All About Insurance</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/michael-godard/074.jpg" data-lb-caption="Island Golf &mdash; Michael Godard">
+        <img src="../images/artists/michael-godard/thumb/074.jpg" alt="Island Golf" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Island Golf</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/michael-godard/075.jpg" data-lb-caption="I Love My Heels &mdash; Michael Godard">
+        <img src="../images/artists/michael-godard/thumb/075.jpg" alt="I Love My Heels" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">I Love My Heels</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/michael-godard/076.jpg" data-lb-caption="Hell of Martini &mdash; Michael Godard">
+        <img src="../images/artists/michael-godard/thumb/076.jpg" alt="Hell of Martini" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Hell of Martini</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/michael-godard/077.jpg" data-lb-caption="Hearts of Hope &mdash; Michael Godard">
+        <img src="../images/artists/michael-godard/thumb/077.jpg" alt="Hearts of Hope" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Hearts of Hope</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/michael-godard/078.jpg" data-lb-caption="He Devil Shie Devil with a Twist &mdash; Michael Godard">
+        <img src="../images/artists/michael-godard/thumb/078.jpg" alt="He Devil Shie Devil with a Twist" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">He Devil Shie Devil with a Twist</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/michael-godard/079.jpg" data-lb-caption="Grape Confusion &mdash; Michael Godard">
+        <img src="../images/artists/michael-godard/thumb/079.jpg" alt="Grape Confusion" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Grape Confusion</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/michael-godard/080.jpg" data-lb-caption="Fountain of Youth &mdash; Michael Godard">
+        <img src="../images/artists/michael-godard/thumb/080.jpg" alt="Fountain of Youth" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Fountain of Youth</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/michael-godard/081.jpg" data-lb-caption="Dead or O&#39;live &mdash; Michael Godard">
+        <img src="../images/artists/michael-godard/thumb/081.jpg" alt="Dead or O&#39;live" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Dead or O&#39;live</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/michael-godard/082.jpg" data-lb-caption="Da Vinci &mdash; Michael Godard">
+        <img src="../images/artists/michael-godard/thumb/082.jpg" alt="Da Vinci" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Da Vinci</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/michael-godard/083.jpg" data-lb-caption="Cosmo In Love &mdash; Michael Godard">
+        <img src="../images/artists/michael-godard/thumb/083.jpg" alt="Cosmo In Love" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Cosmo In Love</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/michael-godard/084.jpg" data-lb-caption="Commotion in the Ocean &mdash; Michael Godard">
+        <img src="../images/artists/michael-godard/thumb/084.jpg" alt="Commotion in the Ocean" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Commotion in the Ocean</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/michael-godard/085.jpg" data-lb-caption="Champagne Shoe &mdash; Michael Godard">
+        <img src="../images/artists/michael-godard/thumb/085.jpg" alt="Champagne Shoe" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Champagne Shoe</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/michael-godard/086.jpg" data-lb-caption="Cashtini &mdash; Michael Godard">
+        <img src="../images/artists/michael-godard/thumb/086.jpg" alt="Cashtini" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Cashtini</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/michael-godard/087.jpg" data-lb-caption="Burning It Up &mdash; Michael Godard">
+        <img src="../images/artists/michael-godard/thumb/087.jpg" alt="Burning It Up" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Burning It Up</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/michael-godard/088.jpg" data-lb-caption="Bond &mdash; Michael Godard">
+        <img src="../images/artists/michael-godard/thumb/088.jpg" alt="Bond" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Bond</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/michael-godard/089.jpg" data-lb-caption="Bat Tini &mdash; Michael Godard">
+        <img src="../images/artists/michael-godard/thumb/089.jpg" alt="Bat Tini" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Bat Tini</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/michael-godard/090.jpg" data-lb-caption="A Good Day &mdash; Michael Godard">
+        <img src="../images/artists/michael-godard/thumb/090.jpg" alt="A Good Day" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">A Good Day</figcaption>
+      </figure>
+    </div>
+
+    <h2 class="display h-section mt-[var(--pad-xxl)] rv">More Artists</h2>
+    <div class="scroll-x mt-[var(--pad-l)] rv">
+      <div class="flex gap-[var(--pad-xs)] w-max pb-2">
+        <a href="angela-mia.html" class="card flex items-center gap-3 py-3 px-4 flex-none">
+          <img src="../images/artists/angela-mia/_card.jpg" alt="Angela Mia" loading="lazy" class="w-9 h-9 rounded-full object-cover border border-white/25">
+          <span class="text-[.92rem] whitespace-nowrap">Angela Mia</span>
+        </a>
+        <a href="david-wight.html" class="card flex items-center gap-3 py-3 px-4 flex-none">
+          <img src="../images/artists/david-wight/_card.jpg" alt="David Wight" loading="lazy" class="w-9 h-9 rounded-full object-cover border border-white/25">
+          <span class="text-[.92rem] whitespace-nowrap">David Wight</span>
+        </a>
+        <a href="jeff-vermeeren.html" class="card flex items-center gap-3 py-3 px-4 flex-none">
+          <img src="../images/artists/jeff-vermeeren/_card.jpg" alt="Jeff Vermeeren" loading="lazy" class="w-9 h-9 rounded-full object-cover border border-white/25">
+          <span class="text-[.92rem] whitespace-nowrap">Jeff Vermeeren</span>
+        </a>
+        <a href="joseph-capicotto.html" class="card flex items-center gap-3 py-3 px-4 flex-none">
+          <img src="../images/artists/joseph-capicotto/_card.jpg" alt="Joseph Capicotto" loading="lazy" class="w-9 h-9 rounded-full object-cover border border-white/25">
+          <span class="text-[.92rem] whitespace-nowrap">Joseph Capicotto</span>
+        </a>
+        <a href="nano-lopez.html" class="card flex items-center gap-3 py-3 px-4 flex-none">
+          <img src="../images/artists/nano-lopez/_card.jpg" alt="Nano Lopez" loading="lazy" class="w-9 h-9 rounded-full object-cover border border-white/25">
+          <span class="text-[.92rem] whitespace-nowrap">Nano Lopez</span>
+        </a>
+        <a href="oryan.html" class="card flex items-center gap-3 py-3 px-4 flex-none">
+          <img src="../images/artists/oryan/_card.jpg" alt="Oryan" loading="lazy" class="w-9 h-9 rounded-full object-cover border border-white/25">
+          <span class="text-[.92rem] whitespace-nowrap">Oryan</span>
+        </a>
+        <a href="tom-everhart.html" class="card flex items-center gap-3 py-3 px-4 flex-none">
+          <img src="../images/artists/tom-everhart/_card.jpg" alt="Tom Everhart" loading="lazy" class="w-9 h-9 rounded-full object-cover border border-white/25">
+          <span class="text-[.92rem] whitespace-nowrap">Tom Everhart</span>
+        </a>
+        <a href="walfrido.html" class="card flex items-center gap-3 py-3 px-4 flex-none">
+          <img src="../images/artists/walfrido/_card.jpg" alt="Walfrido" loading="lazy" class="w-9 h-9 rounded-full object-cover border border-white/25">
+          <span class="text-[.92rem] whitespace-nowrap">Walfrido</span>
+        </a>
+        <a href="wyland.html" class="card flex items-center gap-3 py-3 px-4 flex-none">
+          <img src="../images/artists/wyland/_card.jpg" alt="Wyland" loading="lazy" class="w-9 h-9 rounded-full object-cover border border-white/25">
+          <span class="text-[.92rem] whitespace-nowrap">Wyland</span>
+        </a>
+        <a href="2wild.html" class="card flex items-center gap-3 py-3 px-4 flex-none">
+          <img src="../images/artists/2wild/_card.jpg" alt="2Wild" loading="lazy" class="w-9 h-9 rounded-full object-cover border border-white/25">
+          <span class="text-[.92rem] whitespace-nowrap">2Wild</span>
+        </a>
+        <a href="advait-kolarkar.html" class="card flex items-center gap-3 py-3 px-4 flex-none">
+          <img src="../images/artists/advait-kolarkar/_card.jpg" alt="Advait Kolarkar" loading="lazy" class="w-9 h-9 rounded-full object-cover border border-white/25">
+          <span class="text-[.92rem] whitespace-nowrap">Advait Kolarkar</span>
+        </a>
+        <a href="alan-hunt.html" class="card flex items-center gap-3 py-3 px-4 flex-none">
+          <img src="../images/artists/alan-hunt/_card.jpg" alt="Alan Hunt" loading="lazy" class="w-9 h-9 rounded-full object-cover border border-white/25">
+          <span class="text-[.92rem] whitespace-nowrap">Alan Hunt</span>
+        </a>
+      </div>
+    </div>
+    <a href="../artists.html" class="btn-ghost mt-[var(--pad-l)] rv">VIEW ALL ARTISTS</a>
+  </section>
+</main>
+
+<div class="lightbox" id="lightbox">
+  <img alt="">
+  <p class="mono text-[.72rem] tracking-[.13em] uppercase text-white/70" data-lb-caption></p>
+</div>
+
+<footer id="contact" class="relative pt-[var(--pad-xxh)] pb-[var(--pad-xh)] overflow-hidden">
+  <div class="glow-grey opacity-45"></div>
+  <div class="vignette"></div>
+  <div class="relative z-10 pad-content">
+    <div class="max-w-[35rem] mx-auto text-center rv">
+      <h2 class="display h-section">Join Us</h2>
+      <p class="mt-[var(--pad-s)] text-white/70 copy">
+        Join the community and be the first to know about new releases, upcoming art shows and artist appearances at our galleries.
+      </p>
+      <form class="mt-[var(--pad-l)]" data-sgg-signup>
+        <input class="field" type="email" name="email" required placeholder="Your email address" aria-label="Your email address">
+        <button class="btn-pill w-full mt-[var(--pad-s)] text-[.82rem]">REGISTER</button>
+        <p class="mt-[var(--pad-s)] text-[.82rem] text-taste2" data-sgg-signup-msg hidden></p>
+      </form>
+      <p class="mt-[var(--pad-s)] text-[.82rem] text-white/55">
+        By registering you agree to our <a href="#contact" class="underline">privacy policy</a>
+      </p>
+      <div class="socials">
+      <a href="https://www.instagram.com/signaturegallerieslv/?hl=en" target="_blank" rel="noopener" aria-label="Signature Galleries on Instagram"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1.1" fill="currentColor" stroke="none"/></svg></a>
+      <a href="https://www.facebook.com/Signaturegalleryinlasvegas" target="_blank" rel="noopener" aria-label="Signature Galleries on Facebook"><svg width="19" height="19" viewBox="0 0 24 24" fill="currentColor"><path d="M14 8.5V7.2c0-.7.2-1.1 1.2-1.1H17V3.2A18 18 0 0 0 14.6 3C12.3 3 10.8 4.4 10.8 7v1.5H8.4V12h2.4v9h3.2v-9h2.5l.4-3.5H14z"/></svg></a>
+    </div>
+      <p class="mt-[var(--pad-l)] mono text-[.68rem] tracking-[.13em] text-white/45 uppercase">
+        Corporate office &middot; <a href="mailto:info@signaturegalleries.com?subject=Enquiry%20for%20Signature%20Gallery%20Group&amp;body=Hello%20Signature%20Gallery%20Group%2C%0D%0A%0D%0A" class="underline">info@signaturegalleries.com</a>
+      </p>
+      <p class="mt-[var(--pad-xs)] mono text-[.68rem] tracking-[.13em] text-white/45 uppercase">&copy; 2026 Signature Gallery Group</p>
+    </div>
+    <div class="mt-[var(--pad-xh)] max-w-[52rem] mx-auto legalbar px-[var(--pad-s)] py-[var(--pad-xs)] flex flex-wrap items-center justify-center gap-x-[var(--pad-l)] gap-y-[var(--pad-xs)] rv">
+      <a href="../artists.html" class="border border-white/40 rounded-[.25rem] px-4 py-2 text-[.72rem] tracking-[.1em] uppercase">Artists</a>
+      <a href="../index.html#events" class="text-[.72rem] tracking-[.1em] uppercase text-white/70 hover:text-white transition-colors">Events</a>
+      <a href="../index.html#galleries" class="text-[.72rem] tracking-[.1em] uppercase text-white/70 hover:text-white transition-colors">Galleries</a>
+      <a href="../index.html#contact" class="text-[.72rem] tracking-[.1em] uppercase text-white/70 hover:text-white transition-colors">Shop</a>
+      <a href="../index.html#contact" class="border border-white/40 rounded-[.25rem] px-4 py-2 text-[.72rem] tracking-[.1em] uppercase">Contact</a>
+    </div>
+    <p class="mt-[var(--pad-l)] text-center text-[.78rem] text-white/40">
+      Signature Gallery Group, a managing and accounting company.
+    </p>
+    <p class="mt-[var(--pad-xs)] text-center text-[.78rem] text-white/40">
+      Created by <span class="underline">Giancarlo Capicotto</span>
+    </p>
+  </div>
+</footer>
+
+<script src="../assets/site.js"></script>
+<script src="../assets/track.js" defer></script>
+</body>
+</html>
+

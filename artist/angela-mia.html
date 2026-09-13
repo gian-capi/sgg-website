@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Angela Mia — Signature Gallery Group</title>
+<meta name="description" content="Angela Mia: biography, upcoming events and artwork catalogue at Signature Gallery Group.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,75..125,100..900;1,75..125,100..900&family=Geist:wght@100..900&family=Geist+Mono:wght@100..900&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config={theme:{extend:{colors:{taste1:'#3D2B68',taste2:'#9089D3'},
+fontFamily:{body:['Geist','Arial','sans-serif'],head:['Archivo','Arial','sans-serif'],mono:['Geist Mono','Arial','sans-serif']}}}};
+</script>
+<link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+
+<div class="rail"><div class="rail-fill" id="railFill"></div></div>
+<div class="frame">
+  <span class="corner tl"></span><span class="corner tr"></span>
+  <span class="corner bl"></span><span class="corner br"></span>
+  <span class="tick" style="top:13.3rem;right:var(--page-padding);"></span>
+  <span class="tick" style="bottom:6.4rem;right:var(--page-padding);"></span>
+  <span class="edge-letter" style="top:33.5rem;">S</span>
+  <span class="edge-letter" style="top:39rem;">G</span>
+  <span class="edge-letter" style="top:44.5rem;">G</span>
+</div>
+
+<header class="nav">
+  <div class="nav-left flex items-center gap-3">
+    <span class="mono text-[.72rem] tracking-[.14em]">ON</span>
+    <span class="eq"><span></span><span></span><span></span><span></span></span>
+  </div>
+  <a href="../index.html" class="display wordmark">SIGNATURE<br>GALLERY GROUP</a>
+  <div class="nav-right flex items-center gap-[3.25rem]">
+    <button class="flex items-center gap-3" data-menu-open>
+      <span class="dotgrid"><i></i><i></i><i></i><i></i></span>
+      <span class="nav-menu-label text-[.78rem] tracking-[.09em]">MENU</span>
+    </button>
+    <a href="../index.html#contact" class="btn-pill">CONTACT</a>
+  </div>
+</header>
+
+<div class="menu-overlay" id="menuOverlay">
+  <button class="menu-close" data-menu-close aria-label="Close menu">&#10005;</button>
+  <nav class="text-center">
+    <a href="../artists.html" class="display text-[clamp(1.8rem,4vw,3rem)]">All Artists</a>
+    <a href="../index.html#releases" class="display text-[clamp(1.8rem,4vw,3rem)]">New Releases</a>
+    <a href="../index.html#events" class="display text-[clamp(1.8rem,4vw,3rem)]">Events</a>
+    <a href="../index.html#galleries" class="display text-[clamp(1.8rem,4vw,3rem)]">Galleries</a>
+    <a href="../index.html#contact" class="display text-[clamp(1.8rem,4vw,3rem)]">Contact</a>
+  </nav>
+</div>
+
+
+<main class="page-hero">
+  <div class="glow-purple-v"></div><div class="vignette"></div>
+
+  <section class="relative z-10 pad-content pt-[var(--pad-xh)] pb-[var(--pad-xxl)]">
+    <p class="crumb rv"><a href="../index.html">Home</a> &nbsp;/&nbsp; <a href="../artists.html">Artists</a> &nbsp;/&nbsp; Angela Mia</p>
+    <div class="mt-[var(--pad-l)] grid grid-cols-1 lg:grid-cols-[minmax(0,1fr)_minmax(0,.85fr)] gap-[var(--pad-xl)] items-center">
+      <div class="rv">
+        <h1 class="display display-tight text-[clamp(2.4rem,5vw,5.2rem)]">Angela Mia</h1>
+        <p class="mono text-[.72rem] tracking-[.14em] text-taste2 uppercase mt-[var(--pad-s)]">Figurative bronze sculpture</p>
+
+        <p class="mt-[var(--pad-m)] text-white/70 copy">Since sculpting her first bronze in 1994, Angela Mia has been creating figurative bronze sculptures for international collectors, corporations and institutions. She lives and works in Texas. Exalting the human spirit through expressive faces and natural body movement has become Angela’s recognized trademark. Her work’s greatest inspiration is the curious and ever-changing individuality of her children.“As I am working, I find the sculpture gradually coming to life. The piece never seems finished; I want to continue its creation but have to push myself to finally let go.</p>
+      </div>
+      <div class="rv">
+        <img src="../images/artists/angela-mia/_hero.jpg" alt="Angela Mia"
+             class="artist-hero-photo rounded-[1rem]"
+             style="filter:drop-shadow(0 40px 70px rgba(0,0,0,.75));">
+      </div>
+    </div>
+  </section>
+
+  <section class="relative z-10 pad-content pb-[var(--pad-xxl)]">
+    <h2 class="display h-section rv">Upcoming Events</h2>
+    <div class="mt-[var(--pad-l)] grid grid-cols-1 md:grid-cols-2 gap-[var(--pad-s)]">
+      <a href="../event/angela-mia-las-vegas.html" class="card overflow-hidden rv block">
+        <div class="event-banner"><img src="../images/events/angela-mia.jpg" alt="Angela Mia Art Show in Las Vegas" loading="lazy"></div>
+        <div class="p-[var(--pad-s)] flex gap-[var(--pad-s)]">
+          <div class="datechip">
+            <span class="m">Oct</span>
+            <span class="d">09</span>
+          </div>
+          <div>
+            <h3 class="display text-[1.35rem] leading-none">Angela Mia Art Show in Las Vegas</h3>
+            <p class="mono text-[.66rem] tracking-[.13em] text-taste2 uppercase mt-2">October 9, 2026 &middot; Las Vegas</p>
+          </div>
+        </div>
+      </a>
+
+    </div>
+  </section>
+
+  <section class="relative z-10 pad-content pb-[var(--pad-xxh)]">
+    <h2 class="display h-section rv">Catalogue</h2>
+    <p class="mt-[var(--pad-s)] text-white/60 copy rv">91 works. Select a piece to view it larger. Contact a gallery for availability and pricing.</p>
+    <div class="mt-[var(--pad-xl)] grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-[var(--pad-xs)]">
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/angela-mia/000.jpg" data-lb-caption="Collector &mdash; Angela Mia">
+        <img src="../images/artists/angela-mia/thumb/000.jpg" alt="Collector" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Collector</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/angela-mia/001.jpg" data-lb-caption="Unspoken Bond &mdash; Angela Mia">
+        <img src="../images/artists/angela-mia/thumb/001.jpg" alt="Unspoken Bond" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Unspoken Bond</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/angela-mia/002.jpg" data-lb-caption="Bridge of Brother &mdash; Angela Mia">
+        <img src="../images/artists/angela-mia/thumb/002.jpg" alt="Bridge of Brother" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Bridge of Brother</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/angela-mia/003.jpg" data-lb-caption="Arise &mdash; Angela Mia">
+        <img src="../images/artists/angela-mia/thumb/003.jpg" alt="Arise" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Arise</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/angela-mia/004.jpg" data-lb-caption="Today&#39;s Glory &mdash; Angela Mia">
+        <img src="../images/artists/angela-mia/thumb/004.jpg" alt="Today&#39;s Glory" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Today&#39;s Glory</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/angela-mia/005.jpg" data-lb-caption="Today and Tomorrow&#39;s Glory &mdash; Angela Mia">
+        <img src="../images/artists/angela-mia/thumb/005.jpg" alt="Today and Tomorrow&#39;s Glory" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Today and Tomorrow&#39;s Glory</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/angela-mia/006.jpg" data-lb-caption="Sunshine Everyday &mdash; Angela Mia">
+        <img src="../images/artists/angela-mia/thumb/006.jpg" alt="Sunshine Everyday" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Sunshine Everyday</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/angela-mia/007.jpg" data-lb-caption="Sunshine Every Day (clay 1) &mdash; Angela Mia">
+        <img src="../images/artists/angela-mia/thumb/007.jpg" alt="Sunshine Every Day (clay 1)" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Sunshine Every Day (clay 1)</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/angela-mia/008.jpg" data-lb-caption="Roaring Times &mdash; Angela Mia">
+        <img src="../images/artists/angela-mia/thumb/008.jpg" alt="Roaring Times" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Roaring Times</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/angela-mia/009.jpg" data-lb-caption="Vigor &mdash; Angela Mia">
+        <img src="../images/artists/angela-mia/thumb/009.jpg" alt="Vigor" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Vigor</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/angela-mia/010.jpg" data-lb-caption="Wonderplay &mdash; Angela Mia">
+        <img src="../images/artists/angela-mia/thumb/010.jpg" alt="Wonderplay" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Wonderplay</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/angela-mia/011.jpg" data-lb-caption="Whirlwind &mdash; Angela Mia">
+        <img src="../images/artists/angela-mia/thumb/011.jpg" alt="Whirlwind" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Whirlwind</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/angela-mia/012.jpg" data-lb-caption="The Creative &mdash; Angela Mia">
+        <img src="../images/artists/angela-mia/thumb/012.jpg" alt="The Creative" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">The Creative</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/angela-mia/013.jpg" data-lb-caption="Swaddled Star &mdash; Angela Mia">
+        <img src="../images/artists/angela-mia/thumb/013.jpg" alt="Swaddled Star" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Swaddled Star</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/angela-mia/014.jpg" data-lb-caption="Greeting &mdash; Angela Mia">
+        <img src="../images/artists/angela-mia/thumb/014.jpg" alt="Greeting" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Greeting</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/angela-mia/015.jpg" data-lb-caption="Wheel of fun &mdash; Angela Mia">
+        <img src="../images/artists/angela-mia/thumb/015.jpg" alt="Wheel of fun" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Wheel of fun</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/angela-mia/016.jpg" data-lb-caption="Whirlwind &mdash; Angela Mia">
+        <img src="../images/artists/angela-mia/thumb/016.jpg" alt="Whirlwind" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Whirlwind</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/angela-mia/017.jpg" data-lb-caption="Under The Stars &mdash; Angela Mia">
+        <img src="../images/artists/angela-mia/thumb/017.jpg" alt="Under The Stars" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Under The Stars</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/angela-mia/018.jpg" data-lb-caption="Treasure Ship &mdash; Angela Mia">
+        <img src="../images/artists/angela-mia/thumb/018.jpg" alt="Treasure Ship" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Treasure Ship</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/angela-mia/019.jpg" data-lb-caption="There was A Little Girl With A Wee Little Curl &mdash; Angela Mia">
+        <img src="../images/artists/angela-mia/thumb/019.jpg" alt="There was A Little Girl With A Wee Little Curl" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">There was A Little Girl With A Wee Little Curl</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/angela-mia/020.jpg" data-lb-caption="Hayden&#39;s Song &mdash; Angela Mia">
+        <img src="../images/artists/angela-mia/thumb/020.jpg" alt="Hayden&#39;s Song" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Hayden&#39;s Song</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/angela-mia/021.jpg" data-lb-caption="Happy Dance &mdash; Angela Mia">
+        <img src="../images/artists/angela-mia/thumb/021.jpg" alt="Happy Dance" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Happy Dance</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/angela-mia/022.jpg" data-lb-caption="Freeedom &mdash; Angela Mia">
+        <img src="../images/artists/angela-mia/thumb/022.jpg" alt="Freeedom" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Freeedom</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/angela-mia/023.jpg" data-lb-caption="Family Ride &mdash; Angela Mia">
+        <img src="../images/artists/angela-mia/thumb/023.jpg" alt="Family Ride" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Family Ride</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/angela-mia/024.jpg" data-lb-caption="Emma &mdash; Angela Mia">
+        <img src="../images/artists/angela-mia/thumb/024.jpg" alt="Emma" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Emma</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/angela-mia/025.jpg" data-lb-caption="Education &mdash; Angela Mia">
+        <img src="../images/artists/angela-mia/thumb/025.jpg" alt="Education" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Education</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/angela-mia/026.jpg" data-lb-caption="Crowned Jewel Mini &mdash; Angela Mia">
+        <img src="../images/artists/angela-mia/thumb/026.jpg" alt="Crowned Jewel Mini" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Crowned Jewel Mini</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/angela-mia/027.jpg" data-lb-caption="Harmony &mdash; Angela Mia">
+        <img src="../images/artists/angela-mia/thumb/027.jpg" alt="Harmony" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Harmony</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/angela-mia/028.jpg" data-lb-caption="Guardians of the Nest &mdash; Angela Mia">
+        <img src="../images/artists/angela-mia/thumb/028.jpg" alt="Guardians of the Nest" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Guardians of the Nest</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/angela-mia/029.jpg" data-lb-caption="Scampers &mdash; Angela Mia">
+        <img src="../images/artists/angela-mia/thumb/029.jpg" alt="Scampers" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Scampers</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/angela-mia/030.jpg" data-lb-caption="Bridget &mdash; Angela Mia">
+        <img src="../images/artists/angela-mia/thumb/030.jpg" alt="Bridget" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Bridget</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/angela-mia/031.jpg" data-lb-caption="Strawberry Sweet &mdash; Angela Mia">
+        <img src="../images/artists/angela-mia/thumb/031.jpg" alt="Strawberry Sweet" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Strawberry Sweet</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/angela-mia/032.jpg" data-lb-caption="I am Superman &mdash; Angela Mia">
+        <img src="../images/artists/angela-mia/thumb/032.jpg" alt="I am Superman" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">I am Superman</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/angela-mia/033.jpg" data-lb-caption="Sunshine &mdash; Angela Mia">
+        <img src="../images/artists/angela-mia/thumb/033.jpg" alt="Sunshine" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Sunshine</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/angela-mia/034.jpg" data-lb-caption="Bloom &mdash; Angela Mia">
+        <img src="../images/artists/angela-mia/thumb/034.jpg" alt="Bloom" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Bloom</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/angela-mia/035.jpg" data-lb-caption="Treasure Nest &mdash; Angela Mia">
+        <img src="../images/artists/angela-mia/thumb/035.jpg" alt="Treasure Nest" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Treasure Nest</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/angela-mia/036.jpg" data-lb-caption="Sunshine (2/3 life size) &mdash; Angela Mia">
+        <img src="../images/artists/angela-mia/thumb/036.jpg" alt="Sunshine (2/3 life size)" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Sunshine (2/3 life size)</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/angela-mia/037.jpg" data-lb-caption="Sunshine (1/3 Life Size) &mdash; Angela Mia">
+        <img src="../images/artists/angela-mia/thumb/037.jpg" alt="Sunshine (1/3 Life Size)" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Sunshine (1/3 Life Size)</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/angela-mia/038.jpg" data-lb-caption="En Garde! &mdash; Angela Mia">
+        <img src="../images/artists/angela-mia/thumb/038.jpg" alt="En Garde!" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">En Garde!</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/angela-mia/039.jpg" data-lb-caption="Crowned Jewel &mdash; Angela Mia">
+        <img src="../images/artists/angela-mia/thumb/039.jpg" alt="Crowned Jewel" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Crowned Jewel</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/angela-mia/040.jpg" data-lb-caption="Bon Temps Rouler &mdash; Angela Mia">
+        <img src="../images/artists/angela-mia/thumb/040.jpg" alt="Bon Temps Rouler" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Bon Temps Rouler</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/angela-mia/041.jpg" data-lb-caption="Bloom (life size) &mdash; Angela Mia">
+        <img src="../images/artists/angela-mia/thumb/041.jpg" alt="Bloom (life size)" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Bloom (life size)</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/angela-mia/042.jpg" data-lb-caption="Bloom (Half-life size) &mdash; Angela Mia">
+        <img src="../images/artists/angela-mia/thumb/042.jpg" alt="Bloom (Half-life size)" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Bloom (Half-life size)</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/angela-mia/043.jpg" data-lb-caption="Young Honor &mdash; Angela Mia">
+        <img src="../images/artists/angela-mia/thumb/043.jpg" alt="Young Honor" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Young Honor</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/angela-mia/044.jpg" data-lb-caption="Winter (Third &amp; Half Life) &mdash; Angela Mia">
+        <img src="../images/artists/angela-mia/thumb/044.jpg" alt="Winter (Third &amp; Half Life)" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Winter (Third &amp; Half Life)</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/angela-mia/045.jpg" data-lb-caption="Triangle of Courage &mdash; Angela Mia">
+        <img src="../images/artists/angela-mia/thumb/045.jpg" alt="Triangle of Courage" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Triangle of Courage</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/angela-mia/046.jpg" data-lb-caption="Tiny Dancer (Life Size) &mdash; Angela Mia">
+        <img src="../images/artists/angela-mia/thumb/046.jpg" alt="Tiny Dancer (Life Size)" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Tiny Dancer (Life Size)</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/angela-mia/047.jpg" data-lb-caption="Tiny Dancer (Half Life) &mdash; Angela Mia">
+        <img src="../images/artists/angela-mia/thumb/047.jpg" alt="Tiny Dancer (Half Life)" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Tiny Dancer (Half Life)</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/angela-mia/048.jpg" data-lb-caption="The Young Thinker &mdash; Angela Mia">
+        <img src="../images/artists/angela-mia/thumb/048.jpg" alt="The Young Thinker" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">The Young Thinker</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/angela-mia/049.jpg" data-lb-caption="Summer ( Half &amp; Third Life) &mdash; Angela Mia">
+        <img src="../images/artists/angela-mia/thumb/049.jpg" alt="Summer ( Half &amp; Third Life)" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Summer ( Half &amp; Third Life)</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/angela-mia/050.jpg" data-lb-caption="Spring ( Life &amp; Half LIfe) &mdash; Angela Mia">
+        <img src="../images/artists/angela-mia/thumb/050.jpg" alt="Spring ( Life &amp; Half LIfe)" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Spring ( Life &amp; Half LIfe)</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/angela-mia/051.jpg" data-lb-caption="Security Blanket &mdash; Angela Mia">
+        <img src="../images/artists/angela-mia/thumb/051.jpg" alt="Security Blanket" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Security Blanket</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/angela-mia/052.jpg" data-lb-caption="Roasty Toasty Boys &mdash; Angela Mia">
+        <img src="../images/artists/angela-mia/thumb/052.jpg" alt="Roasty Toasty Boys" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Roasty Toasty Boys</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/angela-mia/053.jpg" data-lb-caption="Remembering the Seashore &mdash; Angela Mia">
+        <img src="../images/artists/angela-mia/thumb/053.jpg" alt="Remembering the Seashore" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Remembering the Seashore</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/angela-mia/054.jpg" data-lb-caption="Race of the Wild &mdash; Angela Mia">
+        <img src="../images/artists/angela-mia/thumb/054.jpg" alt="Race of the Wild" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Race of the Wild</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/angela-mia/055.jpg" data-lb-caption="Race of the Wild (Life Size) &mdash; Angela Mia">
+        <img src="../images/artists/angela-mia/thumb/055.jpg" alt="Race of the Wild (Life Size)" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Race of the Wild (Life Size)</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/angela-mia/056.jpg" data-lb-caption="Pride &mdash; Angela Mia">
+        <img src="../images/artists/angela-mia/thumb/056.jpg" alt="Pride" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Pride</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/angela-mia/057.jpg" data-lb-caption="Pivotal Moment (With Fox) (Life Size) &mdash; Angela Mia">
+        <img src="../images/artists/angela-mia/thumb/057.jpg" alt="Pivotal Moment (With Fox) (Life Size)" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Pivotal Moment (With Fox) (Life Size)</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/angela-mia/058.jpg" data-lb-caption="Pivotal Moment (with Fox) (Half Life) &mdash; Angela Mia">
+        <img src="../images/artists/angela-mia/thumb/058.jpg" alt="Pivotal Moment (with Fox) (Half Life)" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Pivotal Moment (with Fox) (Half Life)</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/angela-mia/059.jpg" data-lb-caption="Pivotal Moment (Life Size) &mdash; Angela Mia">
+        <img src="../images/artists/angela-mia/thumb/059.jpg" alt="Pivotal Moment (Life Size)" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Pivotal Moment (Life Size)</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/angela-mia/060.jpg" data-lb-caption="Pivotal Moment (Girl Only) (Half Size) &mdash; Angela Mia">
+        <img src="../images/artists/angela-mia/thumb/060.jpg" alt="Pivotal Moment (Girl Only) (Half Size)" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Pivotal Moment (Girl Only) (Half Size)</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/angela-mia/061.jpg" data-lb-caption="Painting Music &mdash; Angela Mia">
+        <img src="../images/artists/angela-mia/thumb/061.jpg" alt="Painting Music" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Painting Music</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/angela-mia/062.jpg" data-lb-caption="Painting Music (Life Size) &mdash; Angela Mia">
+        <img src="../images/artists/angela-mia/thumb/062.jpg" alt="Painting Music (Life Size)" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Painting Music (Life Size)</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/angela-mia/063.jpg" data-lb-caption="New Life &mdash; Angela Mia">
+        <img src="../images/artists/angela-mia/thumb/063.jpg" alt="New Life" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">New Life</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/angela-mia/064.jpg" data-lb-caption="Mother Doe &mdash; Angela Mia">
+        <img src="../images/artists/angela-mia/thumb/064.jpg" alt="Mother Doe" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Mother Doe</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/angela-mia/065.jpg" data-lb-caption="Loving Learning &mdash; Angela Mia">
+        <img src="../images/artists/angela-mia/thumb/065.jpg" alt="Loving Learning" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Loving Learning</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/angela-mia/066.jpg" data-lb-caption="Looking Back &mdash; Angela Mia">
+        <img src="../images/artists/angela-mia/thumb/066.jpg" alt="Looking Back" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Looking Back</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/angela-mia/067.jpg" data-lb-caption="Light of My Life &mdash; Angela Mia">
+        <img src="../images/artists/angela-mia/thumb/067.jpg" alt="Light of My Life" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Light of My Life</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/angela-mia/068.jpg" data-lb-caption="Lifted by Literature (Girl) &mdash; Angela Mia">
+        <img src="../images/artists/angela-mia/thumb/068.jpg" alt="Lifted by Literature (Girl)" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Lifted by Literature (Girl)</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/angela-mia/069.jpg" data-lb-caption="Lifted by Literature (Boy) &mdash; Angela Mia">
+        <img src="../images/artists/angela-mia/thumb/069.jpg" alt="Lifted by Literature (Boy)" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Lifted by Literature (Boy)</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/angela-mia/070.jpg" data-lb-caption="Lift Her With Butterflies &mdash; Angela Mia">
+        <img src="../images/artists/angela-mia/thumb/070.jpg" alt="Lift Her With Butterflies" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Lift Her With Butterflies</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/angela-mia/071.jpg" data-lb-caption="Land Ho &mdash; Angela Mia">
+        <img src="../images/artists/angela-mia/thumb/071.jpg" alt="Land Ho" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Land Ho</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/angela-mia/072.jpg" data-lb-caption="Joyful &mdash; Angela Mia">
+        <img src="../images/artists/angela-mia/thumb/072.jpg" alt="Joyful" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Joyful</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/angela-mia/073.jpg" data-lb-caption="Joyful Empowerment &mdash; Angela Mia">
+        <img src="../images/artists/angela-mia/thumb/073.jpg" alt="Joyful Empowerment" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Joyful Empowerment</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/angela-mia/074.jpg" data-lb-caption="Joyful Empowerment (Life Size) &mdash; Angela Mia">
+        <img src="../images/artists/angela-mia/thumb/074.jpg" alt="Joyful Empowerment (Life Size)" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Joyful Empowerment (Life Size)</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/angela-mia/075.jpg" data-lb-caption="Joyful (Life Size) &mdash; Angela Mia">
+        <img src="../images/artists/angela-mia/thumb/075.jpg" alt="Joyful (Life Size)" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Joyful (Life Size)</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/angela-mia/076.jpg" data-lb-caption="Highland Belle &mdash; Angela Mia">
+        <img src="../images/artists/angela-mia/thumb/076.jpg" alt="Highland Belle" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Highland Belle</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/angela-mia/077.jpg" data-lb-caption="Her Voice &mdash; Angela Mia">
+        <img src="../images/artists/angela-mia/thumb/077.jpg" alt="Her Voice" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Her Voice</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/angela-mia/078.jpg" data-lb-caption="Fall (Third &amp; Half Life) &mdash; Angela Mia">
+        <img src="../images/artists/angela-mia/thumb/078.jpg" alt="Fall (Third &amp; Half Life)" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Fall (Third &amp; Half Life)</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/angela-mia/079.jpg" data-lb-caption="Dreams &mdash; Angela Mia">
+        <img src="../images/artists/angela-mia/thumb/079.jpg" alt="Dreams" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Dreams</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/angela-mia/080.jpg" data-lb-caption="Dream Captain &mdash; Angela Mia">
+        <img src="../images/artists/angela-mia/thumb/080.jpg" alt="Dream Captain" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Dream Captain</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/angela-mia/081.jpg" data-lb-caption="Dream Captain (Life Size) &mdash; Angela Mia">
+        <img src="../images/artists/angela-mia/thumb/081.jpg" alt="Dream Captain (Life Size)" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Dream Captain (Life Size)</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/angela-mia/082.jpg" data-lb-caption="Doe Leaping I &mdash; Angela Mia">
+        <img src="../images/artists/angela-mia/thumb/082.jpg" alt="Doe Leaping I" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Doe Leaping I</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/angela-mia/083.jpg" data-lb-caption="Discovery (Hauling up treasure chest) &mdash; Angela Mia">
+        <img src="../images/artists/angela-mia/thumb/083.jpg" alt="Discovery (Hauling up treasure chest)" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Discovery (Hauling up treasure chest)</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/angela-mia/084.jpg" data-lb-caption="Developing Leader for Our Future (girl) &mdash; Angela Mia">
+        <img src="../images/artists/angela-mia/thumb/084.jpg" alt="Developing Leader for Our Future (girl)" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Developing Leader for Our Future (girl)</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/angela-mia/085.jpg" data-lb-caption="Dancing Delight &mdash; Angela Mia">
+        <img src="../images/artists/angela-mia/thumb/085.jpg" alt="Dancing Delight" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Dancing Delight</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/angela-mia/086.jpg" data-lb-caption="Calm &mdash; Angela Mia">
+        <img src="../images/artists/angela-mia/thumb/086.jpg" alt="Calm" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Calm</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/angela-mia/087.jpg" data-lb-caption="Beyond the Blue &mdash; Angela Mia">
+        <img src="../images/artists/angela-mia/thumb/087.jpg" alt="Beyond the Blue" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Beyond the Blue</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/angela-mia/088.jpg" data-lb-caption="Beyond the Blue (Life Size) &mdash; Angela Mia">
+        <img src="../images/artists/angela-mia/thumb/088.jpg" alt="Beyond the Blue (Life Size)" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Beyond the Blue (Life Size)</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/angela-mia/089.jpg" data-lb-caption="Behind Those Eyes &mdash; Angela Mia">
+        <img src="../images/artists/angela-mia/thumb/089.jpg" alt="Behind Those Eyes" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Behind Those Eyes</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/angela-mia/090.jpg" data-lb-caption="Anika &mdash; Angela Mia">
+        <img src="../images/artists/angela-mia/thumb/090.jpg" alt="Anika" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Anika</figcaption>
+      </figure>
+    </div>
+
+    <h2 class="display h-section mt-[var(--pad-xxl)] rv">More Artists</h2>
+    <div class="scroll-x mt-[var(--pad-l)] rv">
+      <div class="flex gap-[var(--pad-xs)] w-max pb-2">
+        <a href="david-wight.html" class="card flex items-center gap-3 py-3 px-4 flex-none">
+          <img src="../images/artists/david-wight/_card.jpg" alt="David Wight" loading="lazy" class="w-9 h-9 rounded-full object-cover border border-white/25">
+          <span class="text-[.92rem] whitespace-nowrap">David Wight</span>
+        </a>
+        <a href="jeff-vermeeren.html" class="card flex items-center gap-3 py-3 px-4 flex-none">
+          <img src="../images/artists/jeff-vermeeren/_card.jpg" alt="Jeff Vermeeren" loading="lazy" class="w-9 h-9 rounded-full object-cover border border-white/25">
+          <span class="text-[.92rem] whitespace-nowrap">Jeff Vermeeren</span>
+        </a>
+        <a href="joseph-capicotto.html" class="card flex items-center gap-3 py-3 px-4 flex-none">
+          <img src="../images/artists/joseph-capicotto/_card.jpg" alt="Joseph Capicotto" loading="lazy" class="w-9 h-9 rounded-full object-cover border border-white/25">
+          <span class="text-[.92rem] whitespace-nowrap">Joseph Capicotto</span>
+        </a>
+        <a href="michael-godard.html" class="card flex items-center gap-3 py-3 px-4 flex-none">
+          <img src="../images/artists/michael-godard/_card.jpg" alt="Michael Godard" loading="lazy" class="w-9 h-9 rounded-full object-cover border border-white/25">
+          <span class="text-[.92rem] whitespace-nowrap">Michael Godard</span>
+        </a>
+        <a href="nano-lopez.html" class="card flex items-center gap-3 py-3 px-4 flex-none">
+          <img src="../images/artists/nano-lopez/_card.jpg" alt="Nano Lopez" loading="lazy" class="w-9 h-9 rounded-full object-cover border border-white/25">
+          <span class="text-[.92rem] whitespace-nowrap">Nano Lopez</span>
+        </a>
+        <a href="oryan.html" class="card flex items-center gap-3 py-3 px-4 flex-none">
+          <img src="../images/artists/oryan/_card.jpg" alt="Oryan" loading="lazy" class="w-9 h-9 rounded-full object-cover border border-white/25">
+          <span class="text-[.92rem] whitespace-nowrap">Oryan</span>
+        </a>
+        <a href="tom-everhart.html" class="card flex items-center gap-3 py-3 px-4 flex-none">
+          <img src="../images/artists/tom-everhart/_card.jpg" alt="Tom Everhart" loading="lazy" class="w-9 h-9 rounded-full object-cover border border-white/25">
+          <span class="text-[.92rem] whitespace-nowrap">Tom Everhart</span>
+        </a>
+        <a href="walfrido.html" class="card flex items-center gap-3 py-3 px-4 flex-none">
+          <img src="../images/artists/walfrido/_card.jpg" alt="Walfrido" loading="lazy" class="w-9 h-9 rounded-full object-cover border border-white/25">
+          <span class="text-[.92rem] whitespace-nowrap">Walfrido</span>
+        </a>
+        <a href="wyland.html" class="card flex items-center gap-3 py-3 px-4 flex-none">
+          <img src="../images/artists/wyland/_card.jpg" alt="Wyland" loading="lazy" class="w-9 h-9 rounded-full object-cover border border-white/25">
+          <span class="text-[.92rem] whitespace-nowrap">Wyland</span>
+        </a>
+        <a href="2wild.html" class="card flex items-center gap-3 py-3 px-4 flex-none">
+          <img src="../images/artists/2wild/_card.jpg" alt="2Wild" loading="lazy" class="w-9 h-9 rounded-full object-cover border border-white/25">
+          <span class="text-[.92rem] whitespace-nowrap">2Wild</span>
+        </a>
+        <a href="advait-kolarkar.html" class="card flex items-center gap-3 py-3 px-4 flex-none">
+          <img src="../images/artists/advait-kolarkar/_card.jpg" alt="Advait Kolarkar" loading="lazy" class="w-9 h-9 rounded-full object-cover border border-white/25">
+          <span class="text-[.92rem] whitespace-nowrap">Advait Kolarkar</span>
+        </a>
+        <a href="alan-hunt.html" class="card flex items-center gap-3 py-3 px-4 flex-none">
+          <img src="../images/artists/alan-hunt/_card.jpg" alt="Alan Hunt" loading="lazy" class="w-9 h-9 rounded-full object-cover border border-white/25">
+          <span class="text-[.92rem] whitespace-nowrap">Alan Hunt</span>
+        </a>
+      </div>
+    </div>
+    <a href="../artists.html" class="btn-ghost mt-[var(--pad-l)] rv">VIEW ALL ARTISTS</a>
+  </section>
+</main>
+
+<div class="lightbox" id="lightbox">
+  <img alt="">
+  <p class="mono text-[.72rem] tracking-[.13em] uppercase text-white/70" data-lb-caption></p>
+</div>
+
+<footer id="contact" class="relative pt-[var(--pad-xxh)] pb-[var(--pad-xh)] overflow-hidden">
+  <div class="glow-grey opacity-45"></div>
+  <div class="vignette"></div>
+  <div class="relative z-10 pad-content">
+    <div class="max-w-[35rem] mx-auto text-center rv">
+      <h2 class="display h-section">Join Us</h2>
+      <p class="mt-[var(--pad-s)] text-white/70 copy">
+        Join the community and be the first to know about new releases, upcoming art shows and artist appearances at our galleries.
+      </p>
+      <form class="mt-[var(--pad-l)]" data-sgg-signup>
+        <input class="field" type="email" name="email" required placeholder="Your email address" aria-label="Your email address">
+        <button class="btn-pill w-full mt-[var(--pad-s)] text-[.82rem]">REGISTER</button>
+        <p class="mt-[var(--pad-s)] text-[.82rem] text-taste2" data-sgg-signup-msg hidden></p>
+      </form>
+      <p class="mt-[var(--pad-s)] text-[.82rem] text-white/55">
+        By registering you agree to our <a href="#contact" class="underline">privacy policy</a>
+      </p>
+      <div class="socials">
+      <a href="https://www.instagram.com/signaturegallerieslv/?hl=en" target="_blank" rel="noopener" aria-label="Signature Galleries on Instagram"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1.1" fill="currentColor" stroke="none"/></svg></a>
+      <a href="https://www.facebook.com/Signaturegalleryinlasvegas" target="_blank" rel="noopener" aria-label="Signature Galleries on Facebook"><svg width="19" height="19" viewBox="0 0 24 24" fill="currentColor"><path d="M14 8.5V7.2c0-.7.2-1.1 1.2-1.1H17V3.2A18 18 0 0 0 14.6 3C12.3 3 10.8 4.4 10.8 7v1.5H8.4V12h2.4v9h3.2v-9h2.5l.4-3.5H14z"/></svg></a>
+    </div>
+      <p class="mt-[var(--pad-l)] mono text-[.68rem] tracking-[.13em] text-white/45 uppercase">
+        Corporate office &middot; <a href="mailto:info@signaturegalleries.com?subject=Enquiry%20for%20Signature%20Gallery%20Group&amp;body=Hello%20Signature%20Gallery%20Group%2C%0D%0A%0D%0A" class="underline">info@signaturegalleries.com</a>
+      </p>
+      <p class="mt-[var(--pad-xs)] mono text-[.68rem] tracking-[.13em] text-white/45 uppercase">&copy; 2026 Signature Gallery Group</p>
+    </div>
+    <div class="mt-[var(--pad-xh)] max-w-[52rem] mx-auto legalbar px-[var(--pad-s)] py-[var(--pad-xs)] flex flex-wrap items-center justify-center gap-x-[var(--pad-l)] gap-y-[var(--pad-xs)] rv">
+      <a href="../artists.html" class="border border-white/40 rounded-[.25rem] px-4 py-2 text-[.72rem] tracking-[.1em] uppercase">Artists</a>
+      <a href="../index.html#events" class="text-[.72rem] tracking-[.1em] uppercase text-white/70 hover:text-white transition-colors">Events</a>
+      <a href="../index.html#galleries" class="text-[.72rem] tracking-[.1em] uppercase text-white/70 hover:text-white transition-colors">Galleries</a>
+      <a href="../index.html#contact" class="text-[.72rem] tracking-[.1em] uppercase text-white/70 hover:text-white transition-colors">Shop</a>
+      <a href="../index.html#contact" class="border border-white/40 rounded-[.25rem] px-4 py-2 text-[.72rem] tracking-[.1em] uppercase">Contact</a>
+    </div>
+    <p class="mt-[var(--pad-l)] text-center text-[.78rem] text-white/40">
+      Signature Gallery Group, a managing and accounting company.
+    </p>
+    <p class="mt-[var(--pad-xs)] text-center text-[.78rem] text-white/40">
+      Created by <span class="underline">Giancarlo Capicotto</span>
+    </p>
+  </div>
+</footer>
+
+<script src="../assets/site.js"></script>
+<script src="../assets/track.js" defer></script>
+</body>
+</html>
+

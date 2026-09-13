@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wyland — Signature Gallery Group</title>
+<meta name="description" content="Wyland: biography, upcoming events and artwork catalogue at Signature Gallery Group.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,75..125,100..900;1,75..125,100..900&family=Geist:wght@100..900&family=Geist+Mono:wght@100..900&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config={theme:{extend:{colors:{taste1:'#3D2B68',taste2:'#9089D3'},
+fontFamily:{body:['Geist','Arial','sans-serif'],head:['Archivo','Arial','sans-serif'],mono:['Geist Mono','Arial','sans-serif']}}}};
+</script>
+<link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+
+<div class="rail"><div class="rail-fill" id="railFill"></div></div>
+<div class="frame">
+  <span class="corner tl"></span><span class="corner tr"></span>
+  <span class="corner bl"></span><span class="corner br"></span>
+  <span class="tick" style="top:13.3rem;right:var(--page-padding);"></span>
+  <span class="tick" style="bottom:6.4rem;right:var(--page-padding);"></span>
+  <span class="edge-letter" style="top:33.5rem;">S</span>
+  <span class="edge-letter" style="top:39rem;">G</span>
+  <span class="edge-letter" style="top:44.5rem;">G</span>
+</div>
+
+<header class="nav">
+  <div class="nav-left flex items-center gap-3">
+    <span class="mono text-[.72rem] tracking-[.14em]">ON</span>
+    <span class="eq"><span></span><span></span><span></span><span></span></span>
+  </div>
+  <a href="../index.html" class="display wordmark">SIGNATURE<br>GALLERY GROUP</a>
+  <div class="nav-right flex items-center gap-[3.25rem]">
+    <button class="flex items-center gap-3" data-menu-open>
+      <span class="dotgrid"><i></i><i></i><i></i><i></i></span>
+      <span class="nav-menu-label text-[.78rem] tracking-[.09em]">MENU</span>
+    </button>
+    <a href="../index.html#contact" class="btn-pill">CONTACT</a>
+  </div>
+</header>
+
+<div class="menu-overlay" id="menuOverlay">
+  <button class="menu-close" data-menu-close aria-label="Close menu">&#10005;</button>
+  <nav class="text-center">
+    <a href="../artists.html" class="display text-[clamp(1.8rem,4vw,3rem)]">All Artists</a>
+    <a href="../index.html#releases" class="display text-[clamp(1.8rem,4vw,3rem)]">New Releases</a>
+    <a href="../index.html#events" class="display text-[clamp(1.8rem,4vw,3rem)]">Events</a>
+    <a href="../index.html#galleries" class="display text-[clamp(1.8rem,4vw,3rem)]">Galleries</a>
+    <a href="../index.html#contact" class="display text-[clamp(1.8rem,4vw,3rem)]">Contact</a>
+  </nav>
+</div>
+
+
+<main class="page-hero">
+  <div class="glow-purple-v"></div><div class="vignette"></div>
+
+  <section class="relative z-10 pad-content pt-[var(--pad-xh)] pb-[var(--pad-xxl)]">
+    <p class="crumb rv"><a href="../index.html">Home</a> &nbsp;/&nbsp; <a href="../artists.html">Artists</a> &nbsp;/&nbsp; Wyland</p>
+    <div class="mt-[var(--pad-l)] grid grid-cols-1 lg:grid-cols-[minmax(0,1fr)_minmax(0,.85fr)] gap-[var(--pad-xl)] items-center">
+      <div class="rv">
+        <h1 class="display display-tight text-[clamp(2.4rem,5vw,5.2rem)]">Wyland</h1>
+        <p class="mono text-[.72rem] tracking-[.14em] text-taste2 uppercase mt-[var(--pad-s)]">Marine life artist</p>
+
+        <p class="mt-[var(--pad-m)] text-white/70 copy">Hailed a “Marine Michaelangelo” by USA Today, Wyland’s work is sought by millions of collectors and his galleries throughout the United States are considered a must-see on the itineraries of travelers everywhere. His equally successful Wyland Foundation, in partnership with the Scripps Institution of Oceanography, is actively engaged in teaching millions of students around engaged in teaching millions of students around our oceans, rivers, lakes, streams, and wetlands.</p>
+      </div>
+      <div class="rv">
+        <img src="../images/artists/wyland/_hero.jpg" alt="Wyland"
+             class="artist-hero-photo rounded-[1rem]"
+             style="filter:drop-shadow(0 40px 70px rgba(0,0,0,.75));">
+      </div>
+    </div>
+  </section>
+
+  <section class="relative z-10 pad-content pb-[var(--pad-xxl)]">
+    <h2 class="display h-section rv">Upcoming Events</h2>
+    <div class="mt-[var(--pad-l)] grid grid-cols-1 md:grid-cols-2 gap-[var(--pad-s)]">
+      <div class="card p-[var(--pad-l)] rv">
+        <p class="text-white/60 copy">No scheduled appearances at this time. Contact a gallery to be notified
+          when this artist's next show is announced.</p>
+        <a href="../index.html#galleries" class="btn-ghost mt-[var(--pad-m)]">CONTACT A GALLERY</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="relative z-10 pad-content pb-[var(--pad-xxh)]">
+    <h2 class="display h-section rv">Catalogue</h2>
+    <p class="mt-[var(--pad-s)] text-white/60 copy rv">100 works. Select a piece to view it larger. Contact a gallery for availability and pricing.</p>
+    <div class="mt-[var(--pad-xl)] grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-[var(--pad-xs)]">
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/wyland/000.jpg" data-lb-caption="The Old Man and The Sea &mdash; Wyland">
+        <img src="../images/artists/wyland/thumb/000.jpg" alt="The Old Man and The Sea" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">The Old Man and The Sea</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/wyland/001.jpg" data-lb-caption="Bob Marley- One Love &mdash; Wyland">
+        <img src="../images/artists/wyland/thumb/001.jpg" alt="Bob Marley- One Love" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Bob Marley- One Love</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/wyland/002.jpg" data-lb-caption="Nonu Porthole &mdash; Wyland">
+        <img src="../images/artists/wyland/thumb/002.jpg" alt="Nonu Porthole" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Nonu Porthole</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/wyland/003.jpg" data-lb-caption="Vincent &mdash; Wyland">
+        <img src="../images/artists/wyland/thumb/003.jpg" alt="Vincent" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Vincent</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/wyland/004.jpg" data-lb-caption="Sailfish Sea &mdash; Wyland">
+        <img src="../images/artists/wyland/thumb/004.jpg" alt="Sailfish Sea" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Sailfish Sea</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/wyland/005.jpg" data-lb-caption="Eddie Aikau Legend of the Sea &mdash; Wyland">
+        <img src="../images/artists/wyland/thumb/005.jpg" alt="Eddie Aikau Legend of the Sea" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Eddie Aikau Legend of the Sea</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/wyland/006.jpg" data-lb-caption="Dolphin &mdash; Wyland">
+        <img src="../images/artists/wyland/thumb/006.jpg" alt="Dolphin" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Dolphin</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/wyland/007.jpg" data-lb-caption="Whale Tail Lucite.jpg &mdash; Wyland">
+        <img src="../images/artists/wyland/thumb/007.jpg" alt="Whale Tail Lucite.jpg" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Whale Tail Lucite.jpg</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/wyland/008.jpg" data-lb-caption="The Sacred Sea &mdash; Wyland">
+        <img src="../images/artists/wyland/thumb/008.jpg" alt="The Sacred Sea" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">The Sacred Sea</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/wyland/009.jpg" data-lb-caption="Sea Lions Dance &mdash; Wyland">
+        <img src="../images/artists/wyland/thumb/009.jpg" alt="Sea Lions Dance" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Sea Lions Dance</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/wyland/010.jpg" data-lb-caption="Harry Otter &mdash; Wyland">
+        <img src="../images/artists/wyland/thumb/010.jpg" alt="Harry Otter" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Harry Otter</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/wyland/011.jpg" data-lb-caption="Grizzly Bear &mdash; Wyland">
+        <img src="../images/artists/wyland/thumb/011.jpg" alt="Grizzly Bear" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Grizzly Bear</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/wyland/012.jpg" data-lb-caption="Florida Flats Grand Slam &mdash; Wyland">
+        <img src="../images/artists/wyland/thumb/012.jpg" alt="Florida Flats Grand Slam" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Florida Flats Grand Slam</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/wyland/013.jpg" data-lb-caption="Aloha Hawaii &mdash; Wyland">
+        <img src="../images/artists/wyland/thumb/013.jpg" alt="Aloha Hawaii" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Aloha Hawaii</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/wyland/014.jpg" data-lb-caption="Once Upon a Starry Starry Night &mdash; Wyland">
+        <img src="../images/artists/wyland/thumb/014.jpg" alt="Once Upon a Starry Starry Night" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Once Upon a Starry Starry Night</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/wyland/015.jpg" data-lb-caption="Laguna Starry Night &mdash; Wyland">
+        <img src="../images/artists/wyland/thumb/015.jpg" alt="Laguna Starry Night" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Laguna Starry Night</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/wyland/016.jpg" data-lb-caption="Octopus Sea &mdash; Wyland">
+        <img src="../images/artists/wyland/thumb/016.jpg" alt="Octopus Sea" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Octopus Sea</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/wyland/017.jpg" data-lb-caption="Sea Otter In the Kelp Forest &mdash; Wyland">
+        <img src="../images/artists/wyland/thumb/017.jpg" alt="Sea Otter In the Kelp Forest" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Sea Otter In the Kelp Forest</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/wyland/018.jpg" data-lb-caption="African Lioness &mdash; Wyland">
+        <img src="../images/artists/wyland/thumb/018.jpg" alt="African Lioness" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">African Lioness</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/wyland/019.jpg" data-lb-caption="African Rhino &mdash; Wyland">
+        <img src="../images/artists/wyland/thumb/019.jpg" alt="African Rhino" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">African Rhino</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/wyland/020.jpg" data-lb-caption="African Lion &mdash; Wyland">
+        <img src="../images/artists/wyland/thumb/020.jpg" alt="African Lion" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">African Lion</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/wyland/021.jpg" data-lb-caption="African Hippo &mdash; Wyland">
+        <img src="../images/artists/wyland/thumb/021.jpg" alt="African Hippo" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">African Hippo</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/wyland/022.jpg" data-lb-caption="African Elephant &mdash; Wyland">
+        <img src="../images/artists/wyland/thumb/022.jpg" alt="African Elephant" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">African Elephant</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/wyland/023.jpg" data-lb-caption="Sunset Waters &mdash; Wyland">
+        <img src="../images/artists/wyland/thumb/023.jpg" alt="Sunset Waters" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Sunset Waters</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/wyland/024.jpg" data-lb-caption="Diving with Great Whales &mdash; Wyland">
+        <img src="../images/artists/wyland/thumb/024.jpg" alt="Diving with Great Whales" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Diving with Great Whales</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/wyland/025.jpg" data-lb-caption="Dali Portal &mdash; Wyland">
+        <img src="../images/artists/wyland/thumb/025.jpg" alt="Dali Portal" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Dali Portal</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/wyland/026.jpg" data-lb-caption="Whale Tail - Large &mdash; Wyland">
+        <img src="../images/artists/wyland/thumb/026.jpg" alt="Whale Tail - Large" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Whale Tail - Large</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/wyland/027.jpg" data-lb-caption="Dolphin Speak &mdash; Wyland">
+        <img src="../images/artists/wyland/thumb/027.jpg" alt="Dolphin Speak" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Dolphin Speak</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/wyland/028.jpg" data-lb-caption="Ocean Travelers &mdash; Wyland">
+        <img src="../images/artists/wyland/thumb/028.jpg" alt="Ocean Travelers" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Ocean Travelers</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/wyland/029.jpg" data-lb-caption="Seeing Whales &mdash; Wyland">
+        <img src="../images/artists/wyland/thumb/029.jpg" alt="Seeing Whales" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Seeing Whales</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/wyland/030.jpg" data-lb-caption="Dolphin Trio &mdash; Wyland">
+        <img src="../images/artists/wyland/thumb/030.jpg" alt="Dolphin Trio" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Dolphin Trio</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/wyland/031.jpg" data-lb-caption="Marlin Celebration &mdash; Wyland">
+        <img src="../images/artists/wyland/thumb/031.jpg" alt="Marlin Celebration" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Marlin Celebration</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/wyland/032.jpg" data-lb-caption="Guiding Light &mdash; Wyland">
+        <img src="../images/artists/wyland/thumb/032.jpg" alt="Guiding Light" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Guiding Light</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/wyland/033.jpg" data-lb-caption="Sunset on the Gulf &mdash; Wyland">
+        <img src="../images/artists/wyland/thumb/033.jpg" alt="Sunset on the Gulf" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Sunset on the Gulf</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/wyland/034.jpg" data-lb-caption="La Luna Del Tiburon &mdash; Wyland">
+        <img src="../images/artists/wyland/thumb/034.jpg" alt="La Luna Del Tiburon" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">La Luna Del Tiburon</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/wyland/035.jpg" data-lb-caption="Free Keiko &mdash; Wyland">
+        <img src="../images/artists/wyland/thumb/035.jpg" alt="Free Keiko" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Free Keiko</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/wyland/036.jpg" data-lb-caption="Dolphin Sea &mdash; Wyland">
+        <img src="../images/artists/wyland/thumb/036.jpg" alt="Dolphin Sea" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Dolphin Sea</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/wyland/037.jpg" data-lb-caption="Great Whale Sounding &mdash; Wyland">
+        <img src="../images/artists/wyland/thumb/037.jpg" alt="Great Whale Sounding" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Great Whale Sounding</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/wyland/038.jpg" data-lb-caption="Clown Fish &mdash; Wyland">
+        <img src="../images/artists/wyland/thumb/038.jpg" alt="Clown Fish" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Clown Fish</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/wyland/039.jpg" data-lb-caption="Ariel&#39;s Dolphin Serenade &mdash; Wyland">
+        <img src="../images/artists/wyland/thumb/039.jpg" alt="Ariel&#39;s Dolphin Serenade" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Ariel&#39;s Dolphin Serenade</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/wyland/040.jpg" data-lb-caption="The Sea &mdash; Wyland">
+        <img src="../images/artists/wyland/thumb/040.jpg" alt="The Sea" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">The Sea</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/wyland/041.jpg" data-lb-caption="Dolphin Experience End Table &mdash; Wyland">
+        <img src="../images/artists/wyland/thumb/041.jpg" alt="Dolphin Experience End Table" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Dolphin Experience End Table</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/wyland/042.jpg" data-lb-caption="Feeding Frenzy Dining Table &mdash; Wyland">
+        <img src="../images/artists/wyland/thumb/042.jpg" alt="Feeding Frenzy Dining Table" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Feeding Frenzy Dining Table</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/wyland/043.jpg" data-lb-caption="A Sea of Life &mdash; Wyland">
+        <img src="../images/artists/wyland/thumb/043.jpg" alt="A Sea of Life" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">A Sea of Life</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/wyland/044.jpg" data-lb-caption="Tranquil Voyager &mdash; Wyland">
+        <img src="../images/artists/wyland/thumb/044.jpg" alt="Tranquil Voyager" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Tranquil Voyager</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/wyland/045.jpg" data-lb-caption="Tiger Shark Table &mdash; Wyland">
+        <img src="../images/artists/wyland/thumb/045.jpg" alt="Tiger Shark Table" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Tiger Shark Table</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/wyland/046.jpg" data-lb-caption="Friendly Manatee &mdash; Wyland">
+        <img src="../images/artists/wyland/thumb/046.jpg" alt="Friendly Manatee" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Friendly Manatee</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/wyland/047.jpg" data-lb-caption="Dolphin Playground &mdash; Wyland">
+        <img src="../images/artists/wyland/thumb/047.jpg" alt="Dolphin Playground" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Dolphin Playground</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/wyland/048.jpg" data-lb-caption="Dolphin Friendly &mdash; Wyland">
+        <img src="../images/artists/wyland/thumb/048.jpg" alt="Dolphin Friendly" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Dolphin Friendly</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/wyland/049.jpg" data-lb-caption="Celebrate the Sun &mdash; Wyland">
+        <img src="../images/artists/wyland/thumb/049.jpg" alt="Celebrate the Sun" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Celebrate the Sun</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/wyland/050.jpg" data-lb-caption="Sunset Paradise &mdash; Wyland">
+        <img src="../images/artists/wyland/thumb/050.jpg" alt="Sunset Paradise" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Sunset Paradise</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/wyland/051.jpg" data-lb-caption="Dreaming of Paradise &mdash; Wyland">
+        <img src="../images/artists/wyland/thumb/051.jpg" alt="Dreaming of Paradise" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Dreaming of Paradise</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/wyland/052.jpg" data-lb-caption="Dawn of Creation &mdash; Wyland">
+        <img src="../images/artists/wyland/thumb/052.jpg" alt="Dawn of Creation" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Dawn of Creation</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/wyland/053.jpg" data-lb-caption="Children of the Sea &mdash; Wyland">
+        <img src="../images/artists/wyland/thumb/053.jpg" alt="Children of the Sea" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Children of the Sea</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/wyland/054.jpg" data-lb-caption="Sea of Consciousness &mdash; Wyland">
+        <img src="../images/artists/wyland/thumb/054.jpg" alt="Sea of Consciousness" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Sea of Consciousness</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/wyland/055.jpg" data-lb-caption="Dolphin Dream &mdash; Wyland">
+        <img src="../images/artists/wyland/thumb/055.jpg" alt="Dolphin Dream" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Dolphin Dream</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/wyland/056.jpg" data-lb-caption="Nature&#39;s Paradise &mdash; Wyland">
+        <img src="../images/artists/wyland/thumb/056.jpg" alt="Nature&#39;s Paradise" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Nature&#39;s Paradise</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/wyland/057.jpg" data-lb-caption="Manatee Encounter &mdash; Wyland">
+        <img src="../images/artists/wyland/thumb/057.jpg" alt="Manatee Encounter" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Manatee Encounter</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/wyland/058.jpg" data-lb-caption="Friends of the Sea &mdash; Wyland">
+        <img src="../images/artists/wyland/thumb/058.jpg" alt="Friends of the Sea" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Friends of the Sea</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/wyland/059.jpg" data-lb-caption="Humpback Realm Dining Table &mdash; Wyland">
+        <img src="../images/artists/wyland/thumb/059.jpg" alt="Humpback Realm Dining Table" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Humpback Realm Dining Table</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/wyland/060.jpg" data-lb-caption="Dolphin Affection &mdash; Wyland">
+        <img src="../images/artists/wyland/thumb/060.jpg" alt="Dolphin Affection" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Dolphin Affection</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/wyland/061.jpg" data-lb-caption="Manta Rays &mdash; Wyland">
+        <img src="../images/artists/wyland/thumb/061.jpg" alt="Manta Rays" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Manta Rays</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/wyland/062.jpg" data-lb-caption="Orca Family Table &mdash; Wyland">
+        <img src="../images/artists/wyland/thumb/062.jpg" alt="Orca Family Table" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Orca Family Table</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/wyland/063.jpg" data-lb-caption="Ocean View &mdash; Wyland">
+        <img src="../images/artists/wyland/thumb/063.jpg" alt="Ocean View" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Ocean View</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/wyland/064.jpg" data-lb-caption="Sacred Waters &mdash; Wyland">
+        <img src="../images/artists/wyland/thumb/064.jpg" alt="Sacred Waters" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Sacred Waters</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/wyland/065.jpg" data-lb-caption="Sea Life Below &mdash; Wyland">
+        <img src="../images/artists/wyland/thumb/065.jpg" alt="Sea Life Below" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Sea Life Below</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/wyland/066.jpg" data-lb-caption="Dolphin Dawn &mdash; Wyland">
+        <img src="../images/artists/wyland/thumb/066.jpg" alt="Dolphin Dawn" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Dolphin Dawn</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/wyland/067.jpg" data-lb-caption="Mother and Calf &mdash; Wyland">
+        <img src="../images/artists/wyland/thumb/067.jpg" alt="Mother and Calf" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Mother and Calf</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/wyland/068.jpg" data-lb-caption="Manatees in the Mangroves &mdash; Wyland">
+        <img src="../images/artists/wyland/thumb/068.jpg" alt="Manatees in the Mangroves" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Manatees in the Mangroves</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/wyland/069.jpg" data-lb-caption="Dolphin Seas &mdash; Wyland">
+        <img src="../images/artists/wyland/thumb/069.jpg" alt="Dolphin Seas" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Dolphin Seas</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/wyland/070.jpg" data-lb-caption="Angel of the Sea &mdash; Wyland">
+        <img src="../images/artists/wyland/thumb/070.jpg" alt="Angel of the Sea" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Angel of the Sea</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/wyland/071.jpg" data-lb-caption="Whale Fluke Hawaii &mdash; Wyland">
+        <img src="../images/artists/wyland/thumb/071.jpg" alt="Whale Fluke Hawaii" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Whale Fluke Hawaii</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/wyland/072.jpg" data-lb-caption="Ocean of Light &mdash; Wyland">
+        <img src="../images/artists/wyland/thumb/072.jpg" alt="Ocean of Light" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Ocean of Light</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/wyland/073.jpg" data-lb-caption="Innocent Age &mdash; Wyland">
+        <img src="../images/artists/wyland/thumb/073.jpg" alt="Innocent Age" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Innocent Age</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/wyland/074.jpg" data-lb-caption="Pacific Paradise &mdash; Wyland">
+        <img src="../images/artists/wyland/thumb/074.jpg" alt="Pacific Paradise" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Pacific Paradise</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/wyland/075.jpg" data-lb-caption="Ice Bear &mdash; Wyland">
+        <img src="../images/artists/wyland/thumb/075.jpg" alt="Ice Bear" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Ice Bear</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/wyland/076.jpg" data-lb-caption="Full Moon Shooting Stars &mdash; Wyland">
+        <img src="../images/artists/wyland/thumb/076.jpg" alt="Full Moon Shooting Stars" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Full Moon Shooting Stars</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/wyland/077.jpg" data-lb-caption="Ocean Celebration &mdash; Wyland">
+        <img src="../images/artists/wyland/thumb/077.jpg" alt="Ocean Celebration" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Ocean Celebration</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/wyland/078.jpg" data-lb-caption="Shark Reef &mdash; Wyland">
+        <img src="../images/artists/wyland/thumb/078.jpg" alt="Shark Reef" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Shark Reef</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/wyland/079.jpg" data-lb-caption="Sea Born &mdash; Wyland">
+        <img src="../images/artists/wyland/thumb/079.jpg" alt="Sea Born" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Sea Born</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/wyland/080.jpg" data-lb-caption="Octopus Reef &mdash; Wyland">
+        <img src="../images/artists/wyland/thumb/080.jpg" alt="Octopus Reef" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Octopus Reef</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/wyland/081.jpg" data-lb-caption="Whale Under a Starry Sea &mdash; Wyland">
+        <img src="../images/artists/wyland/thumb/081.jpg" alt="Whale Under a Starry Sea" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Whale Under a Starry Sea</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/wyland/082.jpg" data-lb-caption="Whale Tail - Extra Large &mdash; Wyland">
+        <img src="../images/artists/wyland/thumb/082.jpg" alt="Whale Tail - Extra Large" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Whale Tail - Extra Large</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/wyland/083.jpg" data-lb-caption="Orca Moon &mdash; Wyland">
+        <img src="../images/artists/wyland/thumb/083.jpg" alt="Orca Moon" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Orca Moon</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/wyland/084.jpg" data-lb-caption="Humpback Life &mdash; Wyland">
+        <img src="../images/artists/wyland/thumb/084.jpg" alt="Humpback Life" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Humpback Life</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/wyland/085.jpg" data-lb-caption="Moonlit Waters &mdash; Wyland">
+        <img src="../images/artists/wyland/thumb/085.jpg" alt="Moonlit Waters" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Moonlit Waters</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/wyland/086.jpg" data-lb-caption="Ariel&#39;s Ocean Ride &mdash; Wyland">
+        <img src="../images/artists/wyland/thumb/086.jpg" alt="Ariel&#39;s Ocean Ride" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Ariel&#39;s Ocean Ride</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/wyland/087.jpg" data-lb-caption="Wish on a Star &mdash; Wyland">
+        <img src="../images/artists/wyland/thumb/087.jpg" alt="Wish on a Star" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Wish on a Star</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/wyland/088.jpg" data-lb-caption="Grey Whales &mdash; Wyland">
+        <img src="../images/artists/wyland/thumb/088.jpg" alt="Grey Whales" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Grey Whales</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/wyland/089.jpg" data-lb-caption="Dolphin Paradise &mdash; Wyland">
+        <img src="../images/artists/wyland/thumb/089.jpg" alt="Dolphin Paradise" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Dolphin Paradise</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/wyland/090.jpg" data-lb-caption="Aquarious &mdash; Wyland">
+        <img src="../images/artists/wyland/thumb/090.jpg" alt="Aquarious" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Aquarious</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/wyland/091.jpg" data-lb-caption="Sunset Soul Mates &mdash; Wyland">
+        <img src="../images/artists/wyland/thumb/091.jpg" alt="Sunset Soul Mates" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Sunset Soul Mates</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/wyland/092.jpg" data-lb-caption="Year of the Reef-Sea Turtle Cleaning Station &mdash; Wyland">
+        <img src="../images/artists/wyland/thumb/092.jpg" alt="Year of the Reef-Sea Turtle Cleaning Station" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Year of the Reef-Sea Turtle Cleaning Station</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/wyland/093.jpg" data-lb-caption="Hugging Dolphins &mdash; Wyland">
+        <img src="../images/artists/wyland/thumb/093.jpg" alt="Hugging Dolphins" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Hugging Dolphins</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/wyland/094.jpg" data-lb-caption="Faster Higher Stronger &mdash; Wyland">
+        <img src="../images/artists/wyland/thumb/094.jpg" alt="Faster Higher Stronger" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Faster Higher Stronger</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/wyland/095.jpg" data-lb-caption="Year of the Reef &mdash; Wyland">
+        <img src="../images/artists/wyland/thumb/095.jpg" alt="Year of the Reef" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Year of the Reef</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/wyland/096.jpg" data-lb-caption="Side by Side &mdash; Wyland">
+        <img src="../images/artists/wyland/thumb/096.jpg" alt="Side by Side" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Side by Side</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/wyland/097.jpg" data-lb-caption="Water Baby &mdash; Wyland">
+        <img src="../images/artists/wyland/thumb/097.jpg" alt="Water Baby" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Water Baby</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/wyland/098.jpg" data-lb-caption="Orca Mist &mdash; Wyland">
+        <img src="../images/artists/wyland/thumb/098.jpg" alt="Orca Mist" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Orca Mist</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/wyland/099.jpg" data-lb-caption="Orca Waters &mdash; Wyland">
+        <img src="../images/artists/wyland/thumb/099.jpg" alt="Orca Waters" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Orca Waters</figcaption>
+      </figure>
+    </div>
+
+    <h2 class="display h-section mt-[var(--pad-xxl)] rv">More Artists</h2>
+    <div class="scroll-x mt-[var(--pad-l)] rv">
+      <div class="flex gap-[var(--pad-xs)] w-max pb-2">
+        <a href="angela-mia.html" class="card flex items-center gap-3 py-3 px-4 flex-none">
+          <img src="../images/artists/angela-mia/_card.jpg" alt="Angela Mia" loading="lazy" class="w-9 h-9 rounded-full object-cover border border-white/25">
+          <span class="text-[.92rem] whitespace-nowrap">Angela Mia</span>
+        </a>
+        <a href="david-wight.html" class="card flex items-center gap-3 py-3 px-4 flex-none">
+          <img src="../images/artists/david-wight/_card.jpg" alt="David Wight" loading="lazy" class="w-9 h-9 rounded-full object-cover border border-white/25">
+          <span class="text-[.92rem] whitespace-nowrap">David Wight</span>
+        </a>
+        <a href="jeff-vermeeren.html" class="card flex items-center gap-3 py-3 px-4 flex-none">
+          <img src="../images/artists/jeff-vermeeren/_card.jpg" alt="Jeff Vermeeren" loading="lazy" class="w-9 h-9 rounded-full object-cover border border-white/25">
+          <span class="text-[.92rem] whitespace-nowrap">Jeff Vermeeren</span>
+        </a>
+        <a href="joseph-capicotto.html" class="card flex items-center gap-3 py-3 px-4 flex-none">
+          <img src="../images/artists/joseph-capicotto/_card.jpg" alt="Joseph Capicotto" loading="lazy" class="w-9 h-9 rounded-full object-cover border border-white/25">
+          <span class="text-[.92rem] whitespace-nowrap">Joseph Capicotto</span>
+        </a>
+        <a href="michael-godard.html" class="card flex items-center gap-3 py-3 px-4 flex-none">
+          <img src="../images/artists/michael-godard/_card.jpg" alt="Michael Godard" loading="lazy" class="w-9 h-9 rounded-full object-cover border border-white/25">
+          <span class="text-[.92rem] whitespace-nowrap">Michael Godard</span>
+        </a>
+        <a href="nano-lopez.html" class="card flex items-center gap-3 py-3 px-4 flex-none">
+          <img src="../images/artists/nano-lopez/_card.jpg" alt="Nano Lopez" loading="lazy" class="w-9 h-9 rounded-full object-cover border border-white/25">
+          <span class="text-[.92rem] whitespace-nowrap">Nano Lopez</span>
+        </a>
+        <a href="oryan.html" class="card flex items-center gap-3 py-3 px-4 flex-none">
+          <img src="../images/artists/oryan/_card.jpg" alt="Oryan" loading="lazy" class="w-9 h-9 rounded-full object-cover border border-white/25">
+          <span class="text-[.92rem] whitespace-nowrap">Oryan</span>
+        </a>
+        <a href="tom-everhart.html" class="card flex items-center gap-3 py-3 px-4 flex-none">
+          <img src="../images/artists/tom-everhart/_card.jpg" alt="Tom Everhart" loading="lazy" class="w-9 h-9 rounded-full object-cover border border-white/25">
+          <span class="text-[.92rem] whitespace-nowrap">Tom Everhart</span>
+        </a>
+        <a href="walfrido.html" class="card flex items-center gap-3 py-3 px-4 flex-none">
+          <img src="../images/artists/walfrido/_card.jpg" alt="Walfrido" loading="lazy" class="w-9 h-9 rounded-full object-cover border border-white/25">
+          <span class="text-[.92rem] whitespace-nowrap">Walfrido</span>
+        </a>
+        <a href="2wild.html" class="card flex items-center gap-3 py-3 px-4 flex-none">
+          <img src="../images/artists/2wild/_card.jpg" alt="2Wild" loading="lazy" class="w-9 h-9 rounded-full object-cover border border-white/25">
+          <span class="text-[.92rem] whitespace-nowrap">2Wild</span>
+        </a>
+        <a href="advait-kolarkar.html" class="card flex items-center gap-3 py-3 px-4 flex-none">
+          <img src="../images/artists/advait-kolarkar/_card.jpg" alt="Advait Kolarkar" loading="lazy" class="w-9 h-9 rounded-full object-cover border border-white/25">
+          <span class="text-[.92rem] whitespace-nowrap">Advait Kolarkar</span>
+        </a>
+        <a href="alan-hunt.html" class="card flex items-center gap-3 py-3 px-4 flex-none">
+          <img src="../images/artists/alan-hunt/_card.jpg" alt="Alan Hunt" loading="lazy" class="w-9 h-9 rounded-full object-cover border border-white/25">
+          <span class="text-[.92rem] whitespace-nowrap">Alan Hunt</span>
+        </a>
+      </div>
+    </div>
+    <a href="../artists.html" class="btn-ghost mt-[var(--pad-l)] rv">VIEW ALL ARTISTS</a>
+  </section>
+</main>
+
+<div class="lightbox" id="lightbox">
+  <img alt="">
+  <p class="mono text-[.72rem] tracking-[.13em] uppercase text-white/70" data-lb-caption></p>
+</div>
+
+<footer id="contact" class="relative pt-[var(--pad-xxh)] pb-[var(--pad-xh)] overflow-hidden">
+  <div class="glow-grey opacity-45"></div>
+  <div class="vignette"></div>
+  <div class="relative z-10 pad-content">
+    <div class="max-w-[35rem] mx-auto text-center rv">
+      <h2 class="display h-section">Join Us</h2>
+      <p class="mt-[var(--pad-s)] text-white/70 copy">
+        Join the community and be the first to know about new releases, upcoming art shows and artist appearances at our galleries.
+      </p>
+      <form class="mt-[var(--pad-l)]" data-sgg-signup>
+        <input class="field" type="email" name="email" required placeholder="Your email address" aria-label="Your email address">
+        <button class="btn-pill w-full mt-[var(--pad-s)] text-[.82rem]">REGISTER</button>
+        <p class="mt-[var(--pad-s)] text-[.82rem] text-taste2" data-sgg-signup-msg hidden></p>
+      </form>
+      <p class="mt-[var(--pad-s)] text-[.82rem] text-white/55">
+        By registering you agree to our <a href="#contact" class="underline">privacy policy</a>
+      </p>
+      <div class="socials">
+      <a href="https://www.instagram.com/signaturegallerieslv/?hl=en" target="_blank" rel="noopener" aria-label="Signature Galleries on Instagram"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1.1" fill="currentColor" stroke="none"/></svg></a>
+      <a href="https://www.facebook.com/Signaturegalleryinlasvegas" target="_blank" rel="noopener" aria-label="Signature Galleries on Facebook"><svg width="19" height="19" viewBox="0 0 24 24" fill="currentColor"><path d="M14 8.5V7.2c0-.7.2-1.1 1.2-1.1H17V3.2A18 18 0 0 0 14.6 3C12.3 3 10.8 4.4 10.8 7v1.5H8.4V12h2.4v9h3.2v-9h2.5l.4-3.5H14z"/></svg></a>
+    </div>
+      <p class="mt-[var(--pad-l)] mono text-[.68rem] tracking-[.13em] text-white/45 uppercase">
+        Corporate office &middot; <a href="mailto:info@signaturegalleries.com?subject=Enquiry%20for%20Signature%20Gallery%20Group&amp;body=Hello%20Signature%20Gallery%20Group%2C%0D%0A%0D%0A" class="underline">info@signaturegalleries.com</a>
+      </p>
+      <p class="mt-[var(--pad-xs)] mono text-[.68rem] tracking-[.13em] text-white/45 uppercase">&copy; 2026 Signature Gallery Group</p>
+    </div>
+    <div class="mt-[var(--pad-xh)] max-w-[52rem] mx-auto legalbar px-[var(--pad-s)] py-[var(--pad-xs)] flex flex-wrap items-center justify-center gap-x-[var(--pad-l)] gap-y-[var(--pad-xs)] rv">
+      <a href="../artists.html" class="border border-white/40 rounded-[.25rem] px-4 py-2 text-[.72rem] tracking-[.1em] uppercase">Artists</a>
+      <a href="../index.html#events" class="text-[.72rem] tracking-[.1em] uppercase text-white/70 hover:text-white transition-colors">Events</a>
+      <a href="../index.html#galleries" class="text-[.72rem] tracking-[.1em] uppercase text-white/70 hover:text-white transition-colors">Galleries</a>
+      <a href="../index.html#contact" class="text-[.72rem] tracking-[.1em] uppercase text-white/70 hover:text-white transition-colors">Shop</a>
+      <a href="../index.html#contact" class="border border-white/40 rounded-[.25rem] px-4 py-2 text-[.72rem] tracking-[.1em] uppercase">Contact</a>
+    </div>
+    <p class="mt-[var(--pad-l)] text-center text-[.78rem] text-white/40">
+      Signature Gallery Group, a managing and accounting company.
+    </p>
+    <p class="mt-[var(--pad-xs)] text-center text-[.78rem] text-white/40">
+      Created by <span class="underline">Giancarlo Capicotto</span>
+    </p>
+  </div>
+</footer>
+
+<script src="../assets/site.js"></script>
+<script src="../assets/track.js" defer></script>
+</body>
+</html>
+

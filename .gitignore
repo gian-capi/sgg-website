@@ -1,0 +1,18 @@
+# macOS
+.DS_Store
+
+# Node
+node_modules/
+
+# Machine-specific Claude Code settings
+.claude/settings.local.json
+
+# Screenshot output from the compare loop
+shots/
+
+# Large binaries — versioned by Dropbox, not git.
+# Remove these lines (and re-add) if you want a self-contained deployable repo.
+images/
+Logos, Images, and Artwork/
+SGG Old Website Screenshots/
+Reference Website Screenshots/

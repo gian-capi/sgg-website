@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ruby Mazur — Signature Gallery Group</title>
+<meta name="description" content="Ruby Mazur: biography, upcoming events and artwork catalogue at Signature Gallery Group.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,75..125,100..900;1,75..125,100..900&family=Geist:wght@100..900&family=Geist+Mono:wght@100..900&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config={theme:{extend:{colors:{taste1:'#3D2B68',taste2:'#9089D3'},
+fontFamily:{body:['Geist','Arial','sans-serif'],head:['Archivo','Arial','sans-serif'],mono:['Geist Mono','Arial','sans-serif']}}}};
+</script>
+<link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+
+<div class="rail"><div class="rail-fill" id="railFill"></div></div>
+<div class="frame">
+  <span class="corner tl"></span><span class="corner tr"></span>
+  <span class="corner bl"></span><span class="corner br"></span>
+  <span class="tick" style="top:13.3rem;right:var(--page-padding);"></span>
+  <span class="tick" style="bottom:6.4rem;right:var(--page-padding);"></span>
+  <span class="edge-letter" style="top:33.5rem;">S</span>
+  <span class="edge-letter" style="top:39rem;">G</span>
+  <span class="edge-letter" style="top:44.5rem;">G</span>
+</div>
+
+<header class="nav">
+  <div class="nav-left flex items-center gap-3">
+    <span class="mono text-[.72rem] tracking-[.14em]">ON</span>
+    <span class="eq"><span></span><span></span><span></span><span></span></span>
+  </div>
+  <a href="../index.html" class="display wordmark">SIGNATURE<br>GALLERY GROUP</a>
+  <div class="nav-right flex items-center gap-[3.25rem]">
+    <button class="flex items-center gap-3" data-menu-open>
+      <span class="dotgrid"><i></i><i></i><i></i><i></i></span>
+      <span class="nav-menu-label text-[.78rem] tracking-[.09em]">MENU</span>
+    </button>
+    <a href="../index.html#contact" class="btn-pill">CONTACT</a>
+  </div>
+</header>
+
+<div class="menu-overlay" id="menuOverlay">
+  <button class="menu-close" data-menu-close aria-label="Close menu">&#10005;</button>
+  <nav class="text-center">
+    <a href="../artists.html" class="display text-[clamp(1.8rem,4vw,3rem)]">All Artists</a>
+    <a href="../index.html#releases" class="display text-[clamp(1.8rem,4vw,3rem)]">New Releases</a>
+    <a href="../index.html#events" class="display text-[clamp(1.8rem,4vw,3rem)]">Events</a>
+    <a href="../index.html#galleries" class="display text-[clamp(1.8rem,4vw,3rem)]">Galleries</a>
+    <a href="../index.html#contact" class="display text-[clamp(1.8rem,4vw,3rem)]">Contact</a>
+  </nav>
+</div>
+
+
+<main class="page-hero">
+  <div class="glow-purple-v"></div><div class="vignette"></div>
+
+  <section class="relative z-10 pad-content pt-[var(--pad-xh)] pb-[var(--pad-xxl)]">
+    <p class="crumb rv"><a href="../index.html">Home</a> &nbsp;/&nbsp; <a href="../artists.html">Artists</a> &nbsp;/&nbsp; Ruby Mazur</p>
+    <div class="mt-[var(--pad-l)] grid grid-cols-1 lg:grid-cols-[minmax(0,1fr)_minmax(0,.85fr)] gap-[var(--pad-xl)] items-center">
+      <div class="rv">
+        <h1 class="display display-tight text-[clamp(2.4rem,5vw,5.2rem)]">Ruby Mazur</h1>
+
+        <p class="mt-[var(--pad-m)] text-white/70 copy">Over the past 45 years, Ruby Mazur&#39;s innovative &amp; influential artistry has been displayed in galleries around the globe.</p>
+      </div>
+      <div class="rv">
+        <img src="../images/artists/ruby-mazur/_hero.jpg" alt="Ruby Mazur"
+             class="artist-hero-photo rounded-[1rem]"
+             style="filter:drop-shadow(0 40px 70px rgba(0,0,0,.75));">
+      </div>
+    </div>
+  </section>
+
+  <section class="relative z-10 pad-content pb-[var(--pad-xxl)]">
+    <h2 class="display h-section rv">Upcoming Events</h2>
+    <div class="mt-[var(--pad-l)] grid grid-cols-1 md:grid-cols-2 gap-[var(--pad-s)]">
+      <div class="card p-[var(--pad-l)] rv">
+        <p class="text-white/60 copy">No scheduled appearances at this time. Contact a gallery to be notified
+          when this artist's next show is announced.</p>
+        <a href="../index.html#galleries" class="btn-ghost mt-[var(--pad-m)]">CONTACT A GALLERY</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="relative z-10 pad-content pb-[var(--pad-xxh)]">
+    <h2 class="display h-section rv">Catalogue</h2>
+    <p class="mt-[var(--pad-s)] text-white/60 copy rv">91 works. Select a piece to view it larger. Contact a gallery for availability and pricing.</p>
+    <div class="mt-[var(--pad-xl)] grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-[var(--pad-xs)]">
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/ruby-mazur/000.jpg" data-lb-caption="Vroooom.jpg &mdash; Ruby Mazur">
+        <img src="../images/artists/ruby-mazur/thumb/000.jpg" alt="Vroooom.jpg" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Vroooom.jpg</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/ruby-mazur/001.jpg" data-lb-caption="_DSC0893 &mdash; Ruby Mazur">
+        <img src="../images/artists/ruby-mazur/thumb/001.jpg" alt="_DSC0893" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">_DSC0893</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/ruby-mazur/002.jpg" data-lb-caption="WILLIE NELSON &mdash; Ruby Mazur">
+        <img src="../images/artists/ruby-mazur/thumb/002.jpg" alt="WILLIE NELSON" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">WILLIE NELSON</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/ruby-mazur/003.jpg" data-lb-caption="Willie Nelson #2 &mdash; Ruby Mazur">
+        <img src="../images/artists/ruby-mazur/thumb/003.jpg" alt="Willie Nelson #2" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Willie Nelson #2</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/ruby-mazur/004.jpg" data-lb-caption="VW &mdash; Ruby Mazur">
+        <img src="../images/artists/ruby-mazur/thumb/004.jpg" alt="VW" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">VW</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/ruby-mazur/005.jpg" data-lb-caption="Van Halen &mdash; Ruby Mazur">
+        <img src="../images/artists/ruby-mazur/thumb/005.jpg" alt="Van Halen" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Van Halen</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/ruby-mazur/006.jpg" data-lb-caption="U2 &mdash; Ruby Mazur">
+        <img src="../images/artists/ruby-mazur/thumb/006.jpg" alt="U2" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">U2</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/ruby-mazur/007.jpg" data-lb-caption="Turtle &mdash; Ruby Mazur">
+        <img src="../images/artists/ruby-mazur/thumb/007.jpg" alt="Turtle" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Turtle</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/ruby-mazur/008.jpg" data-lb-caption="TUMBLING DICE &mdash; Ruby Mazur">
+        <img src="../images/artists/ruby-mazur/thumb/008.jpg" alt="TUMBLING DICE" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">TUMBLING DICE</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/ruby-mazur/009.jpg" data-lb-caption="Traveling Wilburys &mdash; Ruby Mazur">
+        <img src="../images/artists/ruby-mazur/thumb/009.jpg" alt="Traveling Wilburys" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Traveling Wilburys</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/ruby-mazur/010.jpg" data-lb-caption="TOM PETTY &mdash; Ruby Mazur">
+        <img src="../images/artists/ruby-mazur/thumb/010.jpg" alt="TOM PETTY" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">TOM PETTY</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/ruby-mazur/011.jpg" data-lb-caption="The RnR Last Supper &mdash; Ruby Mazur">
+        <img src="../images/artists/ruby-mazur/thumb/011.jpg" alt="The RnR Last Supper" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">The RnR Last Supper</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/ruby-mazur/012.jpg" data-lb-caption="The Last Supper Color &mdash; Ruby Mazur">
+        <img src="../images/artists/ruby-mazur/thumb/012.jpg" alt="The Last Supper Color" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">The Last Supper Color</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/ruby-mazur/013.jpg" data-lb-caption="The Dye &mdash; Ruby Mazur">
+        <img src="../images/artists/ruby-mazur/thumb/013.jpg" alt="The Dye" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">The Dye</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/ruby-mazur/014.jpg" data-lb-caption="Stevie Ray Vaughan &mdash; Ruby Mazur">
+        <img src="../images/artists/ruby-mazur/thumb/014.jpg" alt="Stevie Ray Vaughan" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Stevie Ray Vaughan</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/ruby-mazur/015.jpg" data-lb-caption="Steven Tyler Dream On &mdash; Ruby Mazur">
+        <img src="../images/artists/ruby-mazur/thumb/015.jpg" alt="Steven Tyler Dream On" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Steven Tyler Dream On</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/ruby-mazur/016.jpg" data-lb-caption="Steven Steven Steven &mdash; Ruby Mazur">
+        <img src="../images/artists/ruby-mazur/thumb/016.jpg" alt="Steven Steven Steven" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Steven Steven Steven</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/ruby-mazur/017.jpg" data-lb-caption="Steven Portrait &mdash; Ruby Mazur">
+        <img src="../images/artists/ruby-mazur/thumb/017.jpg" alt="Steven Portrait" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Steven Portrait</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/ruby-mazur/018.jpg" data-lb-caption="STEELY DAN &mdash; Ruby Mazur">
+        <img src="../images/artists/ruby-mazur/thumb/018.jpg" alt="STEELY DAN" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">STEELY DAN</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/ruby-mazur/019.jpg" data-lb-caption="SIR ELTON JOHN &mdash; Ruby Mazur">
+        <img src="../images/artists/ruby-mazur/thumb/019.jpg" alt="SIR ELTON JOHN" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">SIR ELTON JOHN</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/ruby-mazur/020.jpg" data-lb-caption="SGT PEPPER HR &mdash; Ruby Mazur">
+        <img src="../images/artists/ruby-mazur/thumb/020.jpg" alt="SGT PEPPER HR" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">SGT PEPPER HR</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/ruby-mazur/021.jpg" data-lb-caption="SANTANA &mdash; Ruby Mazur">
+        <img src="../images/artists/ruby-mazur/thumb/021.jpg" alt="SANTANA" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">SANTANA</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/ruby-mazur/022.jpg" data-lb-caption="Rocketman &mdash; Ruby Mazur">
+        <img src="../images/artists/ruby-mazur/thumb/022.jpg" alt="Rocketman" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Rocketman</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/ruby-mazur/023.jpg" data-lb-caption="RAT PACK &mdash; Ruby Mazur">
+        <img src="../images/artists/ruby-mazur/thumb/023.jpg" alt="RAT PACK" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">RAT PACK</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/ruby-mazur/024.jpg" data-lb-caption="Purple Prince &mdash; Ruby Mazur">
+        <img src="../images/artists/ruby-mazur/thumb/024.jpg" alt="Purple Prince" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Purple Prince</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/ruby-mazur/025.jpg" data-lb-caption="Prince With Doves &mdash; Ruby Mazur">
+        <img src="../images/artists/ruby-mazur/thumb/025.jpg" alt="Prince With Doves" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Prince With Doves</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/ruby-mazur/026.jpg" data-lb-caption="Prince Tribute &mdash; Ruby Mazur">
+        <img src="../images/artists/ruby-mazur/thumb/026.jpg" alt="Prince Tribute" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Prince Tribute</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/ruby-mazur/027.jpg" data-lb-caption="Peter Gabriel &mdash; Ruby Mazur">
+        <img src="../images/artists/ruby-mazur/thumb/027.jpg" alt="Peter Gabriel" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Peter Gabriel</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/ruby-mazur/028.jpg" data-lb-caption="Peter Frampton &mdash; Ruby Mazur">
+        <img src="../images/artists/ruby-mazur/thumb/028.jpg" alt="Peter Frampton" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Peter Frampton</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/ruby-mazur/029.jpg" data-lb-caption="Nile Rodgers &mdash; Ruby Mazur">
+        <img src="../images/artists/ruby-mazur/thumb/029.jpg" alt="Nile Rodgers" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Nile Rodgers</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/ruby-mazur/030.jpg" data-lb-caption="Mouth And Tongue Rock N Roll &mdash; Ruby Mazur">
+        <img src="../images/artists/ruby-mazur/thumb/030.jpg" alt="Mouth And Tongue Rock N Roll" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Mouth And Tongue Rock N Roll</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/ruby-mazur/031.jpg" data-lb-caption="Mouth And Tongue Rainbow &mdash; Ruby Mazur">
+        <img src="../images/artists/ruby-mazur/thumb/031.jpg" alt="Mouth And Tongue Rainbow" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Mouth And Tongue Rainbow</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/ruby-mazur/032.jpg" data-lb-caption="Mouth And Tongue Dripping &mdash; Ruby Mazur">
+        <img src="../images/artists/ruby-mazur/thumb/032.jpg" alt="Mouth And Tongue Dripping" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Mouth And Tongue Dripping</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/ruby-mazur/033.jpg" data-lb-caption="Mouth And Tongue Blah &mdash; Ruby Mazur">
+        <img src="../images/artists/ruby-mazur/thumb/033.jpg" alt="Mouth And Tongue Blah" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Mouth And Tongue Blah</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/ruby-mazur/034.jpg" data-lb-caption="MOUTH &amp; TONGUE COLLAGE HR &mdash; Ruby Mazur">
+        <img src="../images/artists/ruby-mazur/thumb/034.jpg" alt="MOUTH &amp; TONGUE COLLAGE HR" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">MOUTH &amp; TONGUE COLLAGE HR</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/ruby-mazur/035.jpg" data-lb-caption="Motley Crue &mdash; Ruby Mazur">
+        <img src="../images/artists/ruby-mazur/thumb/035.jpg" alt="Motley Crue" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Motley Crue</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/ruby-mazur/036.jpg" data-lb-caption="Mick Tails &mdash; Ruby Mazur">
+        <img src="../images/artists/ruby-mazur/thumb/036.jpg" alt="Mick Tails" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Mick Tails</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/ruby-mazur/037.jpg" data-lb-caption="Michael Jackson &mdash; Ruby Mazur">
+        <img src="../images/artists/ruby-mazur/thumb/037.jpg" alt="Michael Jackson" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Michael Jackson</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/ruby-mazur/038.jpg" data-lb-caption="Lynyrd Skynyrd &mdash; Ruby Mazur">
+        <img src="../images/artists/ruby-mazur/thumb/038.jpg" alt="Lynyrd Skynyrd" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Lynyrd Skynyrd</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/ruby-mazur/039.jpg" data-lb-caption="LENNY KRAVITZ &mdash; Ruby Mazur">
+        <img src="../images/artists/ruby-mazur/thumb/039.jpg" alt="LENNY KRAVITZ" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">LENNY KRAVITZ</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/ruby-mazur/040.jpg" data-lb-caption="Last Supper RAP &mdash; Ruby Mazur">
+        <img src="../images/artists/ruby-mazur/thumb/040.jpg" alt="Last Supper RAP" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Last Supper RAP</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/ruby-mazur/041.jpg" data-lb-caption="KEITH paint it Black &mdash; Ruby Mazur">
+        <img src="../images/artists/ruby-mazur/thumb/041.jpg" alt="KEITH paint it Black" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">KEITH paint it Black</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/ruby-mazur/042.jpg" data-lb-caption="Keith In Red &mdash; Ruby Mazur">
+        <img src="../images/artists/ruby-mazur/thumb/042.jpg" alt="Keith In Red" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Keith In Red</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/ruby-mazur/043.jpg" data-lb-caption="KEITH RICHARD Sportrait &mdash; Ruby Mazur">
+        <img src="../images/artists/ruby-mazur/thumb/043.jpg" alt="KEITH RICHARD Sportrait" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">KEITH RICHARD Sportrait</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/ruby-mazur/044.jpg" data-lb-caption="JOHNNY CASH &mdash; Ruby Mazur">
+        <img src="../images/artists/ruby-mazur/thumb/044.jpg" alt="JOHNNY CASH" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">JOHNNY CASH</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/ruby-mazur/045.jpg" data-lb-caption="John Lennon Glasses &mdash; Ruby Mazur">
+        <img src="../images/artists/ruby-mazur/thumb/045.jpg" alt="John Lennon Glasses" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">John Lennon Glasses</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/ruby-mazur/046.jpg" data-lb-caption="Joe Walsh &mdash; Ruby Mazur">
+        <img src="../images/artists/ruby-mazur/thumb/046.jpg" alt="Joe Walsh" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Joe Walsh</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/ruby-mazur/047.jpg" data-lb-caption="Joe Cocker &mdash; Ruby Mazur">
+        <img src="../images/artists/ruby-mazur/thumb/047.jpg" alt="Joe Cocker" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Joe Cocker</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/ruby-mazur/048.jpg" data-lb-caption="JIMMY BUFFETT &mdash; Ruby Mazur">
+        <img src="../images/artists/ruby-mazur/thumb/048.jpg" alt="JIMMY BUFFETT" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">JIMMY BUFFETT</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/ruby-mazur/049.jpg" data-lb-caption="Jim Morrison &mdash; Ruby Mazur">
+        <img src="../images/artists/ruby-mazur/thumb/049.jpg" alt="Jim Morrison" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Jim Morrison</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/ruby-mazur/050.jpg" data-lb-caption="Jerry Garcia Tiedye &mdash; Ruby Mazur">
+        <img src="../images/artists/ruby-mazur/thumb/050.jpg" alt="Jerry Garcia Tiedye" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Jerry Garcia Tiedye</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/ruby-mazur/051.jpg" data-lb-caption="JERRY GARCIA &mdash; Ruby Mazur">
+        <img src="../images/artists/ruby-mazur/thumb/051.jpg" alt="JERRY GARCIA" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">JERRY GARCIA</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/ruby-mazur/052.jpg" data-lb-caption="Jeff Beck &mdash; Ruby Mazur">
+        <img src="../images/artists/ruby-mazur/thumb/052.jpg" alt="Jeff Beck" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Jeff Beck</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/ruby-mazur/053.jpg" data-lb-caption="Janis Joplin &mdash; Ruby Mazur">
+        <img src="../images/artists/ruby-mazur/thumb/053.jpg" alt="Janis Joplin" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Janis Joplin</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/ruby-mazur/054.jpg" data-lb-caption="HV-Slash &mdash; Ruby Mazur">
+        <img src="../images/artists/ruby-mazur/thumb/054.jpg" alt="HV-Slash" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">HV-Slash</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/ruby-mazur/055.jpg" data-lb-caption="High Volume Sweet Guitar &mdash; Ruby Mazur">
+        <img src="../images/artists/ruby-mazur/thumb/055.jpg" alt="High Volume Sweet Guitar" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">High Volume Sweet Guitar</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/ruby-mazur/056.jpg" data-lb-caption="High Volume Ronnie Van Zandt &mdash; Ruby Mazur">
+        <img src="../images/artists/ruby-mazur/thumb/056.jpg" alt="High Volume Ronnie Van Zandt" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">High Volume Ronnie Van Zandt</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/ruby-mazur/057.jpg" data-lb-caption="High Volume Rocky Horror &mdash; Ruby Mazur">
+        <img src="../images/artists/ruby-mazur/thumb/057.jpg" alt="High Volume Rocky Horror" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">High Volume Rocky Horror</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/ruby-mazur/058.jpg" data-lb-caption="High Volume Mouth And Tongue &mdash; Ruby Mazur">
+        <img src="../images/artists/ruby-mazur/thumb/058.jpg" alt="High Volume Mouth And Tongue" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">High Volume Mouth And Tongue</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/ruby-mazur/059.jpg" data-lb-caption="High Volume Led Zeplin &mdash; Ruby Mazur">
+        <img src="../images/artists/ruby-mazur/thumb/059.jpg" alt="High Volume Led Zeplin" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">High Volume Led Zeplin</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/ruby-mazur/060.jpg" data-lb-caption="High Volume Keith Urban &mdash; Ruby Mazur">
+        <img src="../images/artists/ruby-mazur/thumb/060.jpg" alt="High Volume Keith Urban" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">High Volume Keith Urban</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/ruby-mazur/061.jpg" data-lb-caption="High Volume Freddy Mercury &mdash; Ruby Mazur">
+        <img src="../images/artists/ruby-mazur/thumb/061.jpg" alt="High Volume Freddy Mercury" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">High Volume Freddy Mercury</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/ruby-mazur/062.jpg" data-lb-caption="High Volume Cyndi Lauper &mdash; Ruby Mazur">
+        <img src="../images/artists/ruby-mazur/thumb/062.jpg" alt="High Volume Cyndi Lauper" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">High Volume Cyndi Lauper</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/ruby-mazur/063.jpg" data-lb-caption="High Volume Bruno &mdash; Ruby Mazur">
+        <img src="../images/artists/ruby-mazur/thumb/063.jpg" alt="High Volume Bruno" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">High Volume Bruno</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/ruby-mazur/064.jpg" data-lb-caption="High Volume Alice Cooper &mdash; Ruby Mazur">
+        <img src="../images/artists/ruby-mazur/thumb/064.jpg" alt="High Volume Alice Cooper" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">High Volume Alice Cooper</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/ruby-mazur/065.jpg" data-lb-caption="Handcuffs &mdash; Ruby Mazur">
+        <img src="../images/artists/ruby-mazur/thumb/065.jpg" alt="Handcuffs" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Handcuffs</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/ruby-mazur/066.jpg" data-lb-caption="Gord Downie &mdash; Ruby Mazur">
+        <img src="../images/artists/ruby-mazur/thumb/066.jpg" alt="Gord Downie" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Gord Downie</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/ruby-mazur/067.jpg" data-lb-caption="George Thorogood &mdash; Ruby Mazur">
+        <img src="../images/artists/ruby-mazur/thumb/067.jpg" alt="George Thorogood" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">George Thorogood</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/ruby-mazur/068.jpg" data-lb-caption="George Michael &mdash; Ruby Mazur">
+        <img src="../images/artists/ruby-mazur/thumb/068.jpg" alt="George Michael" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">George Michael</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/ruby-mazur/069.jpg" data-lb-caption="FREDDIE MERCURY &mdash; Ruby Mazur">
+        <img src="../images/artists/ruby-mazur/thumb/069.jpg" alt="FREDDIE MERCURY" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">FREDDIE MERCURY</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/ruby-mazur/070.jpg" data-lb-caption="Elton &mdash; Ruby Mazur">
+        <img src="../images/artists/ruby-mazur/thumb/070.jpg" alt="Elton" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Elton</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/ruby-mazur/071.jpg" data-lb-caption="Don&#39;t Worry &mdash; Ruby Mazur">
+        <img src="../images/artists/ruby-mazur/thumb/071.jpg" alt="Don&#39;t Worry" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Don&#39;t Worry</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/ruby-mazur/072.jpg" data-lb-caption="Day Glow Young Mick &mdash; Ruby Mazur">
+        <img src="../images/artists/ruby-mazur/thumb/072.jpg" alt="Day Glow Young Mick" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Day Glow Young Mick</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/ruby-mazur/073.jpg" data-lb-caption="Day Glow Sir Paul &mdash; Ruby Mazur">
+        <img src="../images/artists/ruby-mazur/thumb/073.jpg" alt="Day Glow Sir Paul" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Day Glow Sir Paul</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/ruby-mazur/074.jpg" data-lb-caption="Dayglow Mouth And Tongue &mdash; Ruby Mazur">
+        <img src="../images/artists/ruby-mazur/thumb/074.jpg" alt="Dayglow Mouth And Tongue" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Dayglow Mouth And Tongue</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/ruby-mazur/075.jpg" data-lb-caption="Coldplay &mdash; Ruby Mazur">
+        <img src="../images/artists/ruby-mazur/thumb/075.jpg" alt="Coldplay" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Coldplay</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/ruby-mazur/076.jpg" data-lb-caption="CCR &mdash; Ruby Mazur">
+        <img src="../images/artists/ruby-mazur/thumb/076.jpg" alt="CCR" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">CCR</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/ruby-mazur/077.jpg" data-lb-caption="Cat Stevens &mdash; Ruby Mazur">
+        <img src="../images/artists/ruby-mazur/thumb/077.jpg" alt="Cat Stevens" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Cat Stevens</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/ruby-mazur/078.jpg" data-lb-caption="CARLOS SANTANA &mdash; Ruby Mazur">
+        <img src="../images/artists/ruby-mazur/thumb/078.jpg" alt="CARLOS SANTANA" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">CARLOS SANTANA</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/ruby-mazur/079.jpg" data-lb-caption="BUBBLE BLOWING BLONDIE &mdash; Ruby Mazur">
+        <img src="../images/artists/ruby-mazur/thumb/079.jpg" alt="BUBBLE BLOWING BLONDIE" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">BUBBLE BLOWING BLONDIE</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/ruby-mazur/080.jpg" data-lb-caption="Bruce And Clearnce &mdash; Ruby Mazur">
+        <img src="../images/artists/ruby-mazur/thumb/080.jpg" alt="Bruce And Clearnce" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Bruce And Clearnce</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/ruby-mazur/081.jpg" data-lb-caption="Bruce &mdash; Ruby Mazur">
+        <img src="../images/artists/ruby-mazur/thumb/081.jpg" alt="Bruce" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Bruce</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/ruby-mazur/082.jpg" data-lb-caption="Billy Joel &mdash; Ruby Mazur">
+        <img src="../images/artists/ruby-mazur/thumb/082.jpg" alt="Billy Joel" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Billy Joel</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/ruby-mazur/083.jpg" data-lb-caption="Before Time &mdash; Ruby Mazur">
+        <img src="../images/artists/ruby-mazur/thumb/083.jpg" alt="Before Time" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Before Time</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/ruby-mazur/084.jpg" data-lb-caption="Beach Boys &mdash; Ruby Mazur">
+        <img src="../images/artists/ruby-mazur/thumb/084.jpg" alt="Beach Boys" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Beach Boys</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/ruby-mazur/085.jpg" data-lb-caption="BB King &mdash; Ruby Mazur">
+        <img src="../images/artists/ruby-mazur/thumb/085.jpg" alt="BB King" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">BB King</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/ruby-mazur/086.jpg" data-lb-caption="NY Grafitti &mdash; Ruby Mazur">
+        <img src="../images/artists/ruby-mazur/thumb/086.jpg" alt="NY Grafitti" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">NY Grafitti</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/ruby-mazur/087.jpg" data-lb-caption="Animal Skin &mdash; Ruby Mazur">
+        <img src="../images/artists/ruby-mazur/thumb/087.jpg" alt="Animal Skin" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Animal Skin</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/ruby-mazur/088.jpg" data-lb-caption="Alice Cooper With Snake V01 &mdash; Ruby Mazur">
+        <img src="../images/artists/ruby-mazur/thumb/088.jpg" alt="Alice Cooper With Snake V01" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Alice Cooper With Snake V01</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/ruby-mazur/089.jpg" data-lb-caption="AL PACINO &mdash; Ruby Mazur">
+        <img src="../images/artists/ruby-mazur/thumb/089.jpg" alt="AL PACINO" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">AL PACINO</figcaption>
+      </figure>
+      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../images/artists/ruby-mazur/090.jpg" data-lb-caption="Mick &mdash; Ruby Mazur">
+        <img src="../images/artists/ruby-mazur/thumb/090.jpg" alt="Mick" loading="lazy" decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center">Mick</figcaption>
+      </figure>
+    </div>
+
+    <h2 class="display h-section mt-[var(--pad-xxl)] rv">More Artists</h2>
+    <div class="scroll-x mt-[var(--pad-l)] rv">
+      <div class="flex gap-[var(--pad-xs)] w-max pb-2">
+        <a href="angela-mia.html" class="card flex items-center gap-3 py-3 px-4 flex-none">
+          <img src="../images/artists/angela-mia/_card.jpg" alt="Angela Mia" loading="lazy" class="w-9 h-9 rounded-full object-cover border border-white/25">
+          <span class="text-[.92rem] whitespace-nowrap">Angela Mia</span>
+        </a>
+        <a href="david-wight.html" class="card flex items-center gap-3 py-3 px-4 flex-none">
+          <img src="../images/artists/david-wight/_card.jpg" alt="David Wight" loading="lazy" class="w-9 h-9 rounded-full object-cover border border-white/25">
+          <span class="text-[.92rem] whitespace-nowrap">David Wight</span>
+        </a>
+        <a href="jeff-vermeeren.html" class="card flex items-center gap-3 py-3 px-4 flex-none">
+          <img src="../images/artists/jeff-vermeeren/_card.jpg" alt="Jeff Vermeeren" loading="lazy" class="w-9 h-9 rounded-full object-cover border border-white/25">
+          <span class="text-[.92rem] whitespace-nowrap">Jeff Vermeeren</span>
+        </a>
+        <a href="joseph-capicotto.html" class="card flex items-center gap-3 py-3 px-4 flex-none">
+          <img src="../images/artists/joseph-capicotto/_card.jpg" alt="Joseph Capicotto" loading="lazy" class="w-9 h-9 rounded-full object-cover border border-white/25">
+          <span class="text-[.92rem] whitespace-nowrap">Joseph Capicotto</span>
+        </a>
+        <a href="michael-godard.html" class="card flex items-center gap-3 py-3 px-4 flex-none">
+          <img src="../images/artists/michael-godard/_card.jpg" alt="Michael Godard" loading="lazy" class="w-9 h-9 rounded-full object-cover border border-white/25">
+          <span class="text-[.92rem] whitespace-nowrap">Michael Godard</span>
+        </a>
+        <a href="nano-lopez.html" class="card flex items-center gap-3 py-3 px-4 flex-none">
+          <img src="../images/artists/nano-lopez/_card.jpg" alt="Nano Lopez" loading="lazy" class="w-9 h-9 rounded-full object-cover border border-white/25">
+          <span class="text-[.92rem] whitespace-nowrap">Nano Lopez</span>
+        </a>
+        <a href="oryan.html" class="card flex items-center gap-3 py-3 px-4 flex-none">
+          <img src="../images/artists/oryan/_card.jpg" alt="Oryan" loading="lazy" class="w-9 h-9 rounded-full object-cover border border-white/25">
+          <span class="text-[.92rem] whitespace-nowrap">Oryan</span>
+        </a>
+        <a href="tom-everhart.html" class="card flex items-center gap-3 py-3 px-4 flex-none">
+          <img src="../images/artists/tom-everhart/_card.jpg" alt="Tom Everhart" loading="lazy" class="w-9 h-9 rounded-full object-cover border border-white/25">
+          <span class="text-[.92rem] whitespace-nowrap">Tom Everhart</span>
+        </a>
+        <a href="walfrido.html" class="card flex items-center gap-3 py-3 px-4 flex-none">
+          <img src="../images/artists/walfrido/_card.jpg" alt="Walfrido" loading="lazy" class="w-9 h-9 rounded-full object-cover border border-white/25">
+          <span class="text-[.92rem] whitespace-nowrap">Walfrido</span>
+        </a>
+        <a href="wyland.html" class="card flex items-center gap-3 py-3 px-4 flex-none">
+          <img src="../images/artists/wyland/_card.jpg" alt="Wyland" loading="lazy" class="w-9 h-9 rounded-full object-cover border border-white/25">
+          <span class="text-[.92rem] whitespace-nowrap">Wyland</span>
+        </a>
+        <a href="2wild.html" class="card flex items-center gap-3 py-3 px-4 flex-none">
+          <img src="../images/artists/2wild/_card.jpg" alt="2Wild" loading="lazy" class="w-9 h-9 rounded-full object-cover border border-white/25">
+          <span class="text-[.92rem] whitespace-nowrap">2Wild</span>
+        </a>
+        <a href="advait-kolarkar.html" class="card flex items-center gap-3 py-3 px-4 flex-none">
+          <img src="../images/artists/advait-kolarkar/_card.jpg" alt="Advait Kolarkar" loading="lazy" class="w-9 h-9 rounded-full object-cover border border-white/25">
+          <span class="text-[.92rem] whitespace-nowrap">Advait Kolarkar</span>
+        </a>
+      </div>
+    </div>
+    <a href="../artists.html" class="btn-ghost mt-[var(--pad-l)] rv">VIEW ALL ARTISTS</a>
+  </section>
+</main>
+
+<div class="lightbox" id="lightbox">
+  <img alt="">
+  <p class="mono text-[.72rem] tracking-[.13em] uppercase text-white/70" data-lb-caption></p>
+</div>
+
+<footer id="contact" class="relative pt-[var(--pad-xxh)] pb-[var(--pad-xh)] overflow-hidden">
+  <div class="glow-grey opacity-45"></div>
+  <div class="vignette"></div>
+  <div class="relative z-10 pad-content">
+    <div class="max-w-[35rem] mx-auto text-center rv">
+      <h2 class="display h-section">Join Us</h2>
+      <p class="mt-[var(--pad-s)] text-white/70 copy">
+        Join the community and be the first to know about new releases, upcoming art shows and artist appearances at our galleries.
+      </p>
+      <form class="mt-[var(--pad-l)]" data-sgg-signup>
+        <input class="field" type="email" name="email" required placeholder="Your email address" aria-label="Your email address">
+        <button class="btn-pill w-full mt-[var(--pad-s)] text-[.82rem]">REGISTER</button>
+        <p class="mt-[var(--pad-s)] text-[.82rem] text-taste2" data-sgg-signup-msg hidden></p>
+      </form>
+      <p class="mt-[var(--pad-s)] text-[.82rem] text-white/55">
+        By registering you agree to our <a href="#contact" class="underline">privacy policy</a>
+      </p>
+      <div class="socials">
+      <a href="https://www.instagram.com/signaturegallerieslv/?hl=en" target="_blank" rel="noopener" aria-label="Signature Galleries on Instagram"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1.1" fill="currentColor" stroke="none"/></svg></a>
+      <a href="https://www.facebook.com/Signaturegalleryinlasvegas" target="_blank" rel="noopener" aria-label="Signature Galleries on Facebook"><svg width="19" height="19" viewBox="0 0 24 24" fill="currentColor"><path d="M14 8.5V7.2c0-.7.2-1.1 1.2-1.1H17V3.2A18 18 0 0 0 14.6 3C12.3 3 10.8 4.4 10.8 7v1.5H8.4V12h2.4v9h3.2v-9h2.5l.4-3.5H14z"/></svg></a>
+    </div>
+      <p class="mt-[var(--pad-l)] mono text-[.68rem] tracking-[.13em] text-white/45 uppercase">
+        Corporate office &middot; <a href="mailto:info@signaturegalleries.com?subject=Enquiry%20for%20Signature%20Gallery%20Group&amp;body=Hello%20Signature%20Gallery%20Group%2C%0D%0A%0D%0A" class="underline">info@signaturegalleries.com</a>
+      </p>
+      <p class="mt-[var(--pad-xs)] mono text-[.68rem] tracking-[.13em] text-white/45 uppercase">&copy; 2026 Signature Gallery Group</p>
+    </div>
+    <div class="mt-[var(--pad-xh)] max-w-[52rem] mx-auto legalbar px-[var(--pad-s)] py-[var(--pad-xs)] flex flex-wrap items-center justify-center gap-x-[var(--pad-l)] gap-y-[var(--pad-xs)] rv">
+      <a href="../artists.html" class="border border-white/40 rounded-[.25rem] px-4 py-2 text-[.72rem] tracking-[.1em] uppercase">Artists</a>
+      <a href="../index.html#events" class="text-[.72rem] tracking-[.1em] uppercase text-white/70 hover:text-white transition-colors">Events</a>
+      <a href="../index.html#galleries" class="text-[.72rem] tracking-[.1em] uppercase text-white/70 hover:text-white transition-colors">Galleries</a>
+      <a href="../index.html#contact" class="text-[.72rem] tracking-[.1em] uppercase text-white/70 hover:text-white transition-colors">Shop</a>
+      <a href="../index.html#contact" class="border border-white/40 rounded-[.25rem] px-4 py-2 text-[.72rem] tracking-[.1em] uppercase">Contact</a>
+    </div>
+    <p class="mt-[var(--pad-l)] text-center text-[.78rem] text-white/40">
+      Signature Gallery Group, a managing and accounting company.
+    </p>
+    <p class="mt-[var(--pad-xs)] text-center text-[.78rem] text-white/40">
+      Created by <span class="underline">Giancarlo Capicotto</span>
+    </p>
+  </div>
+</footer>
+
+<script src="../assets/site.js"></script>
+<script src="../assets/track.js" defer></script>
+</body>
+</html>
+

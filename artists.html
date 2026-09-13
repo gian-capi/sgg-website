@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>All Artists — Signature Gallery Group</title>
+<meta name="description" content="Every artist represented by Wyland Galleries and Signature Galleries.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,75..125,100..900;1,75..125,100..900&family=Geist:wght@100..900&family=Geist+Mono:wght@100..900&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config={theme:{extend:{colors:{taste1:'#3D2B68',taste2:'#9089D3'},
+fontFamily:{body:['Geist','Arial','sans-serif'],head:['Archivo','Arial','sans-serif'],mono:['Geist Mono','Arial','sans-serif']}}}};
+</script>
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+
+<div class="rail"><div class="rail-fill" id="railFill"></div></div>
+<div class="frame">
+  <span class="corner tl"></span><span class="corner tr"></span>
+  <span class="corner bl"></span><span class="corner br"></span>
+  <span class="tick" style="top:13.3rem;right:var(--page-padding);"></span>
+  <span class="tick" style="bottom:6.4rem;right:var(--page-padding);"></span>
+  <span class="edge-letter" style="top:33.5rem;">S</span>
+  <span class="edge-letter" style="top:39rem;">G</span>
+  <span class="edge-letter" style="top:44.5rem;">G</span>
+</div>
+
+<header class="nav">
+  <div class="nav-left flex items-center gap-3">
+    <span class="mono text-[.72rem] tracking-[.14em]">ON</span>
+    <span class="eq"><span></span><span></span><span></span><span></span></span>
+  </div>
+  <a href="index.html" class="display wordmark">SIGNATURE<br>GALLERY GROUP</a>
+  <div class="nav-right flex items-center gap-[3.25rem]">
+    <button class="flex items-center gap-3" data-menu-open>
+      <span class="dotgrid"><i></i><i></i><i></i><i></i></span>
+      <span class="nav-menu-label text-[.78rem] tracking-[.09em]">MENU</span>
+    </button>
+    <a href="index.html#contact" class="btn-pill">CONTACT</a>
+  </div>
+</header>
+
+<div class="menu-overlay" id="menuOverlay">
+  <button class="menu-close" data-menu-close aria-label="Close menu">&#10005;</button>
+  <nav class="text-center">
+    <a href="artists.html" class="display text-[clamp(1.8rem,4vw,3rem)]">All Artists</a>
+    <a href="index.html#releases" class="display text-[clamp(1.8rem,4vw,3rem)]">New Releases</a>
+    <a href="index.html#events" class="display text-[clamp(1.8rem,4vw,3rem)]">Events</a>
+    <a href="index.html#galleries" class="display text-[clamp(1.8rem,4vw,3rem)]">Galleries</a>
+    <a href="index.html#contact" class="display text-[clamp(1.8rem,4vw,3rem)]">Contact</a>
+  </nav>
+</div>
+
+
+<main class="page-hero">
+  <div class="glow-purple-v"></div><div class="vignette"></div>
+  <section class="relative z-10 pad-content pt-[var(--pad-xh)] pb-[var(--pad-xxh)]">
+    <p class="crumb rv"><a href="index.html">Home</a> &nbsp;/&nbsp; Artists</p>
+    <h1 class="display display-tight h-poster mt-[var(--pad-l)] rv">Artists</h1>
+    <p class="mt-[var(--pad-m)] text-white/70 copy max-w-[34rem] rv">
+      56 artists represented across our five galleries. Select an artist to view
+      their biography, upcoming appearances and full catalogue.
+    </p>
+    <div class="mt-[var(--pad-xh)] grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-[var(--pad-s)]">
+      <a href="artist/angela-mia.html" class="artist-card card p-[var(--pad-xs)] block rv">
+        <div class="shot shot-square"><img src="images/artists/angela-mia/_card.jpg" alt="Angela Mia" loading="lazy"></div>
+        <div class="px-[.35rem] pt-[var(--pad-xs)] pb-[.35rem]">
+          <p class="display text-[1.16rem] leading-none">Angela Mia</p>
+          <p class="text-[.78rem] text-white/50 mt-1">Figurative bronze sculpture</p>
+        </div>
+      </a>
+      <a href="artist/david-wight.html" class="artist-card card p-[var(--pad-xs)] block rv">
+        <div class="shot shot-square"><img src="images/artists/david-wight/_card.jpg" alt="David Wight" loading="lazy"></div>
+        <div class="px-[.35rem] pt-[var(--pad-xs)] pb-[.35rem]">
+          <p class="display text-[1.16rem] leading-none">David Wight</p>
+          <p class="text-[.78rem] text-white/50 mt-1">Hand-sculpted glass</p>
+        </div>
+      </a>
+      <a href="artist/jeff-vermeeren.html" class="artist-card card p-[var(--pad-xs)] block rv">
+        <div class="shot shot-square"><img src="images/artists/jeff-vermeeren/_card.jpg" alt="Jeff Vermeeren" loading="lazy"></div>
+        <div class="px-[.35rem] pt-[var(--pad-xs)] pb-[.35rem]">
+          <p class="display text-[1.16rem] leading-none">Jeff Vermeeren</p>
+          <p class="text-[.78rem] text-white/50 mt-1">Extreme abstract</p>
+        </div>
+      </a>
+      <a href="artist/joseph-capicotto.html" class="artist-card card p-[var(--pad-xs)] block rv">
+        <div class="shot shot-square"><img src="images/artists/joseph-capicotto/_card.jpg" alt="Joseph Capicotto" loading="lazy"></div>
+        <div class="px-[.35rem] pt-[var(--pad-xs)] pb-[.35rem]">
+          <p class="display text-[1.16rem] leading-none">Joseph Capicotto</p>
+          <p class="text-[.78rem] text-white/50 mt-1">Figures, encaustic and mixed media</p>
+        </div>
+      </a>
+      <a href="artist/michael-godard.html" class="artist-card card p-[var(--pad-xs)] block rv">
+        <div class="shot shot-square"><img src="images/artists/michael-godard/_card.jpg" alt="Michael Godard" loading="lazy"></div>
+        <div class="px-[.35rem] pt-[var(--pad-xs)] pb-[.35rem]">
+          <p class="display text-[1.16rem] leading-none">Michael Godard</p>
+          <p class="text-[.78rem] text-white/50 mt-1">The Rock Star of the Art World</p>
+        </div>
+      </a>
+      <a href="artist/nano-lopez.html" class="artist-card card p-[var(--pad-xs)] block rv">
+        <div class="shot shot-square"><img src="images/artists/nano-lopez/_card.jpg" alt="Nano Lopez" loading="lazy"></div>
+        <div class="px-[.35rem] pt-[var(--pad-xs)] pb-[.35rem]">
+          <p class="display text-[1.16rem] leading-none">Nano Lopez</p>
+          <p class="text-[.78rem] text-white/50 mt-1">Bronze sculpture</p>
+        </div>
+      </a>
+      <a href="artist/oryan.html" class="artist-card card p-[var(--pad-xs)] block rv">
+        <div class="shot shot-square"><img src="images/artists/oryan/_card.jpg" alt="Oryan" loading="lazy"></div>
+        <div class="px-[.35rem] pt-[var(--pad-xs)] pb-[.35rem]">
+          <p class="display text-[1.16rem] leading-none">Oryan</p>
+          <p class="text-[.78rem] text-white/50 mt-1">Liquid Fusion</p>
+        </div>
+      </a>
+      <a href="artist/tom-everhart.html" class="artist-card card p-[var(--pad-xs)] block rv">
+        <div class="shot shot-square"><img src="images/artists/tom-everhart/_card.jpg" alt="Tom Everhart" loading="lazy"></div>
+        <div class="px-[.35rem] pt-[var(--pad-xs)] pb-[.35rem]">
+          <p class="display text-[1.16rem] leading-none">Tom Everhart</p>
+          <p class="text-[.78rem] text-white/50 mt-1">Authorised by Charles M. Schulz</p>
+        </div>
+      </a>
+      <a href="artist/walfrido.html" class="artist-card card p-[var(--pad-xs)] block rv">
+        <div class="shot shot-square"><img src="images/artists/walfrido/_card.jpg" alt="Walfrido" loading="lazy"></div>
+        <div class="px-[.35rem] pt-[var(--pad-xs)] pb-[.35rem]">
+          <p class="display text-[1.16rem] leading-none">Walfrido</p>
+          <p class="text-[.78rem] text-white/50 mt-1">Romantic Realism seascapes</p>
+        </div>
+      </a>
+      <a href="artist/wyland.html" class="artist-card card p-[var(--pad-xs)] block rv">
+        <div class="shot shot-square"><img src="images/artists/wyland/_card.jpg" alt="Wyland" loading="lazy"></div>
+        <div class="px-[.35rem] pt-[var(--pad-xs)] pb-[.35rem]">
+          <p class="display text-[1.16rem] leading-none">Wyland</p>
+          <p class="text-[.78rem] text-white/50 mt-1">Marine life artist</p>
+        </div>
+      </a>
+      <a href="artist/2wild.html" class="artist-card card p-[var(--pad-xs)] block rv">
+        <div class="shot shot-square"><img src="images/artists/2wild/_card.jpg" alt="2Wild" loading="lazy"></div>
+        <div class="px-[.35rem] pt-[var(--pad-xs)] pb-[.35rem]">
+          <p class="display text-[1.16rem] leading-none">2Wild</p>
+          <p class="text-[.78rem] text-white/40 mt-1">11 works</p>
+        </div>
+      </a>
+      <a href="artist/advait-kolarkar.html" class="artist-card card p-[var(--pad-xs)] block rv">
+        <div class="shot shot-square"><img src="images/artists/advait-kolarkar/_card.jpg" alt="Advait Kolarkar" loading="lazy"></div>
+        <div class="px-[.35rem] pt-[var(--pad-xs)] pb-[.35rem]">
+          <p class="display text-[1.16rem] leading-none">Advait Kolarkar</p>
+          <p class="text-[.78rem] text-white/40 mt-1">0 works</p>
+        </div>
+      </a>
+      <a href="artist/alan-hunt.html" class="artist-card card p-[var(--pad-xs)] block rv">
+        <div class="shot shot-square"><img src="images/artists/alan-hunt/_card.jpg" alt="Alan Hunt" loading="lazy"></div>
+        <div class="px-[.35rem] pt-[var(--pad-xs)] pb-[.35rem]">
+          <p class="display text-[1.16rem] leading-none">Alan Hunt</p>
+          <p class="text-[.78rem] text-white/40 mt-1">7 works</p>
+        </div>
+      </a>
+      <a href="artist/alexei-butirskiy.html" class="artist-card card p-[var(--pad-xs)] block rv">
+        <div class="shot shot-square"><img src="images/artists/alexei-butirskiy/_card.jpg" alt="Alexei Butirskiy" loading="lazy"></div>
+        <div class="px-[.35rem] pt-[var(--pad-xs)] pb-[.35rem]">
+          <p class="display text-[1.16rem] leading-none">Alexei Butirskiy</p>
+          <p class="text-[.78rem] text-white/50 mt-1">Atmospheric cityscapes</p>
+        </div>
+      </a>
+      <a href="artist/anita-lewis.html" class="artist-card card p-[var(--pad-xs)] block rv">
+        <div class="shot shot-square"><img src="images/artists/anita-lewis/_card.jpg" alt="Anita Lewis" loading="lazy"></div>
+        <div class="px-[.35rem] pt-[var(--pad-xs)] pb-[.35rem]">
+          <p class="display text-[1.16rem] leading-none">Anita Lewis</p>
+          <p class="text-[.78rem] text-white/40 mt-1">21 works</p>
+        </div>
+      </a>
+      <a href="artist/armen-hunanyan.html" class="artist-card card p-[var(--pad-xs)] block rv">
+        <div class="shot shot-square"><img src="images/artists/armen-hunanyan/_card.jpg" alt="Armen Hunanyan" loading="lazy"></div>
+        <div class="px-[.35rem] pt-[var(--pad-xs)] pb-[.35rem]">
+          <p class="display text-[1.16rem] leading-none">Armen Hunanyan</p>
+          <p class="text-[.78rem] text-white/40 mt-1">12 works</p>
+        </div>
+      </a>
+      <a href="artist/barry-entner.html" class="artist-card card p-[var(--pad-xs)] block rv">
+        <div class="shot shot-square"><img src="images/artists/barry-entner/_card.jpg" alt="Barry Entner" loading="lazy"></div>
+        <div class="px-[.35rem] pt-[var(--pad-xs)] pb-[.35rem]">
+          <p class="display text-[1.16rem] leading-none">Barry Entner</p>
+          <p class="text-[.78rem] text-white/40 mt-1">10 works</p>
+        </div>
+      </a>
+      <a href="artist/clarita-brinkerhoff.html" class="artist-card card p-[var(--pad-xs)] block rv">
+        <div class="shot shot-square"><img src="images/artists/clarita-brinkerhoff/_card.jpg" alt="Clarita Brinkerhoff" loading="lazy"></div>
+        <div class="px-[.35rem] pt-[var(--pad-xs)] pb-[.35rem]">
+          <p class="display text-[1.16rem] leading-none">Clarita Brinkerhoff</p>
+          <p class="text-[.78rem] text-white/40 mt-1">25 works</p>
+        </div>
+      </a>
+      <a href="artist/craig-helmich.html" class="artist-card card p-[var(--pad-xs)] block rv">
+        <div class="shot shot-square"><img src="images/artists/craig-helmich/_card.jpg" alt="Craig Helmich" loading="lazy"></div>
+        <div class="px-[.35rem] pt-[var(--pad-xs)] pb-[.35rem]">
+          <p class="display text-[1.16rem] leading-none">Craig Helmich</p>
+          <p class="text-[.78rem] text-white/40 mt-1">57 works</p>
+        </div>
+      </a>
+      <a href="artist/dale-mathis.html" class="artist-card card p-[var(--pad-xs)] block rv">
+        <div class="shot shot-square"><img src="images/artists/dale-mathis/_card.jpg" alt="Dale Mathis" loading="lazy"></div>
+        <div class="px-[.35rem] pt-[var(--pad-xs)] pb-[.35rem]">
+          <p class="display text-[1.16rem] leading-none">Dale Mathis</p>
+          <p class="text-[.78rem] text-white/40 mt-1">25 works</p>
+        </div>
+      </a>
+      <a href="artist/david-goldhagen.html" class="artist-card card p-[var(--pad-xs)] block rv">
+        <div class="shot shot-square"><img src="images/artists/david-goldhagen/_card.jpg" alt="David Goldhagen" loading="lazy"></div>
+        <div class="px-[.35rem] pt-[var(--pad-xs)] pb-[.35rem]">
+          <p class="display text-[1.16rem] leading-none">David Goldhagen</p>
+          <p class="text-[.78rem] text-white/40 mt-1">14 works</p>
+        </div>
+      </a>
+      <a href="artist/dennis-mathewson.html" class="artist-card card p-[var(--pad-xs)] block rv">
+        <div class="shot shot-square"><img src="images/artists/dennis-mathewson/_card.jpg" alt="Dennis Mathewson" loading="lazy"></div>
+        <div class="px-[.35rem] pt-[var(--pad-xs)] pb-[.35rem]">
+          <p class="display text-[1.16rem] leading-none">Dennis Mathewson</p>
+          <p class="text-[.78rem] text-white/40 mt-1">10 works</p>
+        </div>
+      </a>
+      <a href="artist/dino-rosin.html" class="artist-card card p-[var(--pad-xs)] block rv">
+        <div class="shot shot-square"><img src="images/artists/dino-rosin/_card.jpg" alt="Dino Rosin" loading="lazy"></div>
+        <div class="px-[.35rem] pt-[var(--pad-xs)] pb-[.35rem]">
+          <p class="display text-[1.16rem] leading-none">Dino Rosin</p>
+          <p class="text-[.78rem] text-white/40 mt-1">8 works</p>
+        </div>
+      </a>
+      <a href="artist/disney.html" class="artist-card card p-[var(--pad-xs)] block rv">
+        <div class="shot shot-square"><img src="images/artists/disney/000.jpg" alt="Disney Treasures" loading="lazy"></div>
+        <div class="px-[.35rem] pt-[var(--pad-xs)] pb-[.35rem]">
+          <p class="display text-[1.16rem] leading-none">Disney Treasures</p>
+          <p class="text-[.78rem] text-white/40 mt-1">39 works</p>
+        </div>
+      </a>
+      <a href="artist/dr-seuss-2.html" class="artist-card card p-[var(--pad-xs)] block rv">
+        <div class="shot shot-square"><img src="images/artists/dr-seuss-2/_card.jpg" alt="Dr. Seuss" loading="lazy"></div>
+        <div class="px-[.35rem] pt-[var(--pad-xs)] pb-[.35rem]">
+          <p class="display text-[1.16rem] leading-none">Dr. Seuss</p>
+          <p class="text-[.78rem] text-white/40 mt-1">4 works</p>
+        </div>
+      </a>
+      <a href="artist/eric-christensen.html" class="artist-card card p-[var(--pad-xs)] block rv">
+        <div class="shot shot-square"><img src="images/artists/eric-christensen/_card.jpg" alt="Eric Christensen" loading="lazy"></div>
+        <div class="px-[.35rem] pt-[var(--pad-xs)] pb-[.35rem]">
+          <p class="display text-[1.16rem] leading-none">Eric Christensen</p>
+          <p class="text-[.78rem] text-white/40 mt-1">32 works</p>
+        </div>
+      </a>
+      <a href="artist/fabio-napoleoni.html" class="artist-card card p-[var(--pad-xs)] block rv">
+        <div class="shot shot-square"><img src="images/artists/fabio-napoleoni/_card.jpg" alt="Fabio Napoleoni" loading="lazy"></div>
+        <div class="px-[.35rem] pt-[var(--pad-xs)] pb-[.35rem]">
+          <p class="display text-[1.16rem] leading-none">Fabio Napoleoni</p>
+          <p class="text-[.78rem] text-white/40 mt-1">28 works</p>
+        </div>
+      </a>
+      <a href="artist/frogman.html" class="artist-card card p-[var(--pad-xs)] block rv">
+        <div class="shot shot-square"><img src="images/artists/frogman/_card.jpg" alt="Frogman" loading="lazy"></div>
+        <div class="px-[.35rem] pt-[var(--pad-xs)] pb-[.35rem]">
+          <p class="display text-[1.16rem] leading-none">Frogman</p>
+          <p class="text-[.78rem] text-white/40 mt-1">92 works</p>
+        </div>
+      </a>
+      <a href="artist/gabriel-burchman.html" class="artist-card card p-[var(--pad-xs)] block rv">
+        <div class="shot shot-square"><img src="images/artists/gabriel-burchman/_card.jpg" alt="Gabriel Burchman" loading="lazy"></div>
+        <div class="px-[.35rem] pt-[var(--pad-xs)] pb-[.35rem]">
+          <p class="display text-[1.16rem] leading-none">Gabriel Burchman</p>
+          <p class="text-[.78rem] text-white/40 mt-1">0 works</p>
+        </div>
+      </a>
+      <a href="artist/gaylord-ho.html" class="artist-card card p-[var(--pad-xs)] block rv">
+        <div class="shot shot-square"><img src="images/artists/gaylord-ho/_card.jpg" alt="Gaylord Ho" loading="lazy"></div>
+        <div class="px-[.35rem] pt-[var(--pad-xs)] pb-[.35rem]">
+          <p class="display text-[1.16rem] leading-none">Gaylord Ho</p>
+          <p class="text-[.78rem] text-white/40 mt-1">78 works</p>
+        </div>
+      </a>
+      <a href="artist/ghiglieri.html" class="artist-card card p-[var(--pad-xs)] block rv">
+        <div class="shot shot-square"><img src="images/artists/ghiglieri/_card.jpg" alt="Ghiglieri" loading="lazy"></div>
+        <div class="px-[.35rem] pt-[var(--pad-xs)] pb-[.35rem]">
+          <p class="display text-[1.16rem] leading-none">Ghiglieri</p>
+          <p class="text-[.78rem] text-white/40 mt-1">23 works</p>
+        </div>
+      </a>
+      <a href="artist/gloria-lee.html" class="artist-card card p-[var(--pad-xs)] block rv">
+        <div class="shot shot-square"><img src="images/artists/gloria-lee/_card.jpg" alt="Gloria Lee" loading="lazy"></div>
+        <div class="px-[.35rem] pt-[var(--pad-xs)] pb-[.35rem]">
+          <p class="display text-[1.16rem] leading-none">Gloria Lee</p>
+          <p class="text-[.78rem] text-white/40 mt-1">12 works</p>
+        </div>
+      </a>
+      <a href="artist/hot-island-glass.html" class="artist-card card p-[var(--pad-xs)] block rv">
+        <div class="shot shot-square"><img src="images/artists/hot-island-glass/_card.jpg" alt="Hot Island Glass" loading="lazy"></div>
+        <div class="px-[.35rem] pt-[var(--pad-xs)] pb-[.35rem]">
+          <p class="display text-[1.16rem] leading-none">Hot Island Glass</p>
+          <p class="text-[.78rem] text-white/40 mt-1">4 works</p>
+        </div>
+      </a>
+      <a href="artist/houston-llew.html" class="artist-card card p-[var(--pad-xs)] block rv">
+        <div class="shot shot-square"><img src="images/artists/houston-llew/_card.jpg" alt="Houston Llew" loading="lazy"></div>
+        <div class="px-[.35rem] pt-[var(--pad-xs)] pb-[.35rem]">
+          <p class="display text-[1.16rem] leading-none">Houston Llew</p>
+          <p class="text-[.78rem] text-white/40 mt-1">26 works</p>
+        </div>
+      </a>
+      <a href="artist/james-coleman.html" class="artist-card card p-[var(--pad-xs)] block rv">
+        <div class="shot shot-square"><img src="images/artists/james-coleman/_card.jpg" alt="James Coleman" loading="lazy"></div>
+        <div class="px-[.35rem] pt-[var(--pad-xs)] pb-[.35rem]">
+          <p class="display text-[1.16rem] leading-none">James Coleman</p>
+          <p class="text-[.78rem] text-white/40 mt-1">83 works</p>
+        </div>
+      </a>
+      <a href="artist/jennifer-ocualain.html" class="artist-card card p-[var(--pad-xs)] block rv">
+        <div class="shot shot-square"><img src="images/artists/jennifer-ocualain/_card.jpg" alt="Jennifer O&#39;cualain" loading="lazy"></div>
+        <div class="px-[.35rem] pt-[var(--pad-xs)] pb-[.35rem]">
+          <p class="display text-[1.16rem] leading-none">Jennifer O&#39;cualain</p>
+          <p class="text-[.78rem] text-white/40 mt-1">14 works</p>
+        </div>
+      </a>
+      <a href="artist/jennifer-valenzuela.html" class="artist-card card p-[var(--pad-xs)] block rv">
+        <div class="shot shot-square"><img src="images/artists/jennifer-valenzuela/_card.jpg" alt="Jennifer Valenzuela" loading="lazy"></div>
+        <div class="px-[.35rem] pt-[var(--pad-xs)] pb-[.35rem]">
+          <p class="display text-[1.16rem] leading-none">Jennifer Valenzuela</p>
+          <p class="text-[.78rem] text-white/40 mt-1">0 works</p>
+        </div>
+      </a>
+      <a href="artist/jim-warren.html" class="artist-card card p-[var(--pad-xs)] block rv">
+        <div class="shot shot-square"><img src="images/artists/jim-warren/_card.jpg" alt="Jim Warren" loading="lazy"></div>
+        <div class="px-[.35rem] pt-[var(--pad-xs)] pb-[.35rem]">
+          <p class="display text-[1.16rem] leading-none">Jim Warren</p>
+          <p class="text-[.78rem] text-white/40 mt-1">45 works</p>
+        </div>
+      </a>
+      <a href="artist/jon-rattenbury.html" class="artist-card card p-[var(--pad-xs)] block rv">
+        <div class="shot shot-square"><img src="images/artists/jon-rattenbury/_card.jpg" alt="Jon Rattenbury" loading="lazy"></div>
+        <div class="px-[.35rem] pt-[var(--pad-xs)] pb-[.35rem]">
+          <p class="display text-[1.16rem] leading-none">Jon Rattenbury</p>
+          <p class="text-[.78rem] text-white/40 mt-1">27 works</p>
+        </div>
+      </a>
+      <a href="artist/liquid-sand-design.html" class="artist-card card p-[var(--pad-xs)] block rv">
+        <div class="shot shot-square"><img src="images/artists/liquid-sand-design/_card.jpg" alt="Liquid Sand Design" loading="lazy"></div>
+        <div class="px-[.35rem] pt-[var(--pad-xs)] pb-[.35rem]">
+          <p class="display text-[1.16rem] leading-none">Liquid Sand Design</p>
+          <p class="text-[.78rem] text-white/40 mt-1">0 works</p>
+        </div>
+      </a>
+      <a href="artist/lyman-whitaker.html" class="artist-card card p-[var(--pad-xs)] block rv">
+        <div class="shot shot-square"><img src="images/artists/lyman-whitaker/_card.jpg" alt="Lyman Whitaker" loading="lazy"></div>
+        <div class="px-[.35rem] pt-[var(--pad-xs)] pb-[.35rem]">
+          <p class="display text-[1.16rem] leading-none">Lyman Whitaker</p>
+          <p class="text-[.78rem] text-white/40 mt-1">46 works</p>
+        </div>
+      </a>
+      <a href="artist/michael-cheval.html" class="artist-card card p-[var(--pad-xs)] block rv">
+        <div class="shot shot-square"><img src="images/artists/michael-cheval/_card.jpg" alt="Michael Cheval" loading="lazy"></div>
+        <div class="px-[.35rem] pt-[var(--pad-xs)] pb-[.35rem]">
+          <p class="display text-[1.16rem] leading-none">Michael Cheval</p>
+          <p class="text-[.78rem] text-white/50 mt-1">Absurdist painting</p>
+        </div>
+      </a>
+      <a href="artist/michael-flohr.html" class="artist-card card p-[var(--pad-xs)] block rv">
+        <div class="shot shot-square"><img src="images/artists/michael-flohr/_card.jpg" alt="Michael Flohr" loading="lazy"></div>
+        <div class="px-[.35rem] pt-[var(--pad-xs)] pb-[.35rem]">
+          <p class="display text-[1.16rem] leading-none">Michael Flohr</p>
+          <p class="text-[.78rem] text-white/40 mt-1">48 works</p>
+        </div>
+      </a>
+      <a href="artist/richard-j-oliver.html" class="artist-card card p-[var(--pad-xs)] block rv">
+        <div class="shot shot-square"><img src="images/artists/richard-j-oliver/_card.jpg" alt="Richard J. Oliver" loading="lazy"></div>
+        <div class="px-[.35rem] pt-[var(--pad-xs)] pb-[.35rem]">
+          <p class="display text-[1.16rem] leading-none">Richard J. Oliver</p>
+          <p class="text-[.78rem] text-white/40 mt-1">62 works</p>
+        </div>
+      </a>
+      <a href="artist/richard-satava.html" class="artist-card card p-[var(--pad-xs)] block rv">
+        <div class="shot shot-square"><img src="images/artists/richard-satava/_card.jpg" alt="Richard Satava" loading="lazy"></div>
+        <div class="px-[.35rem] pt-[var(--pad-xs)] pb-[.35rem]">
+          <p class="display text-[1.16rem] leading-none">Richard Satava</p>
+          <p class="text-[.78rem] text-white/40 mt-1">0 works</p>
+        </div>
+      </a>
+      <a href="artist/rob-kaz.html" class="artist-card card p-[var(--pad-xs)] block rv">
+        <div class="shot shot-square"><img src="images/artists/rob-kaz/_card.jpg" alt="Rob Kaz" loading="lazy"></div>
+        <div class="px-[.35rem] pt-[var(--pad-xs)] pb-[.35rem]">
+          <p class="display text-[1.16rem] leading-none">Rob Kaz</p>
+          <p class="text-[.78rem] text-white/40 mt-1">100 works</p>
+        </div>
+      </a>
+      <a href="artist/rodo-padilla.html" class="artist-card card p-[var(--pad-xs)] block rv">
+        <div class="shot shot-square"><img src="images/artists/rodo-padilla/_card.jpg" alt="Rodo Padilla" loading="lazy"></div>
+        <div class="px-[.35rem] pt-[var(--pad-xs)] pb-[.35rem]">
+          <p class="display text-[1.16rem] leading-none">Rodo Padilla</p>
+          <p class="text-[.78rem] text-white/40 mt-1">32 works</p>
+        </div>
+      </a>
+      <a href="artist/ruby-mazur.html" class="artist-card card p-[var(--pad-xs)] block rv">
+        <div class="shot shot-square"><img src="images/artists/ruby-mazur/_card.jpg" alt="Ruby Mazur" loading="lazy"></div>
+        <div class="px-[.35rem] pt-[var(--pad-xs)] pb-[.35rem]">
+          <p class="display text-[1.16rem] leading-none">Ruby Mazur</p>
+          <p class="text-[.78rem] text-white/40 mt-1">91 works</p>
+        </div>
+      </a>
+      <a href="artist/shlomi-fine-art.html" class="artist-card card p-[var(--pad-xs)] block rv">
+        <div class="shot shot-square"><img src="images/artists/shlomi-fine-art/_card.jpg" alt="Shlomi Fine Art" loading="lazy"></div>
+        <div class="px-[.35rem] pt-[var(--pad-xs)] pb-[.35rem]">
+          <p class="display text-[1.16rem] leading-none">Shlomi Fine Art</p>
+          <p class="text-[.78rem] text-white/40 mt-1">57 works</p>
+        </div>
+      </a>
+      <a href="artist/sorin.html" class="artist-card card p-[var(--pad-xs)] block rv">
+        <div class="shot shot-square"><img src="images/artists/sorin/_card.jpg" alt="Sorin" loading="lazy"></div>
+        <div class="px-[.35rem] pt-[var(--pad-xs)] pb-[.35rem]">
+          <p class="display text-[1.16rem] leading-none">Sorin</p>
+          <p class="text-[.78rem] text-white/40 mt-1">29 works</p>
+        </div>
+      </a>
+      <a href="artist/steve-matson.html" class="artist-card card p-[var(--pad-xs)] block rv">
+        <div class="shot shot-square"><img src="images/artists/steve-matson/_card.jpg" alt="Steve Matson" loading="lazy"></div>
+        <div class="px-[.35rem] pt-[var(--pad-xs)] pb-[.35rem]">
+          <p class="display text-[1.16rem] leading-none">Steve Matson</p>
+          <p class="text-[.78rem] text-white/40 mt-1">1 works</p>
+        </div>
+      </a>
+      <a href="artist/steven-neill.html" class="artist-card card p-[var(--pad-xs)] block rv">
+        <div class="shot shot-square"><img src="images/artists/steven-neill/_card.jpg" alt="Steven Neill" loading="lazy"></div>
+        <div class="px-[.35rem] pt-[var(--pad-xs)] pb-[.35rem]">
+          <p class="display text-[1.16rem] leading-none">Steven Neill</p>
+          <p class="text-[.78rem] text-white/40 mt-1">18 works</p>
+        </div>
+      </a>
+      <a href="artist/trey-surtees.html" class="artist-card card p-[var(--pad-xs)] block rv">
+        <div class="shot shot-square"><img src="images/artists/trey-surtees/_card.jpg" alt="Trey Surtees" loading="lazy"></div>
+        <div class="px-[.35rem] pt-[var(--pad-xs)] pb-[.35rem]">
+          <p class="display text-[1.16rem] leading-none">Trey Surtees</p>
+          <p class="text-[.78rem] text-white/40 mt-1">36 works</p>
+        </div>
+      </a>
+      <a href="artist/val-warner.html" class="artist-card card p-[var(--pad-xs)] block rv">
+        <div class="shot shot-square"><img src="images/artists/val-warner/_card.jpg" alt="Val Warner" loading="lazy"></div>
+        <div class="px-[.35rem] pt-[var(--pad-xs)] pb-[.35rem]">
+          <p class="display text-[1.16rem] leading-none">Val Warner</p>
+          <p class="text-[.78rem] text-white/40 mt-1">22 works</p>
+        </div>
+      </a>
+      <a href="artist/will-bullas.html" class="artist-card card p-[var(--pad-xs)] block rv">
+        <div class="shot shot-square"><img src="images/artists/will-bullas/_card.jpg" alt="Will Bullas" loading="lazy"></div>
+        <div class="px-[.35rem] pt-[var(--pad-xs)] pb-[.35rem]">
+          <p class="display text-[1.16rem] leading-none">Will Bullas</p>
+          <p class="text-[.78rem] text-white/40 mt-1">28 works</p>
+        </div>
+      </a>
+      <a href="artist/zanetti.html" class="artist-card card p-[var(--pad-xs)] block rv">
+        <div class="shot shot-square"><img src="images/artists/zanetti/_card.jpg" alt="Zanetti" loading="lazy"></div>
+        <div class="px-[.35rem] pt-[var(--pad-xs)] pb-[.35rem]">
+          <p class="display text-[1.16rem] leading-none">Zanetti</p>
+          <p class="text-[.78rem] text-white/40 mt-1">24 works</p>
+        </div>
+      </a>
+    </div>
+  </section>
+</main>
+
+<footer id="contact" class="relative pt-[var(--pad-xxh)] pb-[var(--pad-xh)] overflow-hidden">
+  <div class="glow-grey opacity-45"></div>
+  <div class="vignette"></div>
+  <div class="relative z-10 pad-content">
+    <div class="max-w-[35rem] mx-auto text-center rv">
+      <h2 class="display h-section">Join Us</h2>
+      <p class="mt-[var(--pad-s)] text-white/70 copy">
+        Join the community and be the first to know about new releases, upcoming art shows and artist appearances at our galleries.
+      </p>
+      <form class="mt-[var(--pad-l)]" data-sgg-signup>
+        <input class="field" type="email" name="email" required placeholder="Your email address" aria-label="Your email address">
+        <button class="btn-pill w-full mt-[var(--pad-s)] text-[.82rem]">REGISTER</button>
+        <p class="mt-[var(--pad-s)] text-[.82rem] text-taste2" data-sgg-signup-msg hidden></p>
+      </form>
+      <p class="mt-[var(--pad-s)] text-[.82rem] text-white/55">
+        By registering you agree to our <a href="#contact" class="underline">privacy policy</a>
+      </p>
+      <div class="socials">
+      <a href="https://www.instagram.com/signaturegallerieslv/?hl=en" target="_blank" rel="noopener" aria-label="Signature Galleries on Instagram"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1.1" fill="currentColor" stroke="none"/></svg></a>
+      <a href="https://www.facebook.com/Signaturegalleryinlasvegas" target="_blank" rel="noopener" aria-label="Signature Galleries on Facebook"><svg width="19" height="19" viewBox="0 0 24 24" fill="currentColor"><path d="M14 8.5V7.2c0-.7.2-1.1 1.2-1.1H17V3.2A18 18 0 0 0 14.6 3C12.3 3 10.8 4.4 10.8 7v1.5H8.4V12h2.4v9h3.2v-9h2.5l.4-3.5H14z"/></svg></a>
+    </div>
+      <p class="mt-[var(--pad-l)] mono text-[.68rem] tracking-[.13em] text-white/45 uppercase">
+        Corporate office &middot; <a href="mailto:info@signaturegalleries.com?subject=Enquiry%20for%20Signature%20Gallery%20Group&amp;body=Hello%20Signature%20Gallery%20Group%2C%0D%0A%0D%0A" class="underline">info@signaturegalleries.com</a>
+      </p>
+      <p class="mt-[var(--pad-xs)] mono text-[.68rem] tracking-[.13em] text-white/45 uppercase">&copy; 2026 Signature Gallery Group</p>
+    </div>
+    <div class="mt-[var(--pad-xh)] max-w-[52rem] mx-auto legalbar px-[var(--pad-s)] py-[var(--pad-xs)] flex flex-wrap items-center justify-center gap-x-[var(--pad-l)] gap-y-[var(--pad-xs)] rv">
+      <a href="artists.html" class="border border-white/40 rounded-[.25rem] px-4 py-2 text-[.72rem] tracking-[.1em] uppercase">Artists</a>
+      <a href="index.html#events" class="text-[.72rem] tracking-[.1em] uppercase text-white/70 hover:text-white transition-colors">Events</a>
+      <a href="index.html#galleries" class="text-[.72rem] tracking-[.1em] uppercase text-white/70 hover:text-white transition-colors">Galleries</a>
+      <a href="index.html#contact" class="text-[.72rem] tracking-[.1em] uppercase text-white/70 hover:text-white transition-colors">Shop</a>
+      <a href="index.html#contact" class="border border-white/40 rounded-[.25rem] px-4 py-2 text-[.72rem] tracking-[.1em] uppercase">Contact</a>
+    </div>
+    <p class="mt-[var(--pad-l)] text-center text-[.78rem] text-white/40">
+      Signature Gallery Group, a managing and accounting company.
+    </p>
+    <p class="mt-[var(--pad-xs)] text-center text-[.78rem] text-white/40">
+      Created by <span class="underline">Giancarlo Capicotto</span>
+    </p>
+  </div>
+</footer>
+
+<script src="assets/site.js"></script>
+<script src="assets/track.js" defer></script>
+</body>
+</html>
+

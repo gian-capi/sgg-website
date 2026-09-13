@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Signature Gallery Group — Original Fine Art</title>
+<meta name="description" content="Original fine art, sculpture and limited editions from Wyland Galleries and Signature Galleries in Las Vegas, Lake Tahoe and Hawaii.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,75..125,100..900;1,75..125,100..900&family=Geist:wght@100..900&family=Geist+Mono:wght@100..900&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config={theme:{extend:{colors:{taste1:'#3D2B68',taste2:'#9089D3'},
+fontFamily:{body:['Geist','Arial','sans-serif'],head:['Archivo','Arial','sans-serif'],mono:['Geist Mono','Arial','sans-serif']}}}};
+</script>
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+
+<div class="rail"><div class="rail-fill" id="railFill"></div></div>
+<div class="frame">
+  <span class="corner tl"></span><span class="corner tr"></span>
+  <span class="corner bl"></span><span class="corner br"></span>
+  <span class="tick" style="top:13.3rem;right:var(--page-padding);"></span>
+  <span class="tick" style="bottom:6.4rem;right:var(--page-padding);"></span>
+  <span class="edge-letter" style="top:33.5rem;">S</span>
+  <span class="edge-letter" style="top:39rem;">G</span>
+  <span class="edge-letter" style="top:44.5rem;">G</span>
+</div>
+
+<header class="nav">
+  <div class="nav-left flex items-center gap-3">
+    <span class="mono text-[.72rem] tracking-[.14em]">ON</span>
+    <span class="eq"><span></span><span></span><span></span><span></span></span>
+  </div>
+  <a href="index.html" class="display wordmark">SIGNATURE<br>GALLERY GROUP</a>
+  <div class="nav-right flex items-center gap-[3.25rem]">
+    <button class="flex items-center gap-3" data-menu-open>
+      <span class="dotgrid"><i></i><i></i><i></i><i></i></span>
+      <span class="nav-menu-label text-[.78rem] tracking-[.09em]">MENU</span>
+    </button>
+    <a href="index.html#contact" class="btn-pill">CONTACT</a>
+  </div>
+</header>
+
+<div class="menu-overlay" id="menuOverlay">
+  <button class="menu-close" data-menu-close aria-label="Close menu">&#10005;</button>
+  <nav class="text-center">
+    <a href="artists.html" class="display text-[clamp(1.8rem,4vw,3rem)]">All Artists</a>
+    <a href="index.html#releases" class="display text-[clamp(1.8rem,4vw,3rem)]">New Releases</a>
+    <a href="index.html#events" class="display text-[clamp(1.8rem,4vw,3rem)]">Events</a>
+    <a href="index.html#galleries" class="display text-[clamp(1.8rem,4vw,3rem)]">Galleries</a>
+    <a href="index.html#contact" class="display text-[clamp(1.8rem,4vw,3rem)]">Contact</a>
+  </nav>
+</div>
+
+
+<nav class="iconrail" id="iconRail">
+  <button data-target="#releases" class="active" aria-label="New releases">
+    <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3.5" y="3.5" width="17" height="17" rx="1.5"/><path d="M3.5 15.5l4.5-4.2 3.6 3.3 3.8-4.6 5.1 5.4"/></svg>
+  </button>
+  <span class="dot"></span>
+  <button data-target="#artists" aria-label="Artists">
+    <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="3.4"/><path d="M5 20c0-3.6 3.1-5.6 7-5.6s7 2 7 5.6"/></svg>
+  </button>
+  <span class="dot"></span>
+  <button data-target="#events" aria-label="Events">
+    <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3.5" y="5" width="17" height="15.5" rx="1.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg>
+  </button>
+  <span class="dot"></span>
+  <button data-target="#galleries" aria-label="Galleries">
+    <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 21s7-6.1 7-11a7 7 0 1 0-14 0c0 4.9 7 11 7 11z"/><circle cx="12" cy="10" r="2.6"/></svg>
+  </button>
+</nav>
+
+<main id="top">
+
+  <!-- ============ HERO CAROUSEL ============ -->
+  <section class="hero" id="hero">
+
+    <div class="hero-slide active">
+      <div class="glow-grey"></div>
+      <div class="vignette"></div>
+      <div class="hero-slide-inner grid grid-cols-1 lg:grid-cols-[minmax(0,1.05fr)_minmax(0,.95fr)] gap-[var(--pad-xl)] items-center">
+        <div>
+          <h1 class="display display-tight h-hero-lg">Welcome to<br>Signature<br>Gallery Group</h1>
+          <p class="mt-[var(--pad-m)] text-white/70 copy max-w-[30rem]">Original fine art, sculpture and limited editions across five galleries in Las Vegas, Lake Tahoe and Hawaii.</p>
+          <div class="logo-row mt-[var(--pad-xl)]">
+            <img class="logo-sgg" src="images/logos/sgg.png" alt="Signature Gallery Group">
+            <img src="images/logos/wyland.png" alt="Wyland Galleries">
+            <img src="images/logos/signature.png" alt="Signature Galleries">
+          </div>
+        </div>
+        <div class="hidden lg:block h-full">
+          <div class="art-rotator">
+            <img src="images/hero-whales.jpg" alt="Original Wyland marine artwork">
+            <img src="images/artwork/764-heart-and-harp.jpg" alt="Heart and Harp by Joseph Capicotto">
+            <img src="images/artists/michael-cheval/000.jpg" alt="Artwork by Michael Cheval">
+            <img src="images/artists/oryan/004.jpg" alt="Artwork by Oryan">
+            <img src="images/artists/wyland/002.jpg" alt="Artwork by Wyland">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-slide">
+      <div class="glow-purple-v"></div>
+      <div class="vignette"></div>
+      <div class="hero-slide-inner grid grid-cols-1 lg:grid-cols-2 gap-[var(--pad-xl)] items-center">
+        <div class="hidden lg:flex h-full items-center justify-center py-[var(--pad-l)]">
+          <img src="images/artwork/671-crescendo-in-flight.jpg" alt="Crescendo in Flight by Joseph Capicotto" class="max-h-full w-auto rounded-[.25rem]" style="filter:drop-shadow(0 40px 70px rgba(0,0,0,.8));">
+        </div>
+        <div>
+          <p class="mono text-[.7rem] tracking-[.14em] text-taste2 uppercase">Next art show</p>
+          <h2 class="display display-tight h-hero-lg mt-[var(--pad-s)]">Joseph<br>Capicotto<br>Art Show</h2>
+          <div class="mt-[var(--pad-l)] hair pt-[var(--pad-m)] max-w-[30rem]">
+            <p class="text-[1.15rem]">Wyland Galleries, Lake Tahoe</p>
+            <p class="mt-2 text-white/70 copy">Friday, August 21 – Sunday, August 23, 2026</p>
+            <p class="mt-1 text-white/50 text-[.92rem]">Featuring <em>Crescendo in Flight</em>, 36″ ×
+                36″</p>
+          </div>
+          <div class="mt-[var(--pad-l)] flex flex-wrap gap-[var(--pad-s)]">
+            <a href="event/joseph-capicotto-lake-tahoe.html" class="btn-pill">GO TO EVENT PAGE</a>
+            <a href="gallery/wyland-tahoe.html" class="btn-ghost">VISIT THE GALLERY</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-slide">
+      <div class="glow-purple-v"></div>
+      <div class="vignette"></div>
+      <div class="hero-slide-inner flex flex-col justify-center">
+        <div class="grid grid-cols-1 lg:grid-cols-[minmax(0,.8fr)_minmax(0,1.2fr)] gap-[var(--pad-xl)] items-center">
+          <div>
+            <p class="mono text-[.7rem] tracking-[.14em] text-taste2 uppercase">Just arrived</p>
+            <h2 class="display display-tight h-hero-lg mt-[var(--pad-s)]">Check Out<br>These New<br>Releases</h2>
+            <a href="#releases" class="btn-pill mt-[var(--pad-l)]">BROWSE NEW RELEASES</a>
+          </div>
+          <div class="grid grid-cols-4 sm:grid-cols-6 gap-[var(--pad-xs)]">
+            <img src="images/artwork/671-crescendo-in-flight.jpg" alt="Crescendo in Flight by Joseph Capicotto" class="w-full aspect-square object-cover rounded-[.4rem]">
+            <img src="images/artwork/730-sweet-simple.jpg" alt="Sweet &amp; Simple by Joseph Capicotto" class="w-full aspect-square object-cover rounded-[.4rem]">
+            <img src="images/artwork/731-soft-landing.jpg" alt="Soft Landing by Joseph Capicotto" class="w-full aspect-square object-cover rounded-[.4rem]">
+            <img src="images/artwork/732-dreamscape.jpg" alt="Dreamscape by Joseph Capicotto" class="w-full aspect-square object-cover rounded-[.4rem]">
+            <img src="images/artwork/733-black-white-memories.jpg" alt="Black &amp; White Memories by Joseph Capicotto" class="w-full aspect-square object-cover rounded-[.4rem]">
+            <img src="images/artwork/734-apparition.jpg" alt="Apparition by Joseph Capicotto" class="w-full aspect-square object-cover rounded-[.4rem]">
+            <img src="images/artwork/735-lady-elegance.jpg" alt="Lady Elegance by Joseph Capicotto" class="w-full aspect-square object-cover rounded-[.4rem]">
+            <img src="images/artwork/752-shoreline-embrace.jpg" alt="Shoreline Embrace by Joseph Capicotto" class="w-full aspect-square object-cover rounded-[.4rem]">
+            <img src="images/artwork/754-proposal.jpg" alt="Proposal by Joseph Capicotto" class="w-full aspect-square object-cover rounded-[.4rem]">
+            <img src="images/artwork/755-andalusia.jpg" alt="Andalusia by Joseph Capicotto" class="w-full aspect-square object-cover rounded-[.4rem]">
+            <img src="images/artwork/756-paso-doble.jpg" alt="Paso Doble by Joseph Capicotto" class="w-full aspect-square object-cover rounded-[.4rem]">
+            <img src="images/artwork/757-emancipation.jpg" alt="Emancipation by Joseph Capicotto" class="w-full aspect-square object-cover rounded-[.4rem]">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-slide">
+      <img src="images/hero-living-room.jpg" alt="A statement artwork in a modern living room" class="absolute inset-0 w-full h-full object-cover">
+      <div class="absolute inset-0" style="background:linear-gradient(90deg, rgba(4,3,10,.94) 0%, rgba(4,3,10,.72) 34%, rgba(4,3,10,.15) 62%, rgba(4,3,10,.35) 100%);"></div>
+      <div class="hero-slide-inner flex flex-col justify-center">
+        <div class="max-w-[34rem]">
+          <p class="mono text-[.7rem] tracking-[.14em] text-taste2 uppercase">Art for the home</p>
+          <h2 class="display display-tight h-hero-lg mt-[var(--pad-s)]">Find Your<br>Statement<br>Piece</h2>
+          <p class="mt-[var(--pad-m)] text-white/75 copy">Our fine art consultants help you choose the work that anchors a room, and arrange delivery and installation anywhere in the world.</p>
+          <a href="#galleries" class="btn-pill mt-[var(--pad-l)]">TALK TO A CONSULTANT</a>
+          <p class="mt-[var(--pad-m)] mono text-[.66rem] tracking-[.13em] uppercase text-white/45">
+            Shown: <a href="artist/joseph-capicotto.html" class="underline">Emancipation</a> by Joseph Capicotto
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <button class="arrow hero-arrow prev" aria-label="Previous slide">
+      <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M15 4l-8 8 8 8"/></svg>
+    </button>
+    <button class="arrow hero-arrow next" aria-label="Next slide">
+      <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M9 4l8 8-8 8"/></svg>
+    </button>
+    <div class="hero-dots dots"></div>
+  </section>
+
+  <!-- ============ NEW RELEASES ============ -->
+  <section id="releases" class="relative py-[var(--pad-xxh)] overflow-hidden">
+    <div class="glow-purple-v"></div>
+    <div class="scatter" id="releaseScatter"></div>
+    <div class="relative z-10">
+      <div class="pad-content rv">
+        <h2 class="display h-section">New Releases</h2>
+        <p class="mt-[var(--pad-s)] text-white/60 copy max-w-[26rem]">
+          Newly arrived originals, sculpture and limited editions from the artists we represent across Las Vegas, Lake Tahoe and Hawaii.
+        </p>
+      </div>
+      <div class="release-stage" id="releaseStage">
+        <figure class="slot" data-title="Crescendo in Flight" data-artist="Joseph Capicotto · 36x36&#34;"><img src="images/artwork/671-crescendo-in-flight.jpg" alt="Crescendo in Flight by Joseph Capicotto"></figure>
+        <figure class="slot" data-title="Sweet &amp; Simple" data-artist="Joseph Capicotto · charcoal-pastel · 12x16&#34;"><img src="images/artwork/730-sweet-simple.jpg" alt="Sweet &amp; Simple by Joseph Capicotto"></figure>
+        <figure class="slot" data-title="Soft Landing" data-artist="Joseph Capicotto · charcoal-pastel · 18x24&#34;"><img src="images/artwork/731-soft-landing.jpg" alt="Soft Landing by Joseph Capicotto"></figure>
+        <figure class="slot" data-title="Dreamscape" data-artist="Joseph Capicotto · charcoal-pastel · 18x24&#34;"><img src="images/artwork/732-dreamscape.jpg" alt="Dreamscape by Joseph Capicotto"></figure>
+        <figure class="slot" data-title="Black &amp; White Memories" data-artist="Joseph Capicotto · charcoal-pastel · 18x24&#34;"><img src="images/artwork/733-black-white-memories.jpg" alt="Black &amp; White Memories by Joseph Capicotto"></figure>
+        <figure class="slot" data-title="Apparition" data-artist="Joseph Capicotto · charcoal-pastel · 16x24&#34;"><img src="images/artwork/734-apparition.jpg" alt="Apparition by Joseph Capicotto"></figure>
+        <figure class="slot" data-title="Lady Elegance" data-artist="Joseph Capicotto · charcoal-pastel · 18x24&#34;"><img src="images/artwork/735-lady-elegance.jpg" alt="Lady Elegance by Joseph Capicotto"></figure>
+        <figure class="slot" data-title="Shoreline Embrace" data-artist="Joseph Capicotto · 40x40&#34;"><img src="images/artwork/752-shoreline-embrace.jpg" alt="Shoreline Embrace by Joseph Capicotto"></figure>
+        <figure class="slot" data-title="Proposal" data-artist="Joseph Capicotto · 30x30&#34;"><img src="images/artwork/754-proposal.jpg" alt="Proposal by Joseph Capicotto"></figure>
+        <figure class="slot" data-title="Andalusia" data-artist="Joseph Capicotto · 24x36&#34;"><img src="images/artwork/755-andalusia.jpg" alt="Andalusia by Joseph Capicotto"></figure>
+        <figure class="slot" data-title="Paso Doble" data-artist="Joseph Capicotto · 30x40&#34;"><img src="images/artwork/756-paso-doble.jpg" alt="Paso Doble by Joseph Capicotto"></figure>
+        <figure class="slot" data-title="Emancipation" data-artist="Joseph Capicotto · 30x40&#34;"><img src="images/artwork/757-emancipation.jpg" alt="Emancipation by Joseph Capicotto"></figure>
+        <figure class="slot" data-title="Silver Linings" data-artist="Joseph Capicotto · 16x20&#34;"><img src="images/artwork/763-silver-linings.jpg" alt="Silver Linings by Joseph Capicotto"></figure>
+        <figure class="slot" data-title="Heart and Harp" data-artist="Joseph Capicotto · 30x30&#34;"><img src="images/artwork/764-heart-and-harp.jpg" alt="Heart and Harp by Joseph Capicotto"></figure>
+      </div>
+      <div class="pad-content mt-[var(--pad-xl)] flex flex-col lg:flex-row lg:items-end justify-between gap-[var(--pad-l)]">
+        <div class="release-meta">
+          <h3 class="display text-[clamp(1.9rem,3.6vw,3.4rem)] release-fade" id="releaseTitle">&nbsp;</h3>
+          <p class="mt-[var(--pad-xs)] text-white/70 copy release-fade" id="releaseMeta">&nbsp;</p>
+        </div>
+        <div class="flex items-center gap-[var(--pad-s)]">
+          <span class="mono text-[.72rem] tracking-[.13em] text-white/55" id="releaseCount">01 / 14</span>
+          <button class="arrow" id="releasePrev" aria-label="Previous artwork">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M15 4l-8 8 8 8"/></svg>
+          </button>
+          <button class="arrow" id="releaseNext" aria-label="Next artwork">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M9 4l8 8-8 8"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FEATURED ARTISTS ============ -->
+  <section id="artists" class="relative py-[var(--pad-xxh)] overflow-hidden" data-rail>
+    <div class="glow-purple"></div>
+    <div class="relative z-10">
+      <div class="pad-content flex flex-wrap items-end justify-between gap-[var(--pad-m)] rv">
+        <div class="max-w-[40rem]">
+          <h2 class="display display-tight h-section">Featured Artists</h2>
+          <p class="mt-[var(--pad-m)] text-white/70 copy max-w-[32rem]">
+            Every artist we carry is represented in person. Meet them at a show, commission a piece, or view their full catalogue.
+          </p>
+        </div>
+        <div class="flex items-center gap-[var(--pad-s)]">
+          <a href="artists.html" class="btn-pill">VIEW ALL ARTISTS</a>
+          <div class="flex items-center gap-[var(--pad-xs)]">
+            <button class="arrow" data-rail-prev aria-label="Previous artists">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M15 4l-8 8 8 8"/></svg>
+            </button>
+            <button class="arrow" data-rail-next aria-label="More artists">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M9 4l8 8-8 8"/></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-x mt-[var(--pad-xl)] pl-[var(--content-padding)] pr-[var(--page-padding)] rv" data-rail-track>
+        <div class="flex flex-col gap-[var(--pad-s)] w-max pb-2">
+          <div class="flex gap-[var(--pad-s)]">
+            <a href="artist/angela-mia.html" class="artist-card card p-[var(--pad-xs)] block flex-none">
+              <div class="shot"><img src="images/cards/artist-angela-mia.jpg" alt="Angela Mia"></div>
+              <div class="px-[.35rem] pt-[var(--pad-xs)] pb-[.35rem]">
+                <p class="mono text-[.62rem] tracking-[.13em] text-white/50 uppercase">Top Artist</p>
+                <p class="display text-[1.28rem] leading-none mt-1">Angela Mia</p>
+                <p class="text-[.8rem] text-white/55 mt-2">Figurative bronze sculpture</p>
+              </div>
+            </a>
+            <a href="artist/david-wight.html" class="artist-card card p-[var(--pad-xs)] block flex-none">
+              <div class="shot"><img src="images/cards/artist-david-wight.jpg" alt="David Wight"></div>
+              <div class="px-[.35rem] pt-[var(--pad-xs)] pb-[.35rem]">
+                <p class="mono text-[.62rem] tracking-[.13em] text-white/50 uppercase">Top Artist</p>
+                <p class="display text-[1.28rem] leading-none mt-1">David Wight</p>
+                <p class="text-[.8rem] text-white/55 mt-2">Hand-sculpted glass</p>
+              </div>
+            </a>
+            <a href="artist/jeff-vermeeren.html" class="artist-card card p-[var(--pad-xs)] block flex-none">
+              <div class="shot"><img src="images/cards/artist-jeff-vermeeren.jpg" alt="Jeff Vermeeren"></div>
+              <div class="px-[.35rem] pt-[var(--pad-xs)] pb-[.35rem]">
+                <p class="mono text-[.62rem] tracking-[.13em] text-white/50 uppercase">Top Artist</p>
+                <p class="display text-[1.28rem] leading-none mt-1">Jeff Vermeeren</p>
+                <p class="text-[.8rem] text-white/55 mt-2">Extreme abstract</p>
+              </div>
+            </a>
+            <a href="artist/joseph-capicotto.html" class="artist-card card p-[var(--pad-xs)] block flex-none">
+              <div class="shot"><img src="images/cards/artist-joseph-capicotto.jpg" alt="Joseph Capicotto"></div>
+              <div class="px-[.35rem] pt-[var(--pad-xs)] pb-[.35rem]">
+                <p class="mono text-[.62rem] tracking-[.13em] text-white/50 uppercase">Top Artist</p>
+                <p class="display text-[1.28rem] leading-none mt-1">Joseph Capicotto</p>
+                <p class="text-[.8rem] text-white/55 mt-2">Figures, encaustic and mixed media</p>
+              </div>
+            </a>
+            <a href="artist/michael-godard.html" class="artist-card card p-[var(--pad-xs)] block flex-none">
+              <div class="shot"><img src="images/cards/artist-michael-godard.jpg" alt="Michael Godard"></div>
+              <div class="px-[.35rem] pt-[var(--pad-xs)] pb-[.35rem]">
+                <p class="mono text-[.62rem] tracking-[.13em] text-white/50 uppercase">Top Artist</p>
+                <p class="display text-[1.28rem] leading-none mt-1">Michael Godard</p>
+                <p class="text-[.8rem] text-white/55 mt-2">The Rock Star of the Art World</p>
+              </div>
+            </a>
+          </div>
+          <div class="flex gap-[var(--pad-s)]">
+            <a href="artist/nano-lopez.html" class="artist-card card p-[var(--pad-xs)] block flex-none">
+              <div class="shot"><img src="images/cards/artist-nano-lopez.jpg" alt="Nano Lopez"></div>
+              <div class="px-[.35rem] pt-[var(--pad-xs)] pb-[.35rem]">
+                <p class="mono text-[.62rem] tracking-[.13em] text-white/50 uppercase">Top Artist</p>
+                <p class="display text-[1.28rem] leading-none mt-1">Nano Lopez</p>
+                <p class="text-[.8rem] text-white/55 mt-2">Bronze sculpture</p>
+              </div>
+            </a>
+            <a href="artist/oryan.html" class="artist-card card p-[var(--pad-xs)] block flex-none">
+              <div class="shot"><img src="images/cards/artist-oryan.jpg" alt="Oryan"></div>
+              <div class="px-[.35rem] pt-[var(--pad-xs)] pb-[.35rem]">
+                <p class="mono text-[.62rem] tracking-[.13em] text-white/50 uppercase">Top Artist</p>
+                <p class="display text-[1.28rem] leading-none mt-1">Oryan</p>
+                <p class="text-[.8rem] text-white/55 mt-2">Liquid Fusion</p>
+              </div>
+            </a>
+            <a href="artist/tom-everhart.html" class="artist-card card p-[var(--pad-xs)] block flex-none">
+              <div class="shot"><img src="images/cards/artist-tom-everhart.jpg" alt="Tom Everhart"></div>
+              <div class="px-[.35rem] pt-[var(--pad-xs)] pb-[.35rem]">
+                <p class="mono text-[.62rem] tracking-[.13em] text-white/50 uppercase">Top Artist</p>
+                <p class="display text-[1.28rem] leading-none mt-1">Tom Everhart</p>
+                <p class="text-[.8rem] text-white/55 mt-2">Authorised by Charles M. Schulz</p>
+              </div>
+            </a>
+            <a href="artist/walfrido.html" class="artist-card card p-[var(--pad-xs)] block flex-none">
+              <div class="shot"><img src="images/cards/artist-walfrido.jpg" alt="Walfrido"></div>
+              <div class="px-[.35rem] pt-[var(--pad-xs)] pb-[.35rem]">
+                <p class="mono text-[.62rem] tracking-[.13em] text-white/50 uppercase">Top Artist</p>
+                <p class="display text-[1.28rem] leading-none mt-1">Walfrido</p>
+                <p class="text-[.8rem] text-white/55 mt-2">Romantic Realism seascapes</p>
+              </div>
+            </a>
+            <a href="artist/wyland.html" class="artist-card card p-[var(--pad-xs)] block flex-none">
+              <div class="shot"><img src="images/cards/artist-wyland.jpg" alt="Wyland"></div>
+              <div class="px-[.35rem] pt-[var(--pad-xs)] pb-[.35rem]">
+                <p class="mono text-[.62rem] tracking-[.13em] text-white/50 uppercase">Top Artist</p>
+                <p class="display text-[1.28rem] leading-none mt-1">Wyland</p>
+                <p class="text-[.8rem] text-white/55 mt-2">Marine life artist</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ EVENTS ============ -->
+  <section id="events" class="relative py-[var(--pad-xxh)] overflow-hidden">
+    <div class="glow-grey opacity-40"></div>
+    <div class="vignette"></div>
+    <div class="relative z-10 pad-content">
+      <h2 class="display display-tight h-section rv">Upcoming Art Shows</h2>
+      <div class="mt-[var(--pad-xh)] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[var(--pad-s)]">
+      <a href="event/joseph-capicotto-lake-tahoe.html" class="card overflow-hidden rv block">
+        <div class="event-banner"><img src="images/events/capicotto.jpg" alt="Joseph Capicotto Art Show in Lake Tahoe"></div>
+        <div class="p-[var(--pad-s)] flex gap-[var(--pad-s)]">
+          <div class="datechip">
+            <span class="m">Aug</span>
+            <span class="d">21</span>
+          </div>
+          <div>
+            <h3 class="display text-[1.35rem] leading-none">Joseph Capicotto Art Show in Lake Tahoe</h3>
+            <p class="mono text-[.66rem] tracking-[.13em] text-taste2 uppercase mt-2">August 21, 2026 &middot; Lake Tahoe</p>
+          </div>
+        </div>
+      </a>
+
+      <a href="event/alexei-butirskiy-lake-tahoe.html" class="card overflow-hidden rv block">
+        <div class="event-banner"><img src="images/events/butirskiy.jpg" alt="Alexei Butirskiy Art Show in Lake Tahoe"></div>
+        <div class="p-[var(--pad-s)] flex gap-[var(--pad-s)]">
+          <div class="datechip">
+            <span class="m">Sep</span>
+            <span class="d">05</span>
+          </div>
+          <div>
+            <h3 class="display text-[1.35rem] leading-none">Alexei Butirskiy Art Show in Lake Tahoe</h3>
+            <p class="mono text-[.66rem] tracking-[.13em] text-taste2 uppercase mt-2">September 5, 2026 &middot; Lake Tahoe</p>
+          </div>
+        </div>
+      </a>
+
+      <a href="event/oryan-lake-tahoe.html" class="card overflow-hidden rv block">
+        <div class="event-banner"><img src="images/events/oryan.jpg" alt="Oryan Art Show in Lake Tahoe"></div>
+        <div class="p-[var(--pad-s)] flex gap-[var(--pad-s)]">
+          <div class="datechip">
+            <span class="m">Sep</span>
+            <span class="d">18</span>
+          </div>
+          <div>
+            <h3 class="display text-[1.35rem] leading-none">Oryan Art Show in Lake Tahoe</h3>
+            <p class="mono text-[.66rem] tracking-[.13em] text-taste2 uppercase mt-2">September 18, 2026 &middot; Lake Tahoe</p>
+          </div>
+        </div>
+      </a>
+
+      <a href="event/jeff-vermeeren-las-vegas.html" class="card overflow-hidden rv block">
+        <div class="event-banner"><img src="images/events/vermeeren.jpg" alt="Jeff Vermeeren Art Show in Las Vegas"></div>
+        <div class="p-[var(--pad-s)] flex gap-[var(--pad-s)]">
+          <div class="datechip">
+            <span class="m">Oct</span>
+            <span class="d">02</span>
+          </div>
+          <div>
+            <h3 class="display text-[1.35rem] leading-none">Jeff Vermeeren Art Show in Las Vegas</h3>
+            <p class="mono text-[.66rem] tracking-[.13em] text-taste2 uppercase mt-2">October 2, 2026 &middot; Las Vegas</p>
+          </div>
+        </div>
+      </a>
+
+      <a href="event/angela-mia-las-vegas.html" class="card overflow-hidden rv block">
+        <div class="event-banner"><img src="images/events/angela-mia.jpg" alt="Angela Mia Art Show in Las Vegas"></div>
+        <div class="p-[var(--pad-s)] flex gap-[var(--pad-s)]">
+          <div class="datechip">
+            <span class="m">Oct</span>
+            <span class="d">09</span>
+          </div>
+          <div>
+            <h3 class="display text-[1.35rem] leading-none">Angela Mia Art Show in Las Vegas</h3>
+            <p class="mono text-[.66rem] tracking-[.13em] text-taste2 uppercase mt-2">October 9, 2026 &middot; Las Vegas</p>
+          </div>
+        </div>
+      </a>
+
+      <a href="event/alexei-butirskiy-las-vegas.html" class="card overflow-hidden rv block">
+        <div class="event-banner"><img src="images/events/butirskiy.jpg" alt="Alexei Butirskiy Art Show in Las Vegas"></div>
+        <div class="p-[var(--pad-s)] flex gap-[var(--pad-s)]">
+          <div class="datechip">
+            <span class="m">Nov</span>
+            <span class="d">06</span>
+          </div>
+          <div>
+            <h3 class="display text-[1.35rem] leading-none">Alexei Butirskiy Art Show in Las Vegas</h3>
+            <p class="mono text-[.66rem] tracking-[.13em] text-taste2 uppercase mt-2">November 6, 2026 &middot; Las Vegas</p>
+          </div>
+        </div>
+      </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ GALLERIES (single-row carousel) ============ -->
+  <section id="galleries" class="relative py-[var(--pad-xxh)] overflow-hidden" data-rail>
+    <div class="glow-purple"></div>
+    <div class="relative z-10">
+      <div class="pad-content flex flex-wrap items-end justify-between gap-[var(--pad-m)] rv">
+        <div class="max-w-[46rem]">
+          <h2 class="display display-tight h-section">Our Art Galleries</h2>
+          <p class="mt-[var(--pad-m)] text-white/70 copy max-w-[34rem]">
+            Wyland Galleries — Las Vegas, Lake Tahoe, Haleiwa, Waikiki and Maui. Signature Galleries — Las Vegas.
+          </p>
+        </div>
+        <div class="flex items-center gap-[var(--pad-xs)]">
+          <button class="arrow" data-rail-prev aria-label="Previous galleries">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M15 4l-8 8 8 8"/></svg>
+          </button>
+          <button class="arrow" data-rail-next aria-label="More galleries">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M9 4l8 8-8 8"/></svg>
+          </button>
+        </div>
+      </div>
+      <div class="scroll-x mt-[var(--pad-xh)] pl-[var(--content-padding)] pr-[var(--page-padding)] rv" data-rail-track>
+        <div class="flex gap-[var(--pad-s)] w-max pb-2">
+          <a href="gallery/signature-vegas.html" class="gallery-card card overflow-hidden block flex-none">
+            <img src="images/galleries/signature-vegas/0.jpg" alt="Signature Galleries Las Vegas, Nevada" class="w-full aspect-[16/10] object-cover">
+            <div class="p-[var(--pad-l)]">
+              <h3 class="display text-[1.75rem] leading-none">Signature Galleries</h3>
+              <p class="mono text-[.7rem] tracking-[.13em] text-taste2 uppercase mt-2">Las Vegas, Nevada</p>
+              <p class="mt-[var(--pad-s)] text-white/65 text-[.92rem]">The Grand Canal Shoppes at the Venetian<br>3377 S. Las Vegas Blvd, Suite 2270</p>
+              <div class="mt-[var(--pad-s)] hair pt-[var(--pad-s)] flex items-center justify-between gap-4">
+                <span class="text-[1.02rem]">702-699-7100</span>
+                <span class="mono text-[.68rem] tracking-[.13em] uppercase text-white/55">View gallery &rsaquo;</span>
+              </div>
+            </div>
+          </a>
+          <a href="gallery/wyland-vegas.html" class="gallery-card card overflow-hidden block flex-none">
+            <img src="images/galleries/wyland-vegas/0.jpg" alt="Wyland Galleries Las Vegas, Nevada" class="w-full aspect-[16/10] object-cover">
+            <div class="p-[var(--pad-l)]">
+              <h3 class="display text-[1.75rem] leading-none">Wyland Galleries</h3>
+              <p class="mono text-[.7rem] tracking-[.13em] text-taste2 uppercase mt-2">Las Vegas, Nevada</p>
+              <p class="mt-[var(--pad-s)] text-white/65 text-[.92rem]">Miracle Mile Shops at Planet Hollywood<br>3663 S. Las Vegas Blvd #245</p>
+              <div class="mt-[var(--pad-s)] hair pt-[var(--pad-s)] flex items-center justify-between gap-4">
+                <span class="text-[1.02rem]">702-699-5363</span>
+                <span class="mono text-[.68rem] tracking-[.13em] uppercase text-white/55">View gallery &rsaquo;</span>
+              </div>
+            </div>
+          </a>
+          <a href="gallery/wyland-waikiki.html" class="gallery-card card overflow-hidden block flex-none">
+            <img src="images/galleries/wyland-waikiki/0.jpg" alt="Wyland Galleries Waikiki, Oahu, Hawaii" class="w-full aspect-[16/10] object-cover">
+            <div class="p-[var(--pad-l)]">
+              <h3 class="display text-[1.75rem] leading-none">Wyland Galleries</h3>
+              <p class="mono text-[.7rem] tracking-[.13em] text-taste2 uppercase mt-2">Waikiki, Oahu, Hawaii</p>
+              <p class="mt-[var(--pad-s)] text-white/65 text-[.92rem]">Beachwalk Shopping Center<br>226 Lewers Street, Suite L-127</p>
+              <div class="mt-[var(--pad-s)] hair pt-[var(--pad-s)] flex items-center justify-between gap-4">
+                <span class="text-[1.02rem]">808-924-1322</span>
+                <span class="mono text-[.68rem] tracking-[.13em] uppercase text-white/55">View gallery &rsaquo;</span>
+              </div>
+            </div>
+          </a>
+          <a href="gallery/wyland-haleiwa.html" class="gallery-card card overflow-hidden block flex-none">
+            <img src="images/galleries/wyland-haleiwa/0.jpg" alt="Wyland Galleries Haleiwa, Oahu, Hawaii" class="w-full aspect-[16/10] object-cover">
+            <div class="p-[var(--pad-l)]">
+              <h3 class="display text-[1.75rem] leading-none">Wyland Galleries</h3>
+              <p class="mono text-[.7rem] tracking-[.13em] text-taste2 uppercase mt-2">Haleiwa, Oahu, Hawaii</p>
+              <p class="mt-[var(--pad-s)] text-white/65 text-[.92rem]">North Shore Market Place<br>66-250 H Kamehameha Highway</p>
+              <div class="mt-[var(--pad-s)] hair pt-[var(--pad-s)] flex items-center justify-between gap-4">
+                <span class="text-[1.02rem]">808-637-8729</span>
+                <span class="mono text-[.68rem] tracking-[.13em] uppercase text-white/55">View gallery &rsaquo;</span>
+              </div>
+            </div>
+          </a>
+          <a href="gallery/wyland-tahoe.html" class="gallery-card card overflow-hidden block flex-none">
+            <img src="images/galleries/wyland-tahoe/0.jpg" alt="Wyland Galleries South Lake Tahoe, California" class="w-full aspect-[16/10] object-cover">
+            <div class="p-[var(--pad-l)]">
+              <h3 class="display text-[1.75rem] leading-none">Wyland Galleries</h3>
+              <p class="mono text-[.7rem] tracking-[.13em] text-taste2 uppercase mt-2">South Lake Tahoe, California</p>
+              <p class="mt-[var(--pad-s)] text-white/65 text-[.92rem]">Village Center<br>4000 Lake Tahoe Blvd, Bldg A, Unit 3</p>
+              <div class="mt-[var(--pad-s)] hair pt-[var(--pad-s)] flex items-center justify-between gap-4">
+                <span class="text-[1.02rem]">530-541-7099</span>
+                <span class="mono text-[.68rem] tracking-[.13em] uppercase text-white/55">View gallery &rsaquo;</span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ GALLERY INFORMATION ============ -->
+  <section class="relative py-[var(--pad-xxh)] overflow-hidden">
+    <div class="glow-grey opacity-30"></div>
+    <div class="vignette"></div>
+    <div class="relative z-10 pad-content">
+      <h2 class="display display-tight h-poster rv">Gallery<br>Information</h2>
+      <div class="mt-[var(--pad-xh)] max-w-[48rem] mx-auto rv">
+        <div class="acc-item">
+          <button class="acc-btn"><span>Who is Signature Gallery Group?</span>
+            <svg class="chev" width="18" height="10" viewBox="0 0 18 10" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M1 1l8 7 8-7"/></svg></button>
+          <div class="acc-panel">
+            <div class="acc-panel-inner">
+              Signature Gallery Group is a managing and accounting company for the galleries listed on this website: Wyland Galleries in Las Vegas, Lake Tahoe, Haleiwa, Waikiki and Maui, and Signature Galleries in Las Vegas.
+            </div>
+          </div>
+        </div>
+        <div class="acc-item">
+          <button class="acc-btn"><span>Where are the galleries located?</span>
+            <svg class="chev" width="18" height="10" viewBox="0 0 18 10" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M1 1l8 7 8-7"/></svg></button>
+          <div class="acc-panel">
+            <div class="acc-panel-inner">
+              Signature Galleries at The Grand Canal Shoppes at the Venetian, Las Vegas. Wyland Galleries at Miracle Mile Shops at Planet Hollywood, Las Vegas; Village Center, South Lake Tahoe; Beachwalk Shopping Center, Honolulu; and North Shore Market Place, Haleiwa.
+            </div>
+          </div>
+        </div>
+        <div class="acc-item">
+          <button class="acc-btn"><span>What are your gallery hours?</span>
+            <svg class="chev" width="18" height="10" viewBox="0 0 18 10" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M1 1l8 7 8-7"/></svg></button>
+          <div class="acc-panel">
+            <div class="acc-panel-inner">
+              Hours vary by location and season, and may change during art shows and special events. Las Vegas galleries open at 10:00am; Hawaii and Lake Tahoe galleries open at 11:00am. Each gallery page lists its current hours.
+            </div>
+          </div>
+        </div>
+        <div class="acc-item">
+          <button class="acc-btn"><span>Can I meet the artists?</span>
+            <svg class="chev" width="18" height="10" viewBox="0 0 18 10" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M1 1l8 7 8-7"/></svg></button>
+          <div class="acc-panel">
+            <div class="acc-panel-inner">
+              Yes. We host artist shows throughout the year in Las Vegas and Lake Tahoe. See the upcoming art shows above, or visit an artist's page for their next appearance.
+            </div>
+          </div>
+        </div>
+        <div class="acc-item">
+          <button class="acc-btn"><span>How do I speak to a fine art consultant?</span>
+            <svg class="chev" width="18" height="10" viewBox="0 0 18 10" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M1 1l8 7 8-7"/></svg></button>
+          <div class="acc-panel">
+            <div class="acc-panel-inner">
+              Every gallery has a director and a team of art consultants, listed on that gallery's page. You can also contact our corporate office at <a href="mailto:info@signaturegalleries.com?subject=Enquiry%20for%20Signature%20Gallery%20Group&amp;body=Hello%20Signature%20Gallery%20Group%2C%0D%0A%0D%0A" class="underline">info@signaturegalleries.com</a>.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer id="contact" class="relative pt-[var(--pad-xxh)] pb-[var(--pad-xh)] overflow-hidden">
+  <div class="glow-grey opacity-45"></div>
+  <div class="vignette"></div>
+  <div class="relative z-10 pad-content">
+    <div class="max-w-[35rem] mx-auto text-center rv">
+      <h2 class="display h-section">Join Us</h2>
+      <p class="mt-[var(--pad-s)] text-white/70 copy">
+        Join the community and be the first to know about new releases, upcoming art shows and artist appearances at our galleries.
+      </p>
+      <form class="mt-[var(--pad-l)]" data-sgg-signup>
+        <input class="field" type="email" name="email" required placeholder="Your email address" aria-label="Your email address">
+        <button class="btn-pill w-full mt-[var(--pad-s)] text-[.82rem]">REGISTER</button>
+        <p class="mt-[var(--pad-s)] text-[.82rem] text-taste2" data-sgg-signup-msg hidden></p>
+      </form>
+      <p class="mt-[var(--pad-s)] text-[.82rem] text-white/55">
+        By registering you agree to our <a href="#contact" class="underline">privacy policy</a>
+      </p>
+      <div class="socials">
+      <a href="https://www.instagram.com/signaturegallerieslv/?hl=en" target="_blank" rel="noopener" aria-label="Signature Galleries on Instagram"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1.1" fill="currentColor" stroke="none"/></svg></a>
+      <a href="https://www.facebook.com/Signaturegalleryinlasvegas" target="_blank" rel="noopener" aria-label="Signature Galleries on Facebook"><svg width="19" height="19" viewBox="0 0 24 24" fill="currentColor"><path d="M14 8.5V7.2c0-.7.2-1.1 1.2-1.1H17V3.2A18 18 0 0 0 14.6 3C12.3 3 10.8 4.4 10.8 7v1.5H8.4V12h2.4v9h3.2v-9h2.5l.4-3.5H14z"/></svg></a>
+    </div>
+      <p class="mt-[var(--pad-l)] mono text-[.68rem] tracking-[.13em] text-white/45 uppercase">
+        Corporate office &middot; <a href="mailto:info@signaturegalleries.com?subject=Enquiry%20for%20Signature%20Gallery%20Group&amp;body=Hello%20Signature%20Gallery%20Group%2C%0D%0A%0D%0A" class="underline">info@signaturegalleries.com</a>
+      </p>
+      <p class="mt-[var(--pad-xs)] mono text-[.68rem] tracking-[.13em] text-white/45 uppercase">&copy; 2026 Signature Gallery Group</p>
+    </div>
+    <div class="mt-[var(--pad-xh)] max-w-[52rem] mx-auto legalbar px-[var(--pad-s)] py-[var(--pad-xs)] flex flex-wrap items-center justify-center gap-x-[var(--pad-l)] gap-y-[var(--pad-xs)] rv">
+      <a href="artists.html" class="border border-white/40 rounded-[.25rem] px-4 py-2 text-[.72rem] tracking-[.1em] uppercase">Artists</a>
+      <a href="index.html#events" class="text-[.72rem] tracking-[.1em] uppercase text-white/70 hover:text-white transition-colors">Events</a>
+      <a href="index.html#galleries" class="text-[.72rem] tracking-[.1em] uppercase text-white/70 hover:text-white transition-colors">Galleries</a>
+      <a href="index.html#contact" class="text-[.72rem] tracking-[.1em] uppercase text-white/70 hover:text-white transition-colors">Shop</a>
+      <a href="index.html#contact" class="border border-white/40 rounded-[.25rem] px-4 py-2 text-[.72rem] tracking-[.1em] uppercase">Contact</a>
+    </div>
+    <p class="mt-[var(--pad-l)] text-center text-[.78rem] text-white/40">
+      Signature Gallery Group, a managing and accounting company.
+    </p>
+    <p class="mt-[var(--pad-xs)] text-center text-[.78rem] text-white/40">
+      Created by <span class="underline">Giancarlo Capicotto</span>
+    </p>
+  </div>
+</footer>
+
+<script src="assets/site.js"></script>
+<script src="assets/track.js" defer></script>
+</body>
+</html>
+
