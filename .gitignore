@@ -4,15 +4,25 @@
 # Node
 node_modules/
 
+# Build outputs
+dist/
+build/
+.cache/
+.parcel-cache/
+.vite/
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
 # Machine-specific Claude Code settings
 .claude/settings.local.json
 
 # Screenshot output from the compare loop
 shots/
 
-# Large binaries — versioned by Dropbox, not git.
-# Remove these lines (and re-add) if you want a self-contained deployable repo.
-images/
+# Design-process reference material — not site assets, not needed to deploy.
 Logos, Images, and Artwork/
 SGG Old Website Screenshots/
 Reference Website Screenshots/
