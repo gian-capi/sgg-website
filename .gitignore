@@ -1,28 +1,13 @@
-# macOS
 .DS_Store
-
-# Node
 node_modules/
-
-# Build outputs
 dist/
 build/
 .cache/
-.parcel-cache/
-.vite/
-
-# Environment files
 .env
 .env.local
-.env.*.local
-
-# Machine-specific Claude Code settings
-.claude/settings.local.json
-
-# Screenshot output from the compare loop
 shots/
 
-# Design-process reference material — not site assets, not needed to deploy.
-Logos, Images, and Artwork/
-SGG Old Website Screenshots/
-Reference Website Screenshots/
+# Explicitly anchored reference directories
+/Logos, Images, and Artwork/
+/SGG Old Website Screenshots/
+/Reference Website Screenshots/
