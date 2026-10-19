@@ -11,34 +11,49 @@ const __dirname = path.dirname(__filename);
 
 const app = express();
 
+// Required on Render so secure session cookies persist over HTTPS
+app.set('trust proxy', 1);
+
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-// Serve static admin panel assets (login.html, CSS, JS)
+// Serve static files from public/ directly AND via /assets path
 app.use(express.static(path.join(__dirname, 'public')));
+app.use('/assets', express.static(path.join(__dirname, 'public')));
 
-// Configure session store
+// Configure session middleware
 app.use(
   session({
     secret: config.sessionSecret || 'fallback-secret-key',
     resave: false,
     saveUninitialized: false,
-    cookie: { secure: process.env.NODE_ENV === 'production' }
+    cookie: {
+      secure: process.env.NODE_ENV === 'production',
+      httpOnly: true,
+      maxAge: 24 * 60 * 60 * 1000 // 24 hours
+    }
   })
 );
 
-// Handle POST /login form submissions
+// Process POST /login form submissions
 app.post('/login', async (req, res) => {
-  const { email, password } = req.body;
+  const { email, password, next } = req.body;
   const user = await verifyCredentials(email, password);
 
   if (!user) {
-    return res.status(401).redirect('/login.html?error=invalid');
+    return res.redirect('/login.html?error=invalid');
   }
 
   req.session.userId = user.id;
-  const nextUrl = req.query.next || '/';
-  return res.redirect(nextUrl);
+
+  req.session.save((err) => {
+    if (err) {
+      console.error('[ERROR] Session save failed:', err);
+      return res.status(500).send('Session save error');
+    }
+    const redirectTarget = next && next.startsWith('/') ? next : '/';
+    return res.redirect(redirectTarget);
+  });
 });
 
 // Mount API routes
@@ -49,7 +64,7 @@ if (config.siteRoot) {
   app.use(express.static(config.siteRoot));
 }
 
-// Protected root URL -> serves admin index.html
+// Protected root URL -> serves admin dashboard index.html
 app.get('/', requirePage, (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
