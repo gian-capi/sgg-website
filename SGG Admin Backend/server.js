@@ -3,7 +3,8 @@ import session from 'express-session';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import { config } from './src/lib/config.js';
-import { requirePage } from './src/lib/auth.js';
+import { requirePage, verifyCredentials } from './src/lib/auth.js';
+import apiRouter from './src/routes/api.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -13,7 +14,7 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-// Serve static admin panel assets (login.html, CSS, JS) from the public folder
+// Serve static admin panel assets (login.html, CSS, JS)
 app.use(express.static(path.join(__dirname, 'public')));
 
 // Configure session store
@@ -26,12 +27,29 @@ app.use(
   })
 );
 
+// Handle POST /login form submissions
+app.post('/login', async (req, res) => {
+  const { email, password } = req.body;
+  const user = await verifyCredentials(email, password);
+
+  if (!user) {
+    return res.status(401).redirect('/login.html?error=invalid');
+  }
+
+  req.session.userId = user.id;
+  const nextUrl = req.query.next || '/';
+  return res.redirect(nextUrl);
+});
+
+// Mount API routes
+app.use('/api', apiRouter);
+
 // Serve live site static files if configured
 if (config.siteRoot) {
   app.use(express.static(config.siteRoot));
 }
 
-// Redirect root URL to admin dashboard or login
+// Protected root URL -> serves admin index.html
 app.get('/', requirePage, (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
