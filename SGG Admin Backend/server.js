@@ -11,13 +11,12 @@ const __dirname = path.dirname(__filename);
 
 const app = express();
 
-// Required on Render so secure session cookies persist over HTTPS
 app.set('trust proxy', 1);
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-// Serve static files from public/ directly AND via /assets path
+// Serve static admin files directly and via /assets mapping
 app.use(express.static(path.join(__dirname, 'public')));
 app.use('/assets', express.static(path.join(__dirname, 'public')));
 
@@ -30,7 +29,7 @@ app.use(
     cookie: {
       secure: process.env.NODE_ENV === 'production',
       httpOnly: true,
-      maxAge: 24 * 60 * 60 * 1000 // 24 hours
+      maxAge: 24 * 60 * 60 * 1000
     }
   })
 );
@@ -64,9 +63,9 @@ if (config.siteRoot) {
   app.use(express.static(config.siteRoot));
 }
 
-// Protected root URL -> serves admin dashboard index.html
+// Protected root URL -> serves admin.html
 app.get('/', requirePage, (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'index.html'));
+  res.sendFile(path.join(__dirname, 'public', 'admin.html'));
 });
 
 const PORT = process.env.PORT || 10000;
