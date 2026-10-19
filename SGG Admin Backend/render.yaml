@@ -1,0 +1,42 @@
+services:
+  - type: web
+    name: sgg-admin
+    env: docker
+    dockerfilePath: ./Dockerfile
+    dockerContext: .
+    plan: starter # persistent disks require Starter or higher, not Free
+    region: oregon
+    healthCheckPath: /healthz
+    autoDeploy: true
+
+    # Persistent disk for the SQLite database, pre-publish backups, and the
+    # published static site / uploaded images. Without this, all of it is
+    # wiped on every deploy and on dyno restarts.
+    disk:
+      name: sgg-data
+      mountPath: /var/data
+      sizeGB: 1
+
+    envVars:
+      - key: NODE_ENV
+        value: production
+      # PORT is injected by Render automatically — do not set it here.
+      - key: SESSION_SECRET
+        generateValue: true
+      - key: DB_PATH
+        value: /var/data/db/sgg.db
+      - key: BACKUP_ROOT
+        value: /var/data/backups
+      # Where the admin publishes rendered HTML + uploaded images. This is a
+      # path on Render's disk, NOT the local "SGG Website" Dropbox folder —
+      # see the deployment guide for why that matters before relying on it.
+      - key: SITE_ROOT
+        value: /var/data/site
+      # Set after the first deploy, once you know this service's real URL
+      # (or a custom domain). Required for analytics to work from the live site.
+      - key: PUBLIC_ORIGIN
+        sync: false
+      # Comma-separated origins allowed to POST analytics/inquiries. Set to
+      # your real site domain(s) before going live — never leave as "*".
+      - key: TRACKING_ORIGINS
+        sync: false

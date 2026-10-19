@@ -1,0 +1,65 @@
+<%- include('partials/head', { title: a.page_title || (a.name + ' — Signature Gallery Group'), description: a.meta_description || (a.name + ': biography, upcoming events and artwork catalogue at Signature Gallery Group.'), prefix: prefix }) %>
+
+<main class="page-hero">
+  <div class="glow-purple-v"></div><div class="vignette"></div>
+
+  <section class="relative z-10 pad-content pt-[var(--pad-xh)] pb-[var(--pad-xxl)]">
+    <p class="crumb rv"><a href="../index.html">Home</a> &nbsp;/&nbsp; <a href="../artists.html">Artists</a> &nbsp;/&nbsp; <%= a.name %></p>
+    <div class="mt-[var(--pad-l)] grid grid-cols-1 lg:grid-cols-[minmax(0,1fr)_minmax(0,.85fr)] gap-[var(--pad-xl)] items-center">
+      <div class="rv">
+        <h1 class="display display-tight text-[clamp(2.4rem,5vw,5.2rem)]"><%= a.name %></h1>
+<% if (a.specialty) { %>        <p class="mono text-[.72rem] tracking-[.14em] text-taste2 uppercase mt-[var(--pad-s)]"><%= a.specialty %></p>
+<% } %>
+<% if (bioParagraphs.length) { bioParagraphs.forEach(function (para) { %>        <p class="mt-[var(--pad-m)] text-white/70 copy"><%= para %></p>
+<% }); } else { %>        <p class="mt-[var(--pad-m)] text-white/60 copy">Biography coming soon. Contact a gallery for more on this artist.</p>
+<% } %>      </div>
+      <div class="rv">
+        <img src="../<%= a.hero_image %>" alt="<%= a.name %>"
+             class="artist-hero-photo rounded-[1rem]"
+             style="filter:drop-shadow(0 40px 70px rgba(0,0,0,.75));">
+      </div>
+    </div>
+  </section>
+
+  <section class="relative z-10 pad-content pb-[var(--pad-xxl)]">
+    <h2 class="display h-section rv">Upcoming Events</h2>
+    <div class="mt-[var(--pad-l)] grid grid-cols-1 md:grid-cols-2 gap-[var(--pad-s)]">
+<% if (events.length) { events.forEach(function (ev) { %>      <%- include('partials/event-card', { ev: ev, prefix: prefix, fmt: fmt }) %>
+<% }); } else { %>      <div class="card p-[var(--pad-l)] rv">
+        <p class="text-white/60 copy">No scheduled appearances at this time. Contact a gallery to be notified
+          when this artist's next show is announced.</p>
+        <a href="../index.html#galleries" class="btn-ghost mt-[var(--pad-m)]">CONTACT A GALLERY</a>
+      </div>
+<% } %>    </div>
+  </section>
+
+  <section class="relative z-10 pad-content pb-[var(--pad-xxh)]">
+    <h2 class="display h-section rv">Catalogue</h2>
+    <p class="mt-[var(--pad-s)] text-white/60 copy rv"><%= works.length %> works. Select a piece to view it larger. Contact a gallery for availability and pricing.</p>
+    <div class="mt-[var(--pad-xl)] grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-[var(--pad-xs)]">
+<% if (works.length) { works.forEach(function (w, wi) { %>      <figure class="card p-[var(--pad-xs)] cursor-pointer rv" data-lb-src="../<%= w.image_path %>" data-lb-caption="<%= w.title %> &mdash; <%= a.name %>">
+        <img src="../<%= w.thumb_path || w.image_path %>" alt="<%= w.title %>"<%- wi >= 12 ? ' loading="lazy"' : '' %> decoding="async" width="420" height="420" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+        <figcaption class="mt-[var(--pad-xs)] text-[.8rem] text-white/70 text-center"><%= w.title %></figcaption>
+      </figure>
+<% }); } else { %>      <p class="text-white/60 copy">Catalogue coming soon.</p>
+<% } %>    </div>
+
+    <h2 class="display h-section mt-[var(--pad-xxl)] rv">More Artists</h2>
+    <div class="scroll-x mt-[var(--pad-l)] rv">
+      <div class="flex gap-[var(--pad-xs)] w-max pb-2">
+<% moreArtists.forEach(function (o) { %>        <a href="<%= o.slug %>.html" class="card flex items-center gap-3 py-3 px-4 flex-none">
+          <img src="../<%= o.card_image %>" alt="<%= o.name %>" loading="lazy" class="w-9 h-9 rounded-full object-cover border border-white/25">
+          <span class="text-[.92rem] whitespace-nowrap"><%= o.name %></span>
+        </a>
+<% }); %>      </div>
+    </div>
+    <a href="../artists.html" class="btn-ghost mt-[var(--pad-l)] rv">VIEW ALL ARTISTS</a>
+  </section>
+</main>
+
+<div class="lightbox" id="lightbox">
+  <img alt="">
+  <p class="mono text-[.72rem] tracking-[.13em] uppercase text-white/70" data-lb-caption></p>
+</div>
+
+<%- include('partials/footer', { s: s, prefix: prefix, year: year, mailto: mailto }) %>

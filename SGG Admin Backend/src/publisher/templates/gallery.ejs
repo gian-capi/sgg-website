@@ -1,0 +1,95 @@
+<%- include('partials/head', { title: g.page_title || (g.name + ' ' + g.location + ' — Signature Gallery Group'), description: g.meta_description || (g.name + ' in ' + g.location + ': location, hours and fine art consultants.'), prefix: prefix }) %>
+
+<main class="page-hero">
+  <div class="glow-purple-v"></div><div class="vignette"></div>
+
+  <section class="relative z-10 pad-content pt-[var(--pad-xh)] pb-[var(--pad-xxl)]">
+    <p class="crumb rv"><a href="../index.html">Home</a> &nbsp;/&nbsp; <a href="../index.html#galleries">Galleries</a> &nbsp;/&nbsp; <%= g.location %></p>
+    <div class="mt-[var(--pad-l)] grid grid-cols-1 lg:grid-cols-[minmax(0,1.1fr)_minmax(0,.9fr)] gap-[var(--pad-xl)] items-center">
+<% if (photos.length > 1) { %>      <div class="rv">
+        <div class="gcar" data-gcar>
+          <div class="gcar-track">
+<% photos.forEach(function (p, i) { %>            <img src="../<%= p.path %>" alt="<%= g.name %> <%= g.location %>"<%- i === 0 ? ' class="active"' : ' loading="lazy"' %>>
+<% }); %>          </div>
+          <div class="gcar-nav">
+            <button class="arrow" data-gcar-prev aria-label="Previous photo">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M15 4l-8 8 8 8"/></svg>
+            </button>
+            <div class="dots" data-gcar-dots></div>
+            <button class="arrow" data-gcar-next aria-label="Next photo">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M9 4l8 8-8 8"/></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+<% } else { %>      <div class="rv">
+        <img src="../<%= photos[0] ? photos[0].path : '' %>" alt="<%= g.name %> <%= g.location %>"
+             class="w-full rounded-[1rem] object-cover aspect-[4/3]"
+             style="filter:drop-shadow(0 40px 70px rgba(0,0,0,.75));">
+      </div>
+<% } %>
+      <div class="rv">
+        <img src="../<%= g.logo %>" alt="<%= g.name %>" class="h-[2.6rem] w-auto">
+        <h1 class="display display-tight text-[clamp(2.2rem,4.4vw,4.4rem)] mt-[var(--pad-m)]"><%= g.name %></h1>
+        <p class="mono text-[.72rem] tracking-[.14em] text-taste2 uppercase mt-[var(--pad-s)]"><%= g.location %></p>
+        <div class="mt-[var(--pad-l)] hair pt-[var(--pad-m)]">
+          <p class="mono text-[.66rem] tracking-[.13em] text-white/45 uppercase">Location</p>
+          <p class="mt-2 text-white/80 copy"><%- fmt.br(g.address) %></p>
+        </div>
+        <div class="mt-[var(--pad-m)] hair pt-[var(--pad-m)]">
+          <p class="mono text-[.66rem] tracking-[.13em] text-white/45 uppercase">Contact</p>
+          <p class="mt-2"><a href="tel:<%= fmt.tel(g.phone) %>" class="text-[1.4rem]"><%= g.phone %></a></p>
+          <p class="mt-1"><a href="<%- mailto(g.email) %>" class="text-white/70 underline text-[.95rem]"><%= g.email %></a></p>
+        </div>
+        <div class="mt-[var(--pad-m)] hair pt-[var(--pad-m)]">
+          <p class="mono text-[.66rem] tracking-[.13em] text-white/45 uppercase">Hours</p>
+          <p class="mt-2 text-white/70 text-[.95rem] leading-[1.9]"><%- fmt.br(g.hours) %></p>
+        </div>
+        <div class="mt-[var(--pad-m)] hair pt-[var(--pad-m)]">
+          <p class="mono text-[.66rem] tracking-[.13em] text-white/45 uppercase">Follow this gallery</p>
+          <div class="socials">
+      <a href="<%= g.instagram_url %>" target="_blank" rel="noopener" aria-label="<%= g.name %> <%= g.location %> on Instagram"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1.1" fill="currentColor" stroke="none"/></svg></a>
+      <a href="<%= g.facebook_url %>" target="_blank" rel="noopener" aria-label="<%= g.name %> <%= g.location %> on Facebook"><svg width="19" height="19" viewBox="0 0 24 24" fill="currentColor"><path d="M14 8.5V7.2c0-.7.2-1.1 1.2-1.1H17V3.2A18 18 0 0 0 14.6 3C12.3 3 10.8 4.4 10.8 7v1.5H8.4V12h2.4v9h3.2v-9h2.5l.4-3.5H14z"/></svg></a>
+    </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<% if (consultants.length) { %>  <section class="relative z-10 pad-content pb-[var(--pad-xxl)]">
+    <h2 class="display display-tight h-section rv">Know Your<br>Fine Art Consultant</h2>
+    <div class="mt-[var(--pad-xl)] grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-[var(--pad-s)]">
+<% consultants.forEach(function (c) { %>      <div class="card p-[var(--pad-s)] rv">
+<% if (c.photo) { %>        <img src="../<%= c.photo %>" alt="<%= c.name %>" loading="lazy" class="w-full aspect-square object-cover rounded-[.5rem]">
+<% } else { %>        <div class="avatar-blank w-full aspect-square rounded-[.5rem]"><svg width="46" height="46" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><circle cx="12" cy="8" r="3.6"/><path d="M4.5 20.5c0-3.9 3.4-6 7.5-6s7.5 2.1 7.5 6"/></svg></div>
+<% } %>        <p class="display text-[1.12rem] mt-[var(--pad-xs)] leading-none"><%= c.name %></p>
+        <p class="mono text-[.64rem] tracking-[.11em] text-white/50 uppercase mt-2"><%= c.title %></p>
+        <a href="mailto:<%= c.email %>" class="consultant-email mono"><%= c.email %></a>
+      </div>
+<% }); %>    </div>
+  </section>
+<% } %>
+  <section class="relative z-10 pad-content pb-[var(--pad-xxh)]">
+    <h2 class="display h-section rv">Upcoming Events</h2>
+    <div class="mt-[var(--pad-xl)] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[var(--pad-s)]">
+<% if (events.length) { events.forEach(function (ev) { %>      <%- include('partials/event-card', { ev: ev, prefix: prefix, fmt: fmt }) %>
+<% }); } else { %>      <div class="card p-[var(--pad-l)] md:col-span-2 rv">
+        <p class="text-white/60 copy">Great art events coming soon. Contact the gallery to hear about
+        shows and artist appearances first.</p>
+      </div>
+<% } %>    </div>
+
+    <h2 class="display h-section mt-[var(--pad-xxl)] rv">Our Other Galleries</h2>
+    <div class="mt-[var(--pad-l)] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-[var(--pad-s)]">
+<% others.forEach(function (o) { %>      <a href="<%= o.slug %>.html" class="card overflow-hidden rv block">
+        <img src="../<%= o.photo %>" alt="<%= o.name %>" loading="lazy" class="w-full aspect-[16/10] object-cover">
+        <div class="p-[var(--pad-s)]">
+          <p class="display text-[1.15rem] leading-none"><%= o.name %></p>
+          <p class="mono text-[.64rem] tracking-[.11em] text-white/50 uppercase mt-2"><%= o.location %></p>
+        </div>
+      </a>
+<% }); %>    </div>
+  </section>
+</main>
+
+<%- include('partials/footer', { s: s, prefix: prefix, year: year, mailto: mailto }) %>

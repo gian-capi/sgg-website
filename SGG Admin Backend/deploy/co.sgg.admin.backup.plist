@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Nightly SQLite snapshot for the SGG Admin database.
+
+  Runs `npm run backup:db` at 03:15 every day. Uses SQLite's online backup API,
+  so it is safe to run while the admin server is up and writing in WAL mode.
+  If the Mac is asleep at 03:15, launchd runs the job once it next wakes.
+-->
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>co.sgg.admin.backup</string>
+
+  <key>ProgramArguments</key>
+  <array>
+    <string>__NODE__</string>
+    <string>__APP_DIR__/deploy/backup-db.js</string>
+  </array>
+
+  <key>WorkingDirectory</key>
+  <string>__APP_DIR__</string>
+
+  <key>StartCalendarInterval</key>
+  <dict>
+    <key>Hour</key>
+    <integer>3</integer>
+    <key>Minute</key>
+    <integer>15</integer>
+  </dict>
+
+  <key>StandardOutPath</key>
+  <string>__APP_DIR__/logs/backup.log</string>
+  <key>StandardErrorPath</key>
+  <string>__APP_DIR__/logs/backup.error.log</string>
+
+  <key>EnvironmentVariables</key>
+  <dict>
+    <key>PATH</key>
+    <string>/usr/local/bin:/opt/homebrew/bin:/usr/bin:/bin:/usr/sbin:/sbin</string>
+  </dict>
+</dict>
+</plist>

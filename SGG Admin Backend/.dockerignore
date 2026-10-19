@@ -1,0 +1,16 @@
+node_modules
+data
+data-backups
+backups
+uploads
+logs
+.env
+.env.example
+.env.production
+.git
+.gitignore
+.DS_Store
+*.log
+npm-debug.log*
+README.md
+CLAUDE_1.md

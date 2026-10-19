@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sign in — SGG Admin</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,75..125,100..900;1,75..125,100..900&family=Geist:wght@100..900&family=Geist+Mono:wght@100..900&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%233D2B68'/%3E%3Ctext x='16' y='22' font-family='Arial' font-size='16' font-weight='bold' fill='%23fff' text-anchor='middle'%3ES%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="/assets/admin.css">
+</head>
+<body>
+<div class="login-glow"></div>
+<div class="login-wrap">
+  <div class="login-card">
+    <div style="text-align:center;margin-bottom:1.5rem">
+      <p class="display" style="font-size:1.5rem;line-height:.8">SIGNATURE<br>GALLERY GROUP</p>
+      <p class="label" style="margin-top:.75rem">Admin &amp; Analytics Manager</p>
+    </div>
+    <div class="card card-pad">
+      <form method="post" action="/login">
+        <input type="hidden" name="next" id="nextField">
+        <label class="field">
+          <span>Email</span>
+          <input class="input" type="email" name="email" required autofocus autocomplete="username">
+        </label>
+        <label class="field">
+          <span>Password</span>
+          <input class="input" type="password" name="password" required autocomplete="current-password">
+        </label>
+        <button class="btn btn-primary" style="width:100%;justify-content:center" type="submit">SIGN IN</button>
+      </form>
+    </div>
+    <p class="small dim" style="text-align:center;margin-top:1rem">
+      No account yet? Run <code class="mono">npm run seed</code> in the project folder.
+    </p>
+  </div>
+</div>
+<script>
+  var next = new URLSearchParams(location.search).get('next');
+  if (next && next.charAt(0) === '/') document.getElementById('nextField').value = next;
+</script>
+</body>
+</html>

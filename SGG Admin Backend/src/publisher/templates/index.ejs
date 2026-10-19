@@ -1,0 +1,250 @@
+<%- include('partials/head', { title: s.site_title, description: s.site_description, prefix: prefix }) %>
+
+<nav class="iconrail" id="iconRail">
+  <button data-target="#releases" class="active" aria-label="New releases">
+    <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3.5" y="3.5" width="17" height="17" rx="1.5"/><path d="M3.5 15.5l4.5-4.2 3.6 3.3 3.8-4.6 5.1 5.4"/></svg>
+  </button>
+  <span class="dot"></span>
+  <button data-target="#artists" aria-label="Artists">
+    <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="3.4"/><path d="M5 20c0-3.6 3.1-5.6 7-5.6s7 2 7 5.6"/></svg>
+  </button>
+  <span class="dot"></span>
+  <button data-target="#events" aria-label="Events">
+    <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3.5" y="5" width="17" height="15.5" rx="1.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg>
+  </button>
+  <span class="dot"></span>
+  <button data-target="#galleries" aria-label="Galleries">
+    <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 21s7-6.1 7-11a7 7 0 1 0-14 0c0 4.9 7 11 7 11z"/><circle cx="12" cy="10" r="2.6"/></svg>
+  </button>
+</nav>
+
+<main id="top">
+
+  <!-- ============ HERO CAROUSEL ============ -->
+  <section class="hero" id="hero">
+<% slides.forEach(function (sl, i) { var cfg = sl.cfgObj; %>
+<% if (sl.kind === 'welcome') { %>    <div class="hero-slide<%= i === 0 ? ' active' : '' %>">
+      <div class="glow-grey"></div>
+      <div class="vignette"></div>
+      <div class="hero-slide-inner grid grid-cols-1 lg:grid-cols-[minmax(0,1.05fr)_minmax(0,.95fr)] gap-[var(--pad-xl)] items-center">
+        <div>
+          <h1 class="display display-tight h-hero-lg"><%- fmt.br(sl.headline) %></h1>
+          <p class="mt-[var(--pad-m)] text-white/70 copy max-w-[30rem]"><%= sl.body %></p>
+          <div class="logo-row mt-[var(--pad-xl)]">
+<% (cfg.logos || []).forEach(function (logo, li) { %>            <img<%- li === 0 ? ' class="logo-sgg"' : '' %> src="<%= logo.src %>" alt="<%= logo.alt %>">
+<% }); %>          </div>
+        </div>
+        <div class="hidden lg:block h-full">
+          <div class="art-rotator">
+<% (cfg.rotator || []).forEach(function (img) { %>            <img src="<%= img.src %>" alt="<%= img.alt %>">
+<% }); %>          </div>
+        </div>
+      </div>
+    </div>
+<% } else if (sl.kind === 'event') { %>    <div class="hero-slide<%= i === 0 ? ' active' : '' %>">
+      <div class="glow-purple-v"></div>
+      <div class="vignette"></div>
+      <div class="hero-slide-inner grid grid-cols-1 lg:grid-cols-2 gap-[var(--pad-xl)] items-center">
+        <div class="hidden lg:flex h-full items-center justify-center py-[var(--pad-l)]">
+          <img src="<%= sl.image %>" alt="<%= cfg.imageAlt || sl.eyebrow %>" class="max-h-full w-auto rounded-[.25rem]" style="filter:drop-shadow(0 40px 70px rgba(0,0,0,.8));">
+        </div>
+        <div>
+          <p class="mono text-[.7rem] tracking-[.14em] text-taste2 uppercase"><%= sl.eyebrow %></p>
+          <h2 class="display display-tight h-hero-lg mt-[var(--pad-s)]"><%- fmt.br(sl.headline) %></h2>
+          <div class="mt-[var(--pad-l)] hair pt-[var(--pad-m)] max-w-[30rem]">
+<% (cfg.detail || []).forEach(function (line, di) { %>            <p class="<%= di === 0 ? 'text-[1.15rem]' : (di === 1 ? 'mt-2 text-white/70 copy' : 'mt-1 text-white/50 text-[.92rem]') %>"><%- line %></p>
+<% }); %>          </div>
+          <div class="mt-[var(--pad-l)] flex flex-wrap gap-[var(--pad-s)]">
+<% if (sl.cta_label) { %>            <a href="<%= sl.cta_href %>" class="btn-pill"><%= sl.cta_label %></a>
+<% } %><% if (sl.cta2_label) { %>            <a href="<%= sl.cta2_href %>" class="btn-ghost"><%= sl.cta2_label %></a>
+<% } %>          </div>
+        </div>
+      </div>
+    </div>
+<% } else if (sl.kind === 'releases') { %>    <div class="hero-slide<%= i === 0 ? ' active' : '' %>">
+      <div class="glow-purple-v"></div>
+      <div class="vignette"></div>
+      <div class="hero-slide-inner flex flex-col justify-center">
+        <div class="grid grid-cols-1 lg:grid-cols-[minmax(0,.8fr)_minmax(0,1.2fr)] gap-[var(--pad-xl)] items-center">
+          <div>
+            <p class="mono text-[.7rem] tracking-[.14em] text-taste2 uppercase"><%= sl.eyebrow %></p>
+            <h2 class="display display-tight h-hero-lg mt-[var(--pad-s)]"><%- fmt.br(sl.headline) %></h2>
+<% if (sl.cta_label) { %>            <a href="<%= sl.cta_href %>" class="btn-pill mt-[var(--pad-l)]"><%= sl.cta_label %></a>
+<% } %>          </div>
+          <div class="grid grid-cols-4 sm:grid-cols-6 gap-[var(--pad-xs)]">
+<% (cfg.grid || []).forEach(function (img) { %>            <img src="<%= img.src %>" alt="<%= img.alt %>" class="w-full aspect-square object-cover rounded-[.4rem]">
+<% }); %>          </div>
+        </div>
+      </div>
+    </div>
+<% } else { %>    <div class="hero-slide<%= i === 0 ? ' active' : '' %>">
+      <img src="<%= sl.image %>" alt="<%= cfg.imageAlt || sl.eyebrow %>" class="absolute inset-0 w-full h-full object-cover">
+      <div class="absolute inset-0" style="background:linear-gradient(90deg, rgba(4,3,10,.94) 0%, rgba(4,3,10,.72) 34%, rgba(4,3,10,.15) 62%, rgba(4,3,10,.35) 100%);"></div>
+      <div class="hero-slide-inner flex flex-col justify-center">
+        <div class="max-w-[34rem]">
+          <p class="mono text-[.7rem] tracking-[.14em] text-taste2 uppercase"><%= sl.eyebrow %></p>
+          <h2 class="display display-tight h-hero-lg mt-[var(--pad-s)]"><%- fmt.br(sl.headline) %></h2>
+          <p class="mt-[var(--pad-m)] text-white/75 copy"><%= sl.body %></p>
+<% if (sl.cta_label) { %>          <a href="<%= sl.cta_href %>" class="btn-pill mt-[var(--pad-l)]"><%= sl.cta_label %></a>
+<% } %><% if (cfg.caption) { %>          <p class="mt-[var(--pad-m)] mono text-[.66rem] tracking-[.13em] uppercase text-white/45">
+            <%- cfg.caption %>
+          </p>
+<% } %>        </div>
+      </div>
+    </div>
+<% } %><% }); %>
+    <button class="arrow hero-arrow prev" aria-label="Previous slide">
+      <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M15 4l-8 8 8 8"/></svg>
+    </button>
+    <button class="arrow hero-arrow next" aria-label="Next slide">
+      <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M9 4l8 8-8 8"/></svg>
+    </button>
+    <div class="hero-dots dots"></div>
+  </section>
+
+  <!-- ============ NEW RELEASES ============ -->
+  <section id="releases" class="relative py-[var(--pad-xxh)] overflow-hidden">
+    <div class="glow-purple-v"></div>
+    <div class="scatter" id="releaseScatter"></div>
+    <div class="relative z-10">
+      <div class="pad-content rv">
+        <h2 class="display h-section"><%= s.releases_heading %></h2>
+        <p class="mt-[var(--pad-s)] text-white/60 copy max-w-[26rem]">
+          <%= s.releases_body %>
+        </p>
+      </div>
+      <div class="release-stage" id="releaseStage">
+<% releases.forEach(function (w) { %>        <figure class="slot" data-title="<%= w.title %>" data-artist="<%= fmt.releaseMeta(w) %>"><img src="<%= w.image_path %>" alt="<%= w.title %> by <%= w.artist_name %>"></figure>
+<% }); %>      </div>
+      <div class="pad-content mt-[var(--pad-xl)] flex flex-col lg:flex-row lg:items-end justify-between gap-[var(--pad-l)]">
+        <div class="release-meta">
+          <h3 class="display text-[clamp(1.9rem,3.6vw,3.4rem)] release-fade" id="releaseTitle">&nbsp;</h3>
+          <p class="mt-[var(--pad-xs)] text-white/70 copy release-fade" id="releaseMeta">&nbsp;</p>
+        </div>
+        <div class="flex items-center gap-[var(--pad-s)]">
+          <span class="mono text-[.72rem] tracking-[.13em] text-white/55" id="releaseCount">01 / <%= String(releases.length).padStart(2, '0') %></span>
+          <button class="arrow" id="releasePrev" aria-label="Previous artwork">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M15 4l-8 8 8 8"/></svg>
+          </button>
+          <button class="arrow" id="releaseNext" aria-label="Next artwork">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M9 4l8 8-8 8"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FEATURED ARTISTS ============ -->
+  <section id="artists" class="relative py-[var(--pad-xxh)] overflow-hidden" data-rail>
+    <div class="glow-purple"></div>
+    <div class="relative z-10">
+      <div class="pad-content flex flex-wrap items-end justify-between gap-[var(--pad-m)] rv">
+        <div class="max-w-[40rem]">
+          <h2 class="display display-tight h-section"><%= s.artists_heading %></h2>
+          <p class="mt-[var(--pad-m)] text-white/70 copy max-w-[32rem]">
+            <%= s.artists_body %>
+          </p>
+        </div>
+        <div class="flex items-center gap-[var(--pad-s)]">
+          <a href="artists.html" class="btn-pill">VIEW ALL ARTISTS</a>
+          <div class="flex items-center gap-[var(--pad-xs)]">
+            <button class="arrow" data-rail-prev aria-label="Previous artists">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M15 4l-8 8 8 8"/></svg>
+            </button>
+            <button class="arrow" data-rail-next aria-label="More artists">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M9 4l8 8-8 8"/></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-x mt-[var(--pad-xl)] pl-[var(--content-padding)] pr-[var(--page-padding)] rv" data-rail-track>
+        <div class="flex flex-col gap-[var(--pad-s)] w-max pb-2">
+<% featuredRows.forEach(function (row) { %>          <div class="flex gap-[var(--pad-s)]">
+<% row.forEach(function (a) { %>            <a href="artist/<%= a.slug %>.html" class="artist-card card p-[var(--pad-xs)] block flex-none">
+              <div class="shot"><img src="<%= a.featured_image || a.card_image %>" alt="<%= a.name %>"></div>
+              <div class="px-[.35rem] pt-[var(--pad-xs)] pb-[.35rem]">
+                <p class="mono text-[.62rem] tracking-[.13em] text-white/50 uppercase"><%= a.featured_label %></p>
+                <p class="display text-[1.28rem] leading-none mt-1"><%= a.name %></p>
+                <p class="text-[.8rem] text-white/55 mt-2"><%= a.specialty %></p>
+              </div>
+            </a>
+<% }); %>          </div>
+<% }); %>        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ EVENTS ============ -->
+  <section id="events" class="relative py-[var(--pad-xxh)] overflow-hidden">
+    <div class="glow-grey opacity-40"></div>
+    <div class="vignette"></div>
+    <div class="relative z-10 pad-content">
+      <h2 class="display display-tight h-section rv"><%= s.events_heading %></h2>
+      <div class="mt-[var(--pad-xh)] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[var(--pad-s)]">
+<% events.forEach(function (ev) { %>      <%- include('partials/event-card', { ev: ev, prefix: prefix, fmt: fmt, lazy: false }) %>
+<% }); %>      </div>
+    </div>
+  </section>
+
+  <!-- ============ GALLERIES (single-row carousel) ============ -->
+  <section id="galleries" class="relative py-[var(--pad-xxh)] overflow-hidden" data-rail>
+    <div class="glow-purple"></div>
+    <div class="relative z-10">
+      <div class="pad-content flex flex-wrap items-end justify-between gap-[var(--pad-m)] rv">
+        <div class="max-w-[46rem]">
+          <h2 class="display display-tight h-section"><%= s.galleries_heading %></h2>
+          <p class="mt-[var(--pad-m)] text-white/70 copy max-w-[34rem]">
+            <%- fmt.br(s.galleries_body) %>
+          </p>
+        </div>
+        <div class="flex items-center gap-[var(--pad-xs)]">
+          <button class="arrow" data-rail-prev aria-label="Previous galleries">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M15 4l-8 8 8 8"/></svg>
+          </button>
+          <button class="arrow" data-rail-next aria-label="More galleries">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M9 4l8 8-8 8"/></svg>
+          </button>
+        </div>
+      </div>
+      <div class="scroll-x mt-[var(--pad-xh)] pl-[var(--content-padding)] pr-[var(--page-padding)] rv" data-rail-track>
+        <div class="flex gap-[var(--pad-s)] w-max pb-2">
+<% galleries.forEach(function (g) { %>          <a href="gallery/<%= g.slug %>.html" class="gallery-card card overflow-hidden block flex-none">
+            <img src="<%= g.photo %>" alt="<%= g.name %> <%= g.location %>" class="w-full aspect-[16/10] object-cover">
+            <div class="p-[var(--pad-l)]">
+              <h3 class="display text-[1.75rem] leading-none"><%= g.name %></h3>
+              <p class="mono text-[.7rem] tracking-[.13em] text-taste2 uppercase mt-2"><%= g.location %></p>
+              <p class="mt-[var(--pad-s)] text-white/65 text-[.92rem]"><%- fmt.br(g.short_address) %></p>
+              <div class="mt-[var(--pad-s)] hair pt-[var(--pad-s)] flex items-center justify-between gap-4">
+                <span class="text-[1.02rem]"><%= g.phone %></span>
+                <span class="mono text-[.68rem] tracking-[.13em] uppercase text-white/55">View gallery &rsaquo;</span>
+              </div>
+            </div>
+          </a>
+<% }); %>        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ GALLERY INFORMATION ============ -->
+  <section class="relative py-[var(--pad-xxh)] overflow-hidden">
+    <div class="glow-grey opacity-30"></div>
+    <div class="vignette"></div>
+    <div class="relative z-10 pad-content">
+      <h2 class="display display-tight h-poster rv">Gallery<br>Information</h2>
+      <div class="mt-[var(--pad-xh)] max-w-[48rem] mx-auto rv">
+<% faqs.forEach(function (f) { %>        <div class="acc-item">
+          <button class="acc-btn"><span><%= f.question %></span>
+            <svg class="chev" width="18" height="10" viewBox="0 0 18 10" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M1 1l8 7 8-7"/></svg></button>
+          <div class="acc-panel">
+            <div class="acc-panel-inner">
+              <%- f.answer %>
+            </div>
+          </div>
+        </div>
+<% }); %>      </div>
+    </div>
+  </section>
+
+</main>
+
+<%- include('partials/footer', { s: s, prefix: prefix, year: year, mailto: mailto }) %>

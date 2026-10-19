@@ -1,0 +1,25 @@
+<%- include('partials/head', { title: 'All Artists — Signature Gallery Group', description: 'Every artist represented by Wyland Galleries and Signature Galleries.', prefix: prefix }) %>
+
+<main class="page-hero">
+  <div class="glow-purple-v"></div><div class="vignette"></div>
+  <section class="relative z-10 pad-content pt-[var(--pad-xh)] pb-[var(--pad-xxh)]">
+    <p class="crumb rv"><a href="index.html">Home</a> &nbsp;/&nbsp; Artists</p>
+    <h1 class="display display-tight h-poster mt-[var(--pad-l)] rv">Artists</h1>
+    <p class="mt-[var(--pad-m)] text-white/70 copy max-w-[34rem] rv">
+      <%= artists.length %> artists represented across our five galleries. Select an artist to view
+      their biography, upcoming appearances and full catalogue.
+    </p>
+    <div class="mt-[var(--pad-xh)] grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-[var(--pad-s)]">
+<% artists.forEach(function (a) { %>      <a href="artist/<%= a.slug %>.html" class="artist-card card p-[var(--pad-xs)] block rv">
+        <div class="shot shot-square"><img src="<%= a.card_image %>" alt="<%= a.name %>" loading="lazy"></div>
+        <div class="px-[.35rem] pt-[var(--pad-xs)] pb-[.35rem]">
+          <p class="display text-[1.16rem] leading-none"><%= a.name %></p>
+<% if (a.specialty) { %>          <p class="text-[.78rem] text-white/50 mt-1"><%= a.specialty %></p>
+<% } else { %>          <p class="text-[.78rem] text-white/40 mt-1"><%= a.work_count %> works</p>
+<% } %>        </div>
+      </a>
+<% }); %>    </div>
+  </section>
+</main>
+
+<%- include('partials/footer', { s: s, prefix: prefix, year: year, mailto: mailto }) %>

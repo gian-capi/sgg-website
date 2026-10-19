@@ -1,0 +1,46 @@
+<footer id="contact" class="relative pt-[var(--pad-xxh)] pb-[var(--pad-xh)] overflow-hidden">
+  <div class="glow-grey opacity-45"></div>
+  <div class="vignette"></div>
+  <div class="relative z-10 pad-content">
+    <div class="max-w-[35rem] mx-auto text-center rv">
+      <h2 class="display h-section"><%= s.footer_heading %></h2>
+      <p class="mt-[var(--pad-s)] text-white/70 copy">
+        <%= s.footer_body %>
+      </p>
+      <form class="mt-[var(--pad-l)]" data-sgg-signup>
+        <input class="field" type="email" name="email" required placeholder="Your email address" aria-label="Your email address">
+        <button class="btn-pill w-full mt-[var(--pad-s)] text-[.82rem]">REGISTER</button>
+        <p class="mt-[var(--pad-s)] text-[.82rem] text-taste2" data-sgg-signup-msg hidden></p>
+      </form>
+      <p class="mt-[var(--pad-s)] text-[.82rem] text-white/55">
+        By registering you agree to our <a href="#contact" class="underline">privacy policy</a>
+      </p>
+      <div class="socials">
+      <a href="<%= s.instagram_url %>" target="_blank" rel="noopener" aria-label="Signature Galleries on Instagram"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1.1" fill="currentColor" stroke="none"/></svg></a>
+      <a href="<%= s.facebook_url %>" target="_blank" rel="noopener" aria-label="Signature Galleries on Facebook"><svg width="19" height="19" viewBox="0 0 24 24" fill="currentColor"><path d="M14 8.5V7.2c0-.7.2-1.1 1.2-1.1H17V3.2A18 18 0 0 0 14.6 3C12.3 3 10.8 4.4 10.8 7v1.5H8.4V12h2.4v9h3.2v-9h2.5l.4-3.5H14z"/></svg></a>
+    </div>
+      <p class="mt-[var(--pad-l)] mono text-[.68rem] tracking-[.13em] text-white/45 uppercase">
+        Corporate office &middot; <a href="<%- mailto(s.contact_email) %>" class="underline"><%= s.contact_email %></a>
+      </p>
+      <p class="mt-[var(--pad-xs)] mono text-[.68rem] tracking-[.13em] text-white/45 uppercase">&copy; <%= year %> Signature Gallery Group</p>
+    </div>
+    <div class="mt-[var(--pad-xh)] max-w-[52rem] mx-auto legalbar px-[var(--pad-s)] py-[var(--pad-xs)] flex flex-wrap items-center justify-center gap-x-[var(--pad-l)] gap-y-[var(--pad-xs)] rv">
+      <a href="<%= prefix %>artists.html" class="border border-white/40 rounded-[.25rem] px-4 py-2 text-[.72rem] tracking-[.1em] uppercase">Artists</a>
+      <a href="<%= prefix %>index.html#events" class="text-[.72rem] tracking-[.1em] uppercase text-white/70 hover:text-white transition-colors">Events</a>
+      <a href="<%= prefix %>index.html#galleries" class="text-[.72rem] tracking-[.1em] uppercase text-white/70 hover:text-white transition-colors">Galleries</a>
+      <a href="<%= prefix %>index.html#contact" class="text-[.72rem] tracking-[.1em] uppercase text-white/70 hover:text-white transition-colors">Shop</a>
+      <a href="<%= prefix %>index.html#contact" class="border border-white/40 rounded-[.25rem] px-4 py-2 text-[.72rem] tracking-[.1em] uppercase">Contact</a>
+    </div>
+    <p class="mt-[var(--pad-l)] text-center text-[.78rem] text-white/40">
+      Signature Gallery Group, a managing and accounting company.
+    </p>
+    <p class="mt-[var(--pad-xs)] text-center text-[.78rem] text-white/40">
+      Created by <span class="underline"><%= s.credit_name %></span>
+    </p>
+  </div>
+</footer>
+
+<script src="<%= prefix %>assets/site.js"></script>
+<script src="<%= prefix %>assets/track.js" defer></script>
+</body>
+</html>

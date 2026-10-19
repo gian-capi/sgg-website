@@ -1,0 +1,13 @@
+<a href="<%= prefix %>event/<%= ev.slug %>.html" class="card overflow-hidden rv block">
+        <div class="event-banner"><img src="<%= prefix %><%= ev.banner_image %>" alt="<%= ev.title %>"<%- typeof lazy === 'undefined' || lazy ? ' loading="lazy"' : '' %>></div>
+        <div class="p-[var(--pad-s)] flex gap-[var(--pad-s)]">
+          <div class="datechip">
+            <span class="m"><%= fmt.mon(ev.start_date) %></span>
+            <span class="d"><%= fmt.day(ev.start_date) %></span>
+          </div>
+          <div>
+            <h3 class="display text-[1.35rem] leading-none"><%= ev.title %></h3>
+            <p class="mono text-[.66rem] tracking-[.13em] text-taste2 uppercase mt-2"><%= fmt.longDate(ev.start_date) %> &middot; <%= ev.location %></p>
+          </div>
+        </div>
+      </a>

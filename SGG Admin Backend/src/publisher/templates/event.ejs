@@ -1,0 +1,80 @@
+<%- include('partials/head', { title: e.page_title || (e.title + ' — Signature Gallery Group'), description: e.meta_description || e.description || (e.title + ' at Signature Gallery Group.'), prefix: prefix }) %>
+
+<main class="page-hero">
+  <div class="glow-purple-v"></div><div class="vignette"></div>
+
+  <section class="relative z-10 pad-content pt-[var(--pad-xh)] pb-[var(--pad-xxl)]">
+    <p class="crumb rv"><a href="../index.html">Home</a> &nbsp;/&nbsp; <a href="../index.html#events">Events</a> &nbsp;/&nbsp; <%= e.title %></p>
+
+    <div class="event-hero mt-[var(--pad-l)] rv">
+      <img src="../<%= e.banner_image %>" alt="<%= e.title %>">
+    </div>
+
+    <div class="mt-[var(--pad-xl)] grid grid-cols-1 lg:grid-cols-[auto_minmax(0,1fr)] gap-[var(--pad-l)] items-start">
+      <div class="datechip datechip-lg rv">
+        <span class="m"><%= fmt.mon(e.start_date) %></span>
+        <span class="d"><%= fmt.day(e.start_date) %></span>
+        <span class="y"><%= fmt.year(e.start_date) %></span>
+      </div>
+      <div class="rv">
+        <h1 class="display display-tight text-[clamp(2.1rem,4.4vw,4.4rem)]"><%= e.title %></h1>
+<% if (schedule.length) { %>        <ul class="mt-[var(--pad-m)] text-white/80 copy list-none p-0 m-0">
+<% schedule.forEach(function (line) { %>          <li><%= line %></li>
+<% }); %>        </ul>
+<% } %>
+<% if (e.description) { %>        <p class="mt-[var(--pad-m)] text-white/65 copy max-w-[42rem]"><%= e.description %></p>
+<% } %>        <div class="mt-[var(--pad-l)] flex flex-wrap gap-[var(--pad-s)]">
+<% if (artist) { %>          <a href="../artist/<%= artist.slug %>.html" class="btn-pill">VIEW THE ARTIST</a>
+<% } %><% if (gallery) { %>          <a href="../gallery/<%= gallery.slug %>.html" class="btn-ghost">GO TO GALLERY PAGE</a>
+          <a href="tel:<%= fmt.tel(gallery.phone) %>" class="btn-ghost">CALL <%= gallery.phone %></a>
+<% } %>        </div>
+      </div>
+    </div>
+  </section>
+
+<% if (artist) { %>  <!-- Featuring -->
+  <section class="relative z-10 pad-content pb-[var(--pad-xxl)]">
+    <h2 class="display h-section rv">Featuring</h2>
+    <div class="mt-[var(--pad-l)] card p-[var(--pad-l)] grid grid-cols-1 lg:grid-cols-[auto_minmax(0,1fr)_minmax(0,1fr)] gap-[var(--pad-l)] items-center rv">
+      <img src="../<%= artist.card_image %>" alt="<%= artist.name %>"
+           class="w-[9rem] h-[9rem] rounded-full object-cover border border-white/20">
+      <div>
+        <h3 class="display text-[1.9rem] leading-none"><%= artist.name %></h3>
+        <p class="mt-[var(--pad-s)] text-white/65 text-[.95rem] leading-[1.7]"><%= artistBioIntro %></p>
+        <a href="../artist/<%= artist.slug %>.html" class="btn-ghost mt-[var(--pad-m)]"><%= artist.name.toUpperCase() %> ARTIST PAGE</a>
+      </div>
+      <div class="grid grid-cols-2 gap-[var(--pad-xs)]">
+<% featuredWorks.forEach(function (w) { %>          <img src="../<%= w.image_path %>" alt="Artwork by <%= artist.name %>" loading="lazy" class="w-full aspect-square object-cover rounded-[.5rem] bg-white/5">
+<% }); %>      </div>
+    </div>
+  </section>
+<% } %>
+<% if (gallery) { %>  <!-- Location -->
+  <section class="relative z-10 pad-content pb-[var(--pad-xxl)]">
+    <h2 class="display h-section rv">Location</h2>
+    <div class="mt-[var(--pad-l)] grid grid-cols-1 lg:grid-cols-2 gap-[var(--pad-s)] rv">
+      <a href="../gallery/<%= gallery.slug %>.html" class="card overflow-hidden block">
+        <img src="../<%= galleryPhoto %>" alt="<%= gallery.name %> <%= gallery.location %>" loading="lazy" class="w-full aspect-[16/10] object-cover">
+      </a>
+      <div class="card p-[var(--pad-l)]">
+        <img src="../<%= gallery.logo %>" alt="<%= gallery.name %>" class="h-[2.2rem] w-auto">
+        <h3 class="display text-[1.9rem] leading-none mt-[var(--pad-m)]"><%= gallery.name %></h3>
+        <p class="mono text-[.7rem] tracking-[.13em] text-taste2 uppercase mt-2"><%= gallery.location %></p>
+        <p class="mt-[var(--pad-m)] text-white/70 copy"><%- fmt.br(gallery.address) %></p>
+        <div class="mt-[var(--pad-m)] hair pt-[var(--pad-m)] flex flex-wrap items-center justify-between gap-4">
+          <a href="tel:<%= fmt.tel(gallery.phone) %>" class="text-[1.25rem]"><%= gallery.phone %></a>
+          <a href="../gallery/<%= gallery.slug %>.html" class="mono text-[.68rem] tracking-[.13em] uppercase text-white/60 hover:text-white transition-colors">Go to gallery page &rsaquo;</a>
+        </div>
+      </div>
+    </div>
+  </section>
+<% } %>
+<% if (otherEvents.length) { %>  <section class="relative z-10 pad-content pb-[var(--pad-xxh)]">
+    <h2 class="display h-section rv">Other Upcoming Shows</h2>
+    <div class="mt-[var(--pad-l)] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[var(--pad-s)]">
+<% otherEvents.forEach(function (ev) { %>      <%- include('partials/event-card', { ev: ev, prefix: prefix, fmt: fmt }) %>
+<% }); %>    </div>
+  </section>
+<% } %></main>
+
+<%- include('partials/footer', { s: s, prefix: prefix, year: year, mailto: mailto }) %>

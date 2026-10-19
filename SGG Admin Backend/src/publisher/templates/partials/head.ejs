@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title><%= title %></title>
+<meta name="description" content="<%= description %>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,75..125,100..900;1,75..125,100..900&family=Geist:wght@100..900&family=Geist+Mono:wght@100..900&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config={theme:{extend:{colors:{taste1:'#3D2B68',taste2:'#9089D3'},
+fontFamily:{body:['Geist','Arial','sans-serif'],head:['Archivo','Arial','sans-serif'],mono:['Geist Mono','Arial','sans-serif']}}}};
+</script>
+<link rel="stylesheet" href="<%= prefix %>assets/site.css">
+</head>
+<body>
+
+<div class="rail"><div class="rail-fill" id="railFill"></div></div>
+<div class="frame">
+  <span class="corner tl"></span><span class="corner tr"></span>
+  <span class="corner bl"></span><span class="corner br"></span>
+  <span class="tick" style="top:13.3rem;right:var(--page-padding);"></span>
+  <span class="tick" style="bottom:6.4rem;right:var(--page-padding);"></span>
+  <span class="edge-letter" style="top:33.5rem;">S</span>
+  <span class="edge-letter" style="top:39rem;">G</span>
+  <span class="edge-letter" style="top:44.5rem;">G</span>
+</div>
+
+<header class="nav">
+  <div class="nav-left flex items-center gap-3">
+    <span class="mono text-[.72rem] tracking-[.14em]">ON</span>
+    <span class="eq"><span></span><span></span><span></span><span></span></span>
+  </div>
+  <a href="<%= prefix %>index.html" class="display wordmark">SIGNATURE<br>GALLERY GROUP</a>
+  <div class="nav-right flex items-center gap-[3.25rem]">
+    <button class="flex items-center gap-3" data-menu-open>
+      <span class="dotgrid"><i></i><i></i><i></i><i></i></span>
+      <span class="nav-menu-label text-[.78rem] tracking-[.09em]">MENU</span>
+    </button>
+    <a href="<%= prefix %>index.html#contact" class="btn-pill">CONTACT</a>
+  </div>
+</header>
+
+<div class="menu-overlay" id="menuOverlay">
+  <button class="menu-close" data-menu-close aria-label="Close menu">&#10005;</button>
+  <nav class="text-center">
+    <a href="<%= prefix %>artists.html" class="display text-[clamp(1.8rem,4vw,3rem)]">All Artists</a>
+    <a href="<%= prefix %>index.html#releases" class="display text-[clamp(1.8rem,4vw,3rem)]">New Releases</a>
+    <a href="<%= prefix %>index.html#events" class="display text-[clamp(1.8rem,4vw,3rem)]">Events</a>
+    <a href="<%= prefix %>index.html#galleries" class="display text-[clamp(1.8rem,4vw,3rem)]">Galleries</a>
+    <a href="<%= prefix %>index.html#contact" class="display text-[clamp(1.8rem,4vw,3rem)]">Contact</a>
+  </nav>
+</div>

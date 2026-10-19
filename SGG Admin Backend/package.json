@@ -1,0 +1,41 @@
+{
+  "name": "sgg-admin",
+  "version": "1.0.0",
+  "main": "server.js",
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "import": "node src/importer/import-site.js",
+    "publish": "node src/publisher/cli.js",
+    "seed": "node src/lib/seed-admin.js",
+    "verify": "node src/publisher/verify.js",
+    "smoke": "node src/lib/smoke-test.js",
+    "backup:db": "node deploy/backup-db.js",
+    "deploy:install": "bash deploy/install.sh",
+    "deploy:uninstall": "bash deploy/uninstall.sh"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "Signature Gallery Group — admin & analytics manager",
+  "type": "module",
+  "dependencies": {
+    "@libsql/client": "^0.18.0",
+    "bcryptjs": "^3.0.3",
+    "better-sqlite3": "^13.0.3",
+    "cheerio": "^1.2.0",
+    "dotenv": "^17.4.2",
+    "ejs": "^6.0.1",
+    "express": "^5.2.1",
+    "express-session": "^1.19.0",
+    "multer": "^2.2.0",
+    "sharp": "^0.35.3"
+  },
+  "devDependencies": {
+    "puppeteer-core": "^25.5.0"
+  }
+}
